@@ -1,0 +1,54 @@
+html,
+body {
+  height: 100%;
+}
+
+.blue-filter {
+  background-color: #457B9D;
+  padding-bottom: 2em;
+  margin-bottom: 2em;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+  float:right;
+  padding-top: 5%;
+  margin-right:20%;
+}
+.form-signin .checkbox {
+  font-weight: 400;
+}
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.health-bridge-tagline {
+  height: 30%;
+  width: 30%;
+}
+.hb-tagline {
+  margin-left: 10%;
+}
+.sign-in-form{
+  width: 100%;
+  padding-top: 5%
+}
