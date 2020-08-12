@@ -47,6 +47,24 @@ app.get('/healthbridge/pharmacy', function (req, res) {
 app.get('/healthbridge/doctor', function (req, res) {
     res.sendfile(__dirname + '/web-content/landing/doctor-landing-page.html');
 });
-app.get('/healthbridge/doctor', function (req, res) {
-    res.sendfile(__dirname + '/web-content/landing/doctor-landing-page.html');
+app.get('/healthbridge/doctor/appointments', function (req, res) {
+    res.sendfile(__dirname + '/web-content/landing/doctor-landing-page-appointments.html');
+});
+app.get('/healthbridge/doctor/messages', function (req, res) {
+    res.sendfile(__dirname + '/web-content/landing/doctor-landing-page-messages.html');
+});
+app.get('/healthbridge/doctor/mypatients', function (req, res) {
+    res.sendfile(__dirname + '/web-content/landing/doctor-landing-page-mypatients.html');
+});
+app.get('/healthbridge/doctor/profilesettings', function (req, res) {
+    res.sendfile(__dirname + '/web-content/landing/doctor-landing-page-profilesettings.html');
+});
+app.get('/healthbridge/doctor/invoices', function (req, res) {
+    res.sendfile(__dirname + '/web-content/landing/doctor-landing-page-invoices.html');
+});
+app.get('/healthbridge/doctor/scheduling', function (req, res) {
+    res.sendfile(__dirname + '/web-content/landing/doctor-landing-page-scheduling.html');
+});
+app.get('/healthbridge/doctor/reviews', function (req, res) {
+    res.sendfile(__dirname + '/web-content/landing/doctor-landing-page-reviews.html');
 });

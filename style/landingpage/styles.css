@@ -10177,6 +10177,19 @@ header.masthead {
   background-position: center center;
   background-size: cover;
 }
+
+header.dashboard{
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  text-align: center;
+  color: #fff;
+  background-image: url("../../images/img/header-bg.png");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
+
 header.masthead .masthead-subheading {
   font-size: 1.5rem;
   line-height: 1.5rem;
