@@ -1,8 +1,3 @@
-/*
-Author       : Dreamguys
-Template Name: Doccure - Bootstrap Template
-Version      : 1.3
-*/
 
 (function($) {
     "use strict";
@@ -331,7 +326,7 @@ Version      : 1.3
 					size : 400,
 					thickness: 30,
 					fill: {
-						color: '#da3f81'
+						color: '#3bd55e'
 					}
 				});
 			}
@@ -348,7 +343,7 @@ Version      : 1.3
 					size : 400,
 					thickness: 30,
 					fill: {
-						color: '#68dda9'
+						color: '#f3a545'
 					}
 				});
 			}

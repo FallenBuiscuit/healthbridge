@@ -476,7 +476,19 @@ mark,
 .img-fluid {
   max-width: 100%;
   height: auto;
+} 
+
+.img-fluid-header{
+  max-width: 50%;
+  height: auto;
 }
+@media (min-width: 576px) {
+  .img-fluid-header{
+    max-width: 50%;
+    height: auto;
+  }
+}
+
 
 .img-thumbnail {
   padding: 0.25rem;
@@ -10191,31 +10203,46 @@ header.dashboard{
 }
 
 header.masthead .masthead-subheading {
-  font-size: 1.5rem;
+  font-size: 1rem;
   line-height: 1.5rem;
   margin-bottom: 25px;
   font-family: "Poppins",sans-serif;
 }
 header.masthead .masthead-heading {
-  font-size: 3.25rem;
+  font-size: 1.5rem;
   font-weight: 200;
   line-height: 3.25rem;
   font-family: "Poppins",sans-serif;
 }
-
 @media (min-width: 768px) {
   header.masthead {
   }
   header.masthead .masthead-subheading {
     font-size: 1rem;
-    line-height: 2.25rem;
+    line-height: 1.5rem;
   }
   header.masthead .masthead-heading {
     font-size: 2rem;
-    font-weight: 300;
-    line-height: 4.5rem;
+    font-weight: 200;
+    line-height: 3.25rem;
+    font-family: "Poppins",sans-serif;
   }
 }
+
+.btn-header {
+  font-family: "Poppins",sans-serif;
+  font-weight: 200;
+  font-size: .75rem;    
+  padding: 1rem
+  
+}
+@media (min-width: 768px) {  
+  .btn-header {
+    font-family: "Poppins",sans-serif;
+    font-weight: 200;
+  }
+}
+
 #portfolio .portfolio-item {
   max-width: 25rem;
   margin-left: auto;
@@ -10539,9 +10566,4 @@ section#contact form#contactForm :-ms-input-placeholder {
   text-align: center;
   font-size: 0.9rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
-.btn-header {
-  font-family: "Poppins",sans-serif;
-  font-weight: 200;
 }

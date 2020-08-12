@@ -1,25 +1,30 @@
-<html lang="en" style="transform: none;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		
-	<title>Doccure</title>
+<html lang="en" style="transform: none;">
+<head> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<title>HealthBridge</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-	
+
 	<!-- Favicons -->
-	<link rel="icon" type="image/x-icon" href="images/img/favicon.ico">
-	
+    <link rel="icon" href="images/main/health-bridge-logo.png">
+
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="style/main/bootstrap.min.css">
-	
+
 	<!-- Fontawesome CSS -->
-	<link rel="stylesheet" href="style/landingpage/doctor/fontawesome.min.css">
+	<link rel="stylesheet" href="style/main/fontawesome.min.css">
 	<link rel="stylesheet" href="style/landingpage/doctor/all.min.css">
-	
+
 	<!-- Main CSS -->
-	<link rel="stylesheet" href="style/landingpage/doctor/style.css">
+	<link rel="stylesheet" href="style/landingpage/doctor/customstyle.css">
 	<script src="https://kit.fontawesome.com/6dcc7dba5d.js" crossorigin="anonymous"></script><link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all" rel="stylesheet"><link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css" media="all" rel="stylesheet"><link href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" rel="stylesheet">
 	<link href="style/landingpage/styles.css" rel="stylesheet">
-	
 
-<style id="theia-sticky-sidebar-stylesheet-TSS">.theiaStickySidebar:after {content: ""; display: table; clear: both;}</style></head>
+	<style id="theia-sticky-sidebar-stylesheet-TSS">.theiaStickySidebar:after {content: ""; display: table; clear: both;}</style>
+
+</head> 
+
 <body style="transform: none;">
 
 	<!-- Main Wrapper -->
@@ -35,11 +40,11 @@
 				</button>
 				<div class="collapse navbar-collapse" id="navbarResponsive">
 					<ul class="navbar-nav text-uppercase ml-auto">
-						<li class="nav-item"><a class="nav-link js-scroll-trigger active" href="#home">Home</a></li>
-						<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Services</a></li>
-						<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Shop</a></li>
-						<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">Contact Us</a></li>
-						<li class="nav-item"><a class="nav-link js-scroll-trigger">Logout</a></li>
+						<li class="nav-item"><a class="nav-link js-scroll-trigger active" href="/healthbridge/doctor">Home</a></li>
+						<li class="nav-item"><a class="nav-link js-scroll-trigger" href="/healthbridge/patient">Services</a></li>
+						<li class="nav-item"><a class="nav-link js-scroll-trigger" href="/healthbridge/patient">Shop</a></li>
+						<li class="nav-item"><a class="nav-link js-scroll-trigger" href="/healthbridge/patient">Contact Us</a></li>
+						<li class="nav-item"><a class="nav-link js-scroll-trigger" href="/healthbridge/login">Logout</a></li>
 					</ul>
 				</div>
 			</div>
@@ -96,7 +101,7 @@
 											</a>
 										</li>
 										<li>
-											<a href="/healthbridge/doctor/appointments">
+											<a href="/healthbridge/doctor/mypatients">
 												<i class="fas fa-user-injured" aria-hidden="true"></i>
 												<span>My Patients</span>
 											</a>
@@ -105,25 +110,6 @@
 											<a href="/healthbridge/doctor/scheduling">
 												<i class="fas fa-hourglass-start" aria-hidden="true"></i>
 												<span>Schedule Timings</span>
-											</a>
-										</li>
-										<li>
-											<a href="/healthbridge/doctor/invoices">
-												<i class="fas fa-file-invoice" aria-hidden="true"></i>
-												<span>Invoices</span>
-											</a>
-										</li>
-										<li>
-											<a href="/healthbridge/doctor/reviews">
-												<i class="fas fa-star" aria-hidden="true"></i>
-												<span>Reviews</span>
-											</a>
-										</li>
-										<li>
-											<a href="/healthbridge/doctor/messages">
-												<i class="fas fa-comments" aria-hidden="true"></i>
-												<span>Message</span>
-												<small class="unread-msg">23</small>
 											</a>
 										</li>
 										<li>
@@ -153,13 +139,13 @@
 											<div class="col-md-12 col-lg-4">
 												<div class="dash-widget dct-border-rht">
 													<div class="circle-bar circle-bar1">
-														<div class="circle-graph1" data-percent="75">															
+														<div class="circle-graph1" data-percent="20">															
 															<img src="images/icons/icon-01.png" class="img-fluid" alt="patient">
 														</div>
 													</div>
 													<div class="dash-widget-info">
 														<h6>Total Patient</h6>
-														<h3>1500</h3>
+														<h3>100</h3>
 														<p class="text-muted">Till Today</p>
 													</div>
 												</div>
@@ -168,14 +154,14 @@
 											<div class="col-md-12 col-lg-4">
 												<div class="dash-widget dct-border-rht">
 													<div class="circle-bar circle-bar2">
-														<div class="circle-graph2" data-percent="65">
+														<div class="circle-graph2" data-percent="4">
 															<img src="images/icons/icon-02.png" class="img-fluid" alt="Patient">
 														</div>
 													</div>
 													<div class="dash-widget-info">
 														<h6>Today Patient</h6>
-														<h3>160</h3>
-														<p class="text-muted">06, Nov 2019</p>
+														<h3>4</h3>
+														<p class="text-muted">06, Aug 2020</p>
 													</div>
 												</div>
 											</div>
@@ -183,14 +169,14 @@
 											<div class="col-md-12 col-lg-4">
 												<div class="dash-widget">
 													<div class="circle-bar circle-bar3">
-														<div class="circle-graph3" data-percent="50">
+														<div class="circle-graph3" data-percent="11">
 															<img src="images/icons/icon-03.png" class="img-fluid" alt="Patient">
 														</div>
 													</div>
 													<div class="dash-widget-info">
 														<h6>Appoinments</h6>
-														<h3>85</h3>
-														<p class="text-muted">06, Apr 2019</p>
+														<h3>11</h3>
+														<p class="text-muted">13, Aug 2020</p>
 													</div>
 												</div>
 											</div>
@@ -239,23 +225,101 @@
 																	<td>
 																		<h2 class="table-avatar">
 																			<a href="patient-profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="images/img/patients/patient.jpg" alt="User Image"></a>
-																			<a href="patient-profile.html">Richard Wilson <span>#PT0016</span></a>
+																			<a href="patient-profile.html">Jose Bonachita <span>#PT0001</span></a>
 																		</h2>
 																	</td>
-																	<td>11 Nov 2019 <span class="d-block text-info">10.00 AM</span></td>
-																	<td>General</td>
+																	<td>20 Aug 2020 <span class="d-block text-info">10.00 AM</span></td>
+																	<td>Labad Ulo</td>
 																	<td>New Patient</td>
 																	<td class="text-center">$150</td>
 																	<td class="text-right">
 																		<div class="table-action">
-																			<a href="javascript:void(0);" class="btn btn-sm bg-info-light">
+																			<a href="javascript:void(0);" class="btn btn-sm btn-info">
 																				<i class="far fa-eye" aria-hidden="true"></i> View
 																			</a>
 																			
-																			<a href="javascript:void(0);" class="btn btn-sm bg-success-light">
+																			<a href="javascript:void(0);" class="btn btn-sm btn-success">
 																				<i class="fas fa-check" aria-hidden="true"></i> Accept
 																			</a>
-																			<a href="javascript:void(0);" class="btn btn-sm bg-danger-light">
+																			<a href="javascript:void(0);" class="btn btn-sm btn-danger">
+																				<i class="fas fa-times" aria-hidden="true"></i> Cancel
+																			</a>
+																		</div>
+																	</td>
+																</tr>																
+																<tr>
+																	<td>
+																		<h2 class="table-avatar">
+																			<a href="patient-profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="images/img/patients/patient.jpg" alt="User Image"></a>
+																			<a href="patient-profile.html">Carlo Ruste <span>#PT0002</span></a>
+																		</h2>
+																	</td>
+																	<td>20 Aug 2020 <span class="d-block text-info">1.00 AM</span></td>
+																	<td>Sakit ang Ulo</td>
+																	<td>Old Patient</td>
+																	<td class="text-center">$200</td>
+																	<td class="text-right">
+																		<div class="table-action">
+																			<a href="javascript:void(0);" class="btn btn-sm btn-info">
+																				<i class="far fa-eye" aria-hidden="true"></i> View
+																			</a>
+																			
+																			<a href="javascript:void(0);" class="btn btn-sm btn-success">
+																				<i class="fas fa-check" aria-hidden="true"></i> Accept
+																			</a>
+																			<a href="javascript:void(0);" class="btn btn-sm btn-danger">
+																				<i class="fas fa-times" aria-hidden="true"></i> Cancel
+																			</a>
+																		</div>
+																	</td>
+																</tr>														
+																<tr>
+																	<td>
+																		<h2 class="table-avatar">
+																			<a href="patient-profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="images/img/patients/patient.jpg" alt="User Image"></a>
+																			<a href="patient-profile.html">Christine Leonardo<span>#PT0003</span></a>
+																		</h2>
+																	</td>
+																	<td>20 Aug 2020 <span class="d-block text-info">1.00 AM</span></td>
+																	<td>Sakit ang tiyan</td>
+																	<td>Old Patient</td>
+																	<td class="text-center">$200</td>
+																	<td class="text-right">
+																		<div class="table-action">
+																			<a href="javascript:void(0);" class="btn btn-sm btn-info">
+																				<i class="far fa-eye" aria-hidden="true"></i> View
+																			</a>
+																			
+																			<a href="javascript:void(0);" class="btn btn-sm btn-success">
+																				<i class="fas fa-check" aria-hidden="true"></i> Accept
+																			</a>
+																			<a href="javascript:void(0);" class="btn btn-sm btn-danger">
+																				<i class="fas fa-times" aria-hidden="true"></i> Cancel
+																			</a>
+																		</div>
+																	</td>
+																</tr>	
+																<tr>
+																	<td>
+																		<h2 class="table-avatar">
+																			<a href="patient-profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="images/img/patients/patient.jpg" alt="User Image"></a>
+																			<a href="patient-profile.html">Patrick Dumilon<span>#PT0004</span></a>
+																		</h2>
+																	</td>
+																	<td>14 Aug 2020 <span class="d-block text-info">6.00 PM</span></td>
+																	<td>Fever</td>
+																	<td>New Patient</td>
+																	<td class="text-center">$300</td>
+																	<td class="text-right">
+																		<div class="table-action">
+																			<a href="javascript:void(0);" class="btn btn-sm btn-info">
+																				<i class="far fa-eye" aria-hidden="true"></i> View
+																			</a>
+																			
+																			<a href="javascript:void(0);" class="btn btn-sm btn-success">
+																				<i class="fas fa-check" aria-hidden="true"></i> Accept
+																			</a>
+																			<a href="javascript:void(0);" class="btn btn-sm btn-danger">
 																				<i class="fas fa-times" aria-hidden="true"></i> Cancel
 																			</a>
 																		</div>
@@ -265,132 +329,80 @@
 																	<td>
 																		<h2 class="table-avatar">
 																			<a href="patient-profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="images/img/patients/patient.jpg" alt="User Image"></a>
-																			<a href="patient-profile.html">Charlene Reed <span>#PT0001</span></a>
+																			<a href="patient-profile.html">Jose Bonachita <span>#PT0001</span></a>
 																		</h2>
 																	</td>
-																	<td>3 Nov 2019 <span class="d-block text-info">11.00 AM</span></td>
+																	<td>20 Aug 2020 <span class="d-block text-info">10.00 AM</span></td>
+																	<td>General Checkup</td>
+																	<td>New Patient</td>
+																	<td class="text-center">$150</td>
+																	<td class="text-right">
+																		<div class="table-action">
+																			<a href="javascript:void(0);" class="btn btn-sm btn-info">
+																				<i class="far fa-eye" aria-hidden="true"></i> View
+																			</a>
+																			
+																			<a href="javascript:void(0);" class="btn btn-sm btn-success">
+																				<i class="fas fa-check" aria-hidden="true"></i> Accept
+																			</a>
+																			<a href="javascript:void(0);" class="btn btn-sm btn-danger">
+																				<i class="fas fa-times" aria-hidden="true"></i> Cancel
+																			</a>
+																		</div>
+																	</td>
+																</tr>																
+																<tr>
+																	<td>
+																		<h2 class="table-avatar">
+																			<a href="patient-profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="images/img/patients/patient.jpg" alt="User Image"></a>
+																			<a href="patient-profile.html">Ma. Tia Ann B. Vallecera <span>#PT0002</span></a>
+																		</h2>
+																	</td>
+																	<td>20 Aug 2020 <span class="d-block text-info">1.00 AM</span></td>
 																	<td>General</td>
 																	<td>Old Patient</td>
 																	<td class="text-center">$200</td>
 																	<td class="text-right">
 																		<div class="table-action">
-																			<a href="javascript:void(0);" class="btn btn-sm bg-info-light">
+																			<a href="javascript:void(0);" class="btn btn-sm btn-info">
 																				<i class="far fa-eye" aria-hidden="true"></i> View
 																			</a>
 																			
-																			<a href="javascript:void(0);" class="btn btn-sm bg-success-light">
+																			<a href="javascript:void(0);" class="btn btn-sm btn-success">
 																				<i class="fas fa-check" aria-hidden="true"></i> Accept
 																			</a>
-																			<a href="javascript:void(0);" class="btn btn-sm bg-danger-light">
+																			<a href="javascript:void(0);" class="btn btn-sm btn-danger">
 																				<i class="fas fa-times" aria-hidden="true"></i> Cancel
 																			</a>
 																		</div>
 																	</td>
-																</tr>
+																</tr>														
 																<tr>
 																	<td>
 																		<h2 class="table-avatar">
 																			<a href="patient-profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="images/img/patients/patient.jpg" alt="User Image"></a>
-																			<a href="patient-profile.html">Travis Trimble  <span>#PT0002</span></a>
+																			<a href="patient-profile.html">Shenani Pemintel<span>#PT0003</span></a>
 																		</h2>
 																	</td>
-																	<td>1 Nov 2019 <span class="d-block text-info">1.00 PM</span></td>
-																	<td>General</td>
-																	<td>New Patient</td>
-																	<td class="text-center">$75</td>
-																	<td class="text-right">
-																		<div class="table-action">
-																			<a href="javascript:void(0);" class="btn btn-sm bg-info-light">
-																				<i class="far fa-eye" aria-hidden="true"></i> View
-																			</a>
-																			
-																			<a href="javascript:void(0);" class="btn btn-sm bg-success-light">
-																				<i class="fas fa-check" aria-hidden="true"></i> Accept
-																			</a>
-																			<a href="javascript:void(0);" class="btn btn-sm bg-danger-light">
-																				<i class="fas fa-times" aria-hidden="true"></i> Cancel
-																			</a>
-																		</div>
-																	</td>
-																</tr>
-																<tr>
-																	<td>
-																		<h2 class="table-avatar">
-																			<a href="patient-profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="images/img/patients/patient.jpg" alt="User Image"></a>
-																			<a href="patient-profile.html">Carl Kelly <span>#PT0003</span></a>
-																		</h2>
-																	</td>
-																	<td>30 Oct 2019 <span class="d-block text-info">9.00 AM</span></td>
+																	<td>20 Aug 2020 <span class="d-block text-info">1.00 AM</span></td>
 																	<td>General</td>
 																	<td>Old Patient</td>
-																	<td class="text-center">$100</td>
+																	<td class="text-center">$200</td>
 																	<td class="text-right">
 																		<div class="table-action">
-																			<a href="javascript:void(0);" class="btn btn-sm bg-info-light">
+																			<a href="javascript:void(0);" class="btn btn-sm btn-info">
 																				<i class="far fa-eye" aria-hidden="true"></i> View
 																			</a>
 																			
-																			<a href="javascript:void(0);" class="btn btn-sm bg-success-light">
+																			<a href="javascript:void(0);" class="btn btn-sm btn-success">
 																				<i class="fas fa-check" aria-hidden="true"></i> Accept
 																			</a>
-																			<a href="javascript:void(0);" class="btn btn-sm bg-danger-light">
+																			<a href="javascript:void(0);" class="btn btn-sm btn-danger">
 																				<i class="fas fa-times" aria-hidden="true"></i> Cancel
 																			</a>
 																		</div>
 																	</td>
-																</tr>
-																<tr>
-																	<td>
-																		<h2 class="table-avatar">
-																			<a href="patient-profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="images/img/patients/patient.jpg" alt="User Image"></a>
-																			<a href="patient-profile.html">Michelle Fairfax <span>#PT0004</span></a>
-																		</h2>
-																	</td>
-																	<td>28 Oct 2019 <span class="d-block text-info">6.00 PM</span></td>
-																	<td>General</td>
-																	<td>New Patient</td>
-																	<td class="text-center">$350</td>
-																	<td class="text-right">
-																		<div class="table-action">
-																			<a href="javascript:void(0);" class="btn btn-sm bg-info-light">
-																				<i class="far fa-eye" aria-hidden="true"></i> View
-																			</a>
-																			
-																			<a href="javascript:void(0);" class="btn btn-sm bg-success-light">
-																				<i class="fas fa-check" aria-hidden="true"></i> Accept
-																			</a>
-																			<a href="javascript:void(0);" class="btn btn-sm bg-danger-light">
-																				<i class="fas fa-times" aria-hidden="true"></i> Cancel
-																			</a>
-																		</div>
-																	</td>
-																</tr>
-																<tr>
-																	<td>
-																		<h2 class="table-avatar">
-																			<a href="patient-profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="images/img/patients/patient.jpg" alt="User Image"></a>
-																			<a href="patient-profile.html">Gina Moore <span>#PT0005</span></a>
-																		</h2>
-																	</td>
-																	<td>27 Oct 2019 <span class="d-block text-info">8.00 AM</span></td>
-																	<td>General</td>
-																	<td>Old Patient</td>
-																	<td class="text-center">$250</td>
-																	<td class="text-right">
-																		<div class="table-action">
-																			<a href="javascript:void(0);" class="btn btn-sm bg-info-light">
-																				<i class="far fa-eye" aria-hidden="true"></i> View
-																			</a>
-																			
-																			<a href="javascript:void(0);" class="btn btn-sm bg-success-light">
-																				<i class="fas fa-check" aria-hidden="true"></i> Accept
-																			</a>
-																			<a href="javascript:void(0);" class="btn btn-sm bg-danger-light">
-																				<i class="fas fa-times" aria-hidden="true"></i> Cancel
-																			</a>
-																		</div>
-																	</td>
-																</tr>
+																</tr>	
 															</tbody>
 														</table>		
 													</div>
@@ -420,23 +432,23 @@
 																	<td>
 																		<h2 class="table-avatar">
 																			<a href="patient-profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="images/img/patients/patient.jpg" alt="User Image"></a>
-																			<a href="patient-profile.html">Elsie Gilley <span>#PT0006</span></a>
+																			<a href="patient-profile.html">Patrick Dumilon<span>#PT0004</span></a>
 																		</h2>
 																	</td>
-																	<td>14 Nov 2019 <span class="d-block text-info">6.00 PM</span></td>
+																	<td>13 Aug 2020 <span class="d-block text-info">6.00 PM</span></td>
 																	<td>Fever</td>
-																	<td>Old Patient</td>
+																	<td>New Patient</td>
 																	<td class="text-center">$300</td>
 																	<td class="text-right">
 																		<div class="table-action">
-																			<a href="javascript:void(0);" class="btn btn-sm bg-info-light">
+																			<a href="javascript:void(0);" class="btn btn-sm btn-info">
 																				<i class="far fa-eye" aria-hidden="true"></i> View
 																			</a>
 																			
-																			<a href="javascript:void(0);" class="btn btn-sm bg-success-light">
+																			<a href="javascript:void(0);" class="btn btn-sm btn-success">
 																				<i class="fas fa-check" aria-hidden="true"></i> Accept
 																			</a>
-																			<a href="javascript:void(0);" class="btn btn-sm bg-danger-light">
+																			<a href="javascript:void(0);" class="btn btn-sm btn-danger">
 																				<i class="fas fa-times" aria-hidden="true"></i> Cancel
 																			</a>
 																		</div>
@@ -446,127 +458,75 @@
 																	<td>
 																		<h2 class="table-avatar">
 																			<a href="patient-profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="images/img/patients/patient.jpg" alt="User Image"></a>
-																			<a href="patient-profile.html">Joan Gardner <span>#PT0006</span></a>
+																			<a href="patient-profile.html">Jose Bonachita <span>#PT0001</span></a>
 																		</h2>
 																	</td>
-																	<td>14 Nov 2019 <span class="d-block text-info">5.00 PM</span></td>
+																	<td>13 Aug 2020 <span class="d-block text-info">10.00 AM</span></td>
+																	<td>General</td>
+																	<td>New Patient</td>
+																	<td class="text-center">$150</td>
+																	<td class="text-right">
+																		<div class="table-action">
+																			<a href="javascript:void(0);" class="btn btn-sm btn-info">
+																				<i class="far fa-eye" aria-hidden="true"></i> View
+																			</a>
+																			
+																			<a href="javascript:void(0);" class="btn btn-sm btn-success">
+																				<i class="fas fa-check" aria-hidden="true"></i> Accept
+																			</a>
+																			<a href="javascript:void(0);" class="btn btn-sm btn-danger">
+																				<i class="fas fa-times" aria-hidden="true"></i> Cancel
+																			</a>
+																		</div>
+																	</td>
+																</tr>																
+																<tr>
+																	<td>
+																		<h2 class="table-avatar">
+																			<a href="patient-profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="images/img/patients/patient.jpg" alt="User Image"></a>
+																			<a href="patient-profile.html">Carlo Ruste <span>#PT0002</span></a>
+																		</h2>
+																	</td>
+																	<td>13 Aug 2020 <span class="d-block text-info">1.00 AM</span></td>
 																	<td>General</td>
 																	<td>Old Patient</td>
-																	<td class="text-center">$100</td>
+																	<td class="text-center">$200</td>
 																	<td class="text-right">
 																		<div class="table-action">
-																			<a href="javascript:void(0);" class="btn btn-sm bg-info-light">
+																			<a href="javascript:void(0);" class="btn btn-sm btn-info">
 																				<i class="far fa-eye" aria-hidden="true"></i> View
 																			</a>
 																			
-																			<a href="javascript:void(0);" class="btn btn-sm bg-success-light">
+																			<a href="javascript:void(0);" class="btn btn-sm btn-success">
 																				<i class="fas fa-check" aria-hidden="true"></i> Accept
 																			</a>
-																			<a href="javascript:void(0);" class="btn btn-sm bg-danger-light">
+																			<a href="javascript:void(0);" class="btn btn-sm btn-danger">
 																				<i class="fas fa-times" aria-hidden="true"></i> Cancel
 																			</a>
 																		</div>
 																	</td>
-																</tr>
+																</tr>														
 																<tr>
 																	<td>
 																		<h2 class="table-avatar">
 																			<a href="patient-profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="images/img/patients/patient.jpg" alt="User Image"></a>
-																			<a href="patient-profile.html">Daniel Griffing <span>#PT0007</span></a>
+																			<a href="patient-profile.html">Christine Leonardo<span>#PT0003</span></a>
 																		</h2>
 																	</td>
-																	<td>14 Nov 2019 <span class="d-block text-info">3.00 PM</span></td>
-																	<td>General</td>
-																	<td>New Patient</td>
-																	<td class="text-center">$75</td>
-																	<td class="text-right">
-																		<div class="table-action">
-																			<a href="javascript:void(0);" class="btn btn-sm bg-info-light">
-																				<i class="far fa-eye" aria-hidden="true"></i> View
-																			</a>
-																			
-																			<a href="javascript:void(0);" class="btn btn-sm bg-success-light">
-																				<i class="fas fa-check" aria-hidden="true"></i> Accept
-																			</a>
-																			<a href="javascript:void(0);" class="btn btn-sm bg-danger-light">
-																				<i class="fas fa-times" aria-hidden="true"></i> Cancel
-																			</a>
-																		</div>
-																	</td>
-																</tr>
-																<tr>
-																	<td>
-																		<h2 class="table-avatar">
-																			<a href="patient-profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="images/img/patients/patient.jpg" alt="User Image"></a>
-																			<a href="patient-profile.html">Walter Roberson <span>#PT0008</span></a>
-																		</h2>
-																	</td>
-																	<td>14 Nov 2019 <span class="d-block text-info">1.00 PM</span></td>
+																	<td>13 Aug 2020 <span class="d-block text-info">1.00 AM</span></td>
 																	<td>General</td>
 																	<td>Old Patient</td>
-																	<td class="text-center">$350</td>
+																	<td class="text-center">$200</td>
 																	<td class="text-right">
 																		<div class="table-action">
-																			<a href="javascript:void(0);" class="btn btn-sm bg-info-light">
+																			<a href="javascript:void(0);" class="btn btn-sm btn-info">
 																				<i class="far fa-eye" aria-hidden="true"></i> View
 																			</a>
 																			
-																			<a href="javascript:void(0);" class="btn btn-sm bg-success-light">
+																			<a href="javascript:void(0);" class="btn btn-sm btn-success">
 																				<i class="fas fa-check" aria-hidden="true"></i> Accept
 																			</a>
-																			<a href="javascript:void(0);" class="btn btn-sm bg-danger-light">
-																				<i class="fas fa-times" aria-hidden="true"></i> Cancel
-																			</a>
-																		</div>
-																	</td>
-																</tr>
-																<tr>
-																	<td>
-																		<h2 class="table-avatar">
-																			<a href="patient-profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="images/img/patients/patient.jpg" alt="User Image"></a>
-																			<a href="patient-profile.html">Robert Rhodes <span>#PT0010</span></a>
-																		</h2>
-																	</td>
-																	<td>14 Nov 2019 <span class="d-block text-info">10.00 AM</span></td>
-																	<td>General</td>
-																	<td>New Patient</td>
-																	<td class="text-center">$175</td>
-																	<td class="text-right">
-																		<div class="table-action">
-																			<a href="javascript:void(0);" class="btn btn-sm bg-info-light">
-																				<i class="far fa-eye" aria-hidden="true"></i> View
-																			</a>
-																			
-																			<a href="javascript:void(0);" class="btn btn-sm bg-success-light">
-																				<i class="fas fa-check" aria-hidden="true"></i> Accept
-																			</a>
-																			<a href="javascript:void(0);" class="btn btn-sm bg-danger-light">
-																				<i class="fas fa-times" aria-hidden="true"></i> Cancel
-																			</a>
-																		</div>
-																	</td>
-																</tr>
-																<tr>
-																	<td>
-																		<h2 class="table-avatar">
-																			<a href="patient-profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="images/img/patients/patient.jpg" alt="User Image"></a>
-																			<a href="patient-profile.html">Harry Williams <span>#PT0011</span></a>
-																		</h2>
-																	</td>
-																	<td>14 Nov 2019 <span class="d-block text-info">11.00 AM</span></td>
-																	<td>General</td>
-																	<td>New Patient</td>
-																	<td class="text-center">$450</td>
-																	<td class="text-right">
-																		<div class="table-action">
-																			<a href="javascript:void(0);" class="btn btn-sm bg-info-light">
-																				<i class="far fa-eye" aria-hidden="true"></i> View
-																			</a>
-																			
-																			<a href="javascript:void(0);" class="btn btn-sm bg-success-light">
-																				<i class="fas fa-check" aria-hidden="true"></i> Accept
-																			</a>
-																			<a href="javascript:void(0);" class="btn btn-sm bg-danger-light">
+																			<a href="javascript:void(0);" class="btn btn-sm btn-danger">
 																				<i class="fas fa-times" aria-hidden="true"></i> Cancel
 																			</a>
 																		</div>

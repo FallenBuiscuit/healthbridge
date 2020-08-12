@@ -1,7 +1,4 @@
 /*
-Author       : Dreamguys
-Template Name: Doccure - Bootstrap Template
-Version      : 1.3
 */
 
 /*============================
@@ -797,22 +794,22 @@ button.bg-danger:hover {
 .pagination > .active > span,
 .pagination > .active > span:focus,
 .pagination > .active > span:hover {
-	background-color: #20c0f3;
-	border-color: #20c0f3;
+	background-color: #1b5a90;
+	border-color: #1b5a90;
 }
 .pagination > li > a, 
 .pagination > li > span {
-	color: #20c0f3;
+	color: #1b5a90;
 }
 .page-link:hover {
-	color: #20c0f3;
+	color: #1b5a90;
 }
 .page-link:focus {
 	box-shadow: unset;
 }
 .page-item.active .page-link {
-	background-color: #20c0f3;
-	border-color: #20c0f3;
+	background-color: #1b5a90;
+	border-color: #1b5a90;
 }
 .dropdown-menu {
     background-color: #fff;
@@ -823,7 +820,7 @@ button.bg-danger:hover {
     transform-origin: left top 0;
 }
 .dropdown-item.active, .dropdown-item:active {
-    background-color: #0de0fe;
+    background-color: #ffab42;
 }
 .navbar-nav .open .dropdown-menu {
 	border: 0;
@@ -861,11 +858,11 @@ button.bg-danger:hover {
 	color: #a6a6a6;
 }
 .bootstrap-datetimepicker-widget table td.active, .bootstrap-datetimepicker-widget table td.active:hover {
-	background-color: #20c0f3;
+	background-color: #1b5a90;
 	text-shadow: unset;
 }
 .bootstrap-datetimepicker-widget table td.today::before{
-	border-bottom-color: #20c0f3;
+	border-bottom-color: #1b5a90;
 }
 .bg-info-light {
 	background-color: rgba(2, 182, 179,0.12) !important;
@@ -935,7 +932,7 @@ button.bg-danger:hover {
 .avatar-title {
 	width: 100%;
 	height: 100%;
-	background-color: #20c0f3;
+	background-color: #1b5a90;
 	color: #fff;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -1133,7 +1130,7 @@ button.bg-danger:hover {
 	line-height: 44px;
 }
 .select2-container--default .select2-results__option--highlighted[aria-selected] {
-	background-color: #20c0f3;
+	background-color: #1b5a90;
 }
 .select2-container--default .select2-selection--multiple {
 	border: 1px solid #dcdcdc;
@@ -1169,8 +1166,8 @@ button.bg-danger:hover {
 .nav-tabs.nav-tabs-solid > .active > a,
 .nav-tabs.nav-tabs-solid > .active > a:hover,
 .nav-tabs.nav-tabs-solid > .active > a:focus {
-	background-color: #20c0f3;
-	border-color: #20c0f3;
+	background-color: #1b5a90;
+	border-color: #1b5a90;
 	color: #fff;
 }
 .tab-content {
@@ -1201,8 +1198,8 @@ button.bg-danger:hover {
 .nav-tabs.nav-tabs-solid > li > a.active,
 .nav-tabs.nav-tabs-solid > li > a.active:hover,
 .nav-tabs.nav-tabs-solid > li > a.active:focus {
-	background-color: #20c0f3;
-	border-color: #20c0f3;
+	background-color: #1b5a90;
+	border-color: #1b5a90;
 	color: #fff;
 }
 .nav-tabs.nav-tabs-solid.nav-tabs-rounded {
@@ -1254,14 +1251,14 @@ button.bg-danger:hover {
 .nav-tabs.nav-tabs-top > li > a.active,
 .nav-tabs.nav-tabs-top > li > a.active:hover,
 .nav-tabs.nav-tabs-top > li > a.active:focus {
-	border-top-color: #20c0f3;
+	border-top-color: #1b5a90;
 }
 .nav-tabs.nav-tabs-bottom > li > a.active, 
 .nav-tabs.nav-tabs-bottom > li > a.active:hover, 
 .nav-tabs.nav-tabs-bottom > li > a.active:focus {
 	border-bottom-width: 2px;
 	border-color: transparent;
-	border-bottom-color: #20c0f3;
+	border-bottom-color: #1b5a90;
 	background-color: transparent;
 	transition: none 0s ease 0s; 
 	-moz-transition: none 0s ease 0s; 
@@ -1368,7 +1365,7 @@ button.bg-danger:hover {
     color: #272b41;
 }
 .line {
-    background-color: #20c0f3;
+    background-color: #1b5a90;
     height: 2px;
     margin: 0;
     width: 60px;
@@ -1516,7 +1513,7 @@ button.bg-danger:hover {
 .slick-prev:focus,
 .slick-next:hover,
 .slick-next:focus {
-    background-color: #0de0fe;
+    background-color: #ffab42;
 	color: #fff;
 	opacity: 1;
 }
@@ -1948,7 +1945,7 @@ button.bg-danger:hover {
     font-size: 20px;
 }
 .unread-msg1{
-	background-color: #09e5ab;
+	background-color: #28a745;
     border-radius: 2px;
     color: #272b41;
     font-size: 10px;
@@ -2002,7 +1999,7 @@ button.bg-danger:hover {
     width: 31px;
 }
 .bar-icon span {
-    background-color: #0de0fe;
+    background-color: #ffab42;
     display: block;
     float: left;
     height: 3px;
@@ -2205,7 +2202,7 @@ html.menu-opened body {
     margin-bottom: 3px;
 }
 .login-header h3 a {
-    color: #0de0fe;
+    color: #ffab42;
     float: right;
     font-size: 15px;
     margin-top: 2px;
@@ -2427,11 +2424,11 @@ html.menu-opened body {
     -moz-osx-font-smoothing: grayscale;
 }
 .slick-dots li.slick-active button {
-    background-color: #0de0fe;
+    background-color: #ffab42;
 }
 .slick-dots li.slick-active button:before {
     opacity: 1;
-    color: #0de0fe;
+    color: #ffab42;
 }
 .slick-slide {
 	outline: none !important;
@@ -2484,7 +2481,7 @@ html.menu-opened body {
 }
 .speicality-img span i {
     font-size: 15px;
-	color:#0de0fe;
+	color:#ffab42;
 }
 .speicality-item p {
     font-size: 16px;
@@ -2642,21 +2639,21 @@ html.menu-opened body {
     padding-right: 3px;
 }
 .view-btn {
-    color: #0de0fe;
+    color: #ffab42;
     font-size: 13px;
-    border: 2px solid #0de0fe;
+    border: 2px solid #ffab42;
     text-align: center;
     display: block;
     font-weight: 500;
 	padding: 6px;
 }
 .view-btn:hover, .view-btn:focus {
-	background-color: #0de0fe;
+	background-color: #ffab42;
 	color: #fff;
 }
 .book-btn {
-	background-color: #0de0fe;
-    border: 2px solid #0de0fe;
+	background-color: #ffab42;
+    border: 2px solid #ffab42;
     color: #fff;
     font-size: 13px;
     text-align: center;
@@ -2683,7 +2680,7 @@ html.menu-opened body {
 	margin-top: 20px;
 }
 .about-content a {
-    background-color: #0de0fe;
+    background-color: #ffab42;
     border-radius: 4px;
 	color: #fff;
     display: inline-block;
@@ -2775,8 +2772,8 @@ html.menu-opened body {
 	padding: 80px 0;
 }
 .book-btn1 {
-	background-color: #0de0fe;
-	border: 2px solid #0de0fe;
+	background-color: #ffab42;
+	border: 2px solid #ffab42;
 	color: #fff;
 	font-size: 16px;
 	text-align: center;
@@ -3055,7 +3052,7 @@ html.menu-opened body {
     display: none;
     left: 4px;
     top: 0;
-    color: #0de0fe;
+    color: #ffab42;
     font-size: 11px;
 }
 .custom_check input:checked ~ .checkmark:after {
@@ -3124,8 +3121,8 @@ html.menu-opened body {
 	line-height: 18px;
 }
 .btn-search .btn {
-    background-color: #0de0fe;
-    border: 1px solid #0de0fe;
+    background-color: #ffab42;
+    border: 1px solid #ffab42;
     color: #fff;
     height: 46px;
 	font-weight:500;
@@ -3157,7 +3154,7 @@ html.menu-opened body {
 	border-radius: 5px;
 }
 .doc-department {
-    color: #20c0f3;
+    color: #1b5a90;
     font-size: 14px;
     margin-bottom: 8px;
 }
@@ -3269,9 +3266,9 @@ html.menu-opened body {
 }
 .clinic-booking a {
     background-color: #fff;
-    border: 2px solid #20c0f3;
+    border: 2px solid #1b5a90;
     border-radius: 4px;
-    color: #20c0f3;
+    color: #1b5a90;
     display: block;
     font-size: 14px;
     font-weight: 500;
@@ -3282,11 +3279,11 @@ html.menu-opened body {
     width: 100%;
 }
 .clinic-booking a.view-pro-btn:hover, .clinic-booking a.view-pro-btn:focus {
-	background: #20c0f3; 
+	background: #1b5a90; 
 	color: #fff;
 }
 .clinic-booking a.apt-btn {
-    background-color: #20c0f3;
+    background-color: #1b5a90;
     color: #fff;
 }
 .clinic-booking a.apt-btn:hover, .clinic-booking a.apt-btn:focus {
@@ -3354,7 +3351,7 @@ html.menu-opened body {
 .user-tabs .nav-tabs.nav-tabs-bottom > li > a.active:hover, 
 .user-tabs .nav-tabs.nav-tabs-bottom > li > a.active:focus {
 	border-bottom-width: 3px;
-	color: #20c0f3;
+	color: #1b5a90;
 }
 .user-tabs .med-records {
 	display: inline-block;
@@ -3362,7 +3359,7 @@ html.menu-opened body {
 }
 .user-tabs .nav-tabs > li > a:hover {
 	background-color: unset;
-	color: #20c0f3;
+	color: #1b5a90;
 }
 .widget {
 	margin-bottom: 30px;
@@ -3432,10 +3429,10 @@ html.menu-opened body {
     border-radius: 50%;
     height: 12px;
     width: 12px;
-    border: 2px solid #20c0f3;
+    border: 2px solid #1b5a90;
 }
 .exp-year {
-    color: #20c0f3;
+    color: #1b5a90;
     margin-bottom: 2px;
 }
 .exp-title {
@@ -3562,7 +3559,7 @@ html.menu-opened body {
     font-size: 14px;
 }
 .review-listing > ul li .comment .comment-body .comment-reply .comment-btn {
-    color: #20c0f3;
+    color: #1b5a90;
     display: inline-block;
     font-weight: 500;
     font-size: 15px;
@@ -3631,7 +3628,7 @@ html.menu-opened body {
     color: #f2b600
 }
 .terms-accept a {
-	color: #20c0f3;
+	color: #1b5a90;
 	font-weight: 500;
 }
 .business-widget {
@@ -3862,7 +3859,7 @@ html.menu-opened body {
     width: 100%;
 }
 .exist-customer a {
-	color: #20c0f3;
+	color: #1b5a90;
 	font-weight: 500;
 }
 .payment-widget .payment-list + .payment-list {
@@ -3912,7 +3909,7 @@ html.menu-opened body {
     transition: all .3s;
 }
 .payment-radio input:checked ~ .checkmark {
-    border-color: #20c0f3;
+    border-color: #1b5a90;
 }
 .payment-radio .checkmark::after {
     position: absolute;
@@ -3921,7 +3918,7 @@ html.menu-opened body {
     content: '';
     width: 9px;
     height: 9px;
-    background-color: #20c0f3;
+    background-color: #1b5a90;
     opacity: 0;
     visibility: hidden;
     -webkit-transform: scale(0.1);
@@ -3967,7 +3964,7 @@ html.menu-opened body {
     text-align: right;
 }
 .booking-date li span a{
-	color: #20c0f3;
+	color: #1b5a90;
 	font-size: 13px;
 	width: 100%;
 	display: inline-block;
@@ -4006,7 +4003,7 @@ html.menu-opened body {
     color: #272b41;
 }
 .booking-total ul li .total-cost {
-    color: #20c0f3;
+    color: #1b5a90;
     font-size: 16px;
     float: right;
 }
@@ -4200,8 +4197,8 @@ html.menu-opened body {
 	text-transform: uppercase;
 }
 .schedule-nav .nav-tabs li a.active {
-	background: #ff4877;
-    border: 1px solid #ff4877 !important;
+	background: #e48781;
+    border: 1px solid #e48781 !important;
 	color: #fff;
 }
 .hours-info .form-control {
@@ -4221,7 +4218,7 @@ html.menu-opened body {
 	-ms-flex-pack: center;
 }
 .edit-link {
-    color: #20c0f3;
+    color: #1b5a90;
     font-size: 16px;
     margin-top: 4px;
 }
@@ -4308,7 +4305,7 @@ html.menu-opened body {
 -----------------------*/
 
 .add-new-btn {
-    background-color: #0de0fe;
+    background-color: #ffab42;
     border-radius: 30px;
     color: #fff;
     display: inline-block;
@@ -4317,7 +4314,7 @@ html.menu-opened body {
     padding: 10px 20px;
 }
 .add-new-btn:focus, .add-new-btn:hover,.add-new-btn:active {
-	background-color: #0de0fe;
+	background-color: #ffab42;
     color: #fff;
 }
 .patient-info {
@@ -4359,7 +4356,7 @@ html.menu-opened body {
 	margin-bottom: 10px;
 }
 .add-more-item a {
-	color: #0de0fe;
+	color: #ffab42;
 	font-weight: 500;
 }
 .signature-wrap {
@@ -4762,8 +4759,8 @@ html.menu-opened body {
     color: #9f9f9f;
 }
 .chat-cont-right .chat-footer .input-group .input-group-append .btn.msg-send-btn {
-    background-color: #0de0fe;
-    border-color: #0de0fe;
+    background-color: #ffab42;
+    border-color: #ffab42;
     border-radius: 50%;
     color: #fff;
     margin-left: 10px;
@@ -5047,7 +5044,7 @@ html.menu-opened body {
 	margin-bottom: 1.5rem;
 }
 .change-photo-btn {
-    background-color: #20c0f3;
+    background-color: #1b5a90;
     border-radius: 50px;
     color: #fff;
     cursor: pointer;
@@ -5134,7 +5131,7 @@ html.menu-opened body {
 	-ms-flex-pack: center;
 }
 .add-more a {
-	color: #20c0f3;
+	color: #1b5a90;
 }
 .bootstrap-tagsinput {
     border-color: #dcdcdc;
@@ -5147,7 +5144,7 @@ html.menu-opened body {
 	border-color: #bbb;
 }
 .bootstrap-tagsinput .tag {
-    background-color: #20c0f3;
+    background-color: #1b5a90;
     color: #fff;
     display: inline-block;
     font-size: 14px;
@@ -5262,7 +5259,7 @@ html.menu-opened body {
 .fc-state-down,
 .fc-state-active,
 .fc-state-disabled {
-	background-color: #20c0f3 !important;
+	background-color: #1b5a90 !important;
 	color: #fff !important;
 	text-shadow: none !important;
 }
@@ -5380,7 +5377,7 @@ html.menu-opened body {
 }
 .dashboard-menu > ul > li:hover > a,
 .dashboard-menu > ul > li.active > a {
-	color:#0de0fe;
+	color:#ffab42;
 }
 .dashboard-menu ul li a i {
     font-size: 16px;
@@ -5388,7 +5385,7 @@ html.menu-opened body {
     width: 16px;
 }
 .unread-msg {
-    background-color: #09e5ab;
+    background-color: #fdaa42;
     border-radius: 2px;
     color: #272b41;
     font-size: 10px;
@@ -5597,7 +5594,7 @@ html.menu-opened body {
     font-weight: 500;
 }
 .typing-text {
-	color: #20c0f3;
+	color: #1b5a90;
 	font-size: 12px;
 	text-transform: lowercase;
 }
@@ -6063,7 +6060,7 @@ html.menu-opened body {
 	color: #272b41;
 }
 .blog-title a:hover {
-	color: #20c0f3;
+	color: #1b5a90;
 }
 .blog-content p {
 	color: #666;
@@ -6074,7 +6071,7 @@ html.menu-opened body {
     display: inline-block;
     font-size: 16px;
     padding: 0;
-    color: #20c0f3;
+    color: #1b5a90;
     text-decoration: underline;
     font-weight: bold;
 }
@@ -6090,7 +6087,7 @@ html.menu-opened body {
 	color: #757575;
 }
 .blog-info i {
-	color: #20c0f3;
+	color: #1b5a90;
 	font-size: 14px;
 	margin-right: 5px;
 }
@@ -6123,7 +6120,7 @@ html.menu-opened body {
 	border-color: #f0f0f0;
 }
 .blog-pagination .pagination li.active a {
-	background: #20c0f3;
+	background: #1b5a90;
 	border-color: transparent;
 	color: #ffffff;
 }
@@ -6209,7 +6206,7 @@ html.menu-opened body {
 	color: #272b41;
 }
 .post-info h4 a:hover {
-	color: #20c0f3;
+	color: #1b5a90;
 }
 .post-info p {
 	color: #757575;
@@ -6217,7 +6214,7 @@ html.menu-opened body {
 	margin: 0;
 }
 .post-info p i {
-	color: #20c0f3;
+	color: #1b5a90;
 	font-size: 14px;
 	margin-right: 4px;
 }
@@ -6244,10 +6241,10 @@ html.menu-opened body {
     color: #757575;
 }
 .category-widget .categories li a:hover {
-	color: #20c0f3;
+	color: #1b5a90;
 }
 .category-widget .categories > li > a > i {
-	color: #20c0f3;
+	color: #1b5a90;
 	font-size: 18px;
 	margin-right: 10px;
 }
@@ -6275,8 +6272,8 @@ html.menu-opened body {
 	display: inline-block;
 }
 .tag:hover {
-	background-color: #20c0f3;
-	border-color: #20c0f3;
+	background-color: #1b5a90;
+	border-color: #1b5a90;
 	color: #fff;
 }
 .comment-by {
@@ -6330,9 +6327,9 @@ html.menu-opened body {
 	width: 40px;
 }
 .social-share > li > a:hover {
-	background-color: #20c0f3;
+	background-color: #1b5a90;
 	color: #fff;
-	border-color: #20c0f3;
+	border-color: #1b5a90;
 }
 .blog-reply > a {
 	color: #999;
@@ -6366,7 +6363,7 @@ html.menu-opened body {
 	border-radius: 58px;
 }
 .blog-comments .comment-btn {
-    color: #20c0f3;
+    color: #1b5a90;
     display: inline-block;
     font-weight: 500;
     font-size: 15px;
@@ -6380,8 +6377,8 @@ html.menu-opened body {
 	font-weight: 500;
 }
 .comment-submit .btn {
-	background-color: #20c0f3;
-	border-color: #20c0f3;
+	background-color: #1b5a90;
+	border-color: #1b5a90;
 	border-radius: 0;
 	font-size: 18px;
 	padding: 8px 26px;
@@ -6500,7 +6497,7 @@ html.menu-opened body {
     text-overflow: ellipsis;
 }
 .grid-blog .post-author a:hover {
-	color: #20c0f3
+	color: #1b5a90
 }
 
 /*-----------------
@@ -6563,12 +6560,12 @@ html.menu-opened body {
 	height: 44px;
 }
 .view-icons a:hover {
-	border-color: #20c0f3;
-	color: #20c0f3;
+	border-color: #1b5a90;
+	color: #1b5a90;
 }
 .view-icons a.active {
-    background-color: #20c0f3;
-	border-color: #20c0f3;
+    background-color: #1b5a90;
+	border-color: #1b5a90;
 	color: #fff;
 }
 
@@ -6599,7 +6596,7 @@ html.menu-opened body {
 .loader span {
 	-webkit-animation: loader 1.3s linear infinite;
 	animation: loader 1.3s linear infinite;
-	background-color: #20c0f3;
+	background-color: #1b5a90;
 	border-radius: 100%;
 	display: inline-block;
 	height: 50px;
@@ -6659,7 +6656,7 @@ html.menu-opened body {
 }
 .product-custom .profile-widget:hover .cart-icon{
 	color: #fff;
-	background-color: #0de0fe;
+	background-color: #ffab42;
 }
 .product-description .doctor-img1{
 	width: 40%;
@@ -6677,7 +6674,7 @@ html.menu-opened body {
 ul.benifits-col li i{
 	font-size: 20px;
 	margin-right: 20px;
-	color: #20c0f3;
+	color: #1b5a90;
 }
 .custom-increment .input-group1{
 	display: flex;
@@ -6787,7 +6784,7 @@ ul.benifits-col li i{
 }
 .view-cart-header .shopping-cart-items .item-price {
 	margin-right: 8px;
-	color: #20c0f3;
+	color: #1b5a90;
 	font-size: 13px;
 }
 .view-cart-header .shopping-cart-items .item-quantity {
@@ -7439,7 +7436,7 @@ ul.benifits-col li i{
 	.nav-tabs.nav-justified > li > a.active,
 	.nav-tabs.nav-justified > li > a.active:hover,
 	.nav-tabs.nav-justified > li > a.active:focus {
-		border-color: transparent transparent transparent #20c0f3;
+		border-color: transparent transparent transparent #1b5a90;
 		border-left-width: 2px;
 	}
 	.nav-tabs {
@@ -7469,7 +7466,7 @@ ul.benifits-col li i{
 	.nav-tabs > li > a.active,
 	.nav-tabs > li > a.active:hover,
 	.nav-tabs > li > a.active:focus {
-		border-color: transparent transparent transparent #20c0f3 !important;
+		border-color: transparent transparent transparent #1b5a90 !important;
 		border-left-width: 2px;
 	}
 	.nav-tabs > li.open:not(.active) > a,
@@ -7493,7 +7490,7 @@ ul.benifits-col li i{
 	.nav-tabs-justified > li > a.active:hover,
 	.nav-tabs-justified > li > a.active:focus {
 		border-width: 0 0 0 2px;
-		border-left-color: #20c0f3;
+		border-left-color: #1b5a90;
 	}
 	.review-listing > ul li .comment .comment-body .meta-data span.comment-date {
 		margin-bottom: 5px;
@@ -7532,7 +7529,7 @@ ul.benifits-col li i{
 	.user-tabs .nav-tabs.nav-tabs-bottom > li > a.active:hover, 
 	.user-tabs .nav-tabs.nav-tabs-bottom > li > a.active:focus {
 		border-left-width: 2px;
-		color: #20c0f3;
+		color: #1b5a90;
 	}
 	.doctor-widget {
 		-ms-flex-direction: column;
@@ -7872,7 +7869,7 @@ ul.benifits-col li i{
 		padding: 30px 0;
 	} 
 	.login-header h3 a {
-		color: #0de0fe;
+		color: #ffab42;
 		float: none;
 		font-size: 15px;
 		margin-top: 10px;
