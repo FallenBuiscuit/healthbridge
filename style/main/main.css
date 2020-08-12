@@ -7,3 +7,7 @@
 .btn-primary {
   background-color: #457B9D;
 }
+
+.health-bridge-loading {
+  display: none;
+}
