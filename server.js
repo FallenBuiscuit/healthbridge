@@ -25,5 +25,5 @@ app.use('/images', express.static(__dirname + '/images'));
 
 app.get('/', function (req, res) {
  res.sendfile(__dirname + '/web-content/login/login.html');
- 
+
 });
