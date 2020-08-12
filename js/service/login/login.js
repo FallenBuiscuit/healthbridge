@@ -22,6 +22,7 @@ loginapp.controller("loginServiceCtrl", function($scope,$http){
             if(response.status === 200){
                 alert("success!");
                 alert(response.data[0].USERNAME);
+                window.location.replace("web-content/landing/index.html");
             }
         });
     }
