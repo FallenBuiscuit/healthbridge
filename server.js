@@ -6,8 +6,8 @@ var path = require('path'),
 var app = express();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
-http.listen(8080, function(){
-    console.log('listening on *:8080');
+http.listen(8081, function(){
+    console.log('listening on *:8081');
 });
 
 // view engine setup
@@ -19,11 +19,19 @@ app.set('view engine', 'jade');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use('/js', express.static(__dirname + '/js'));
-app.use('/style', express.static(__dirname + '/style'));
-app.use('/images', express.static(__dirname + '/images'));
+app.use('/healthbridge/js', express.static(__dirname + '/js'));
+app.use('/healthbridge/style', express.static(__dirname + '/style'));
+app.use('/healthbridge/images', express.static(__dirname + '/images'));
 
-app.get('/', function (req, res) {
+app.get('/healthbridge/guest', function (req, res) {
+    res.sendfile(__dirname + '/web-content/landing/guest-landing-page.html');
+});
+
+app.get('/healthbridge/login', function (req, res) {
  res.sendfile(__dirname + '/web-content/login/login.html');
 
+});
+
+app.get('/healthbridge/patient', function (req, res) {
+    res.sendfile(__dirname + '/web-content/landing/patient-landing-page.html');
 });
