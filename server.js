@@ -27,7 +27,12 @@ app.get('/healthbridge/login', function (req, res) {
  res.sendfile(__dirname + '/web-content/login/login.html');
 
 });
-
 app.get('/healthbridge/patient', function (req, res) {
     res.sendfile(__dirname + '/web-content/landing/patient-landing-page.html');
+});
+app.get('/healthbridge/doctor', function (req, res) {
+    res.sendfile(__dirname + '/web-content/landing/doctor-landing-page.html');
+});
+app.get('/healthbridge/doctor', function (req, res) {
+    res.sendfile(__dirname + '/web-content/landing/doctor-landing-page.html');
 });
