@@ -20,8 +20,14 @@ loginapp.controller("loginServiceCtrl", function($scope,$http){
 
         $http(request).then(function(response){
             if(response.status === 200){
-                alert("success!");
-                alert(response.data[0].USERNAME);
+                var url = require('url');
+                var adr = 'http://localhost:8080/default.htm?year=2017&month=february';
+                var q = url.parse(adr, true);
+
+                console.log(q.host); //returns 'localhost:8080'
+                console.log(q.pathname); //returns '/default.htm'
+
+
             }
         });
     }
