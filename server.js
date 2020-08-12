@@ -6,8 +6,10 @@ var path = require('path'),
 var app = express();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
-http.listen(8081, function(){
+var PORT = process.env.PORT || 8081;
+http.listen(PORT, function(){
     console.log('listening on *:8081');
+
 });
 
 // view engine setup
