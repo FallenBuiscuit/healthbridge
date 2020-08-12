@@ -9,8 +9,7 @@ loginapp.controller("loginServiceCtrl", function($scope,$http){
             method: 'POST',
             url: 'https://8cz518ciu1.execute-api.us-east-1.amazonaws.com/dev/user/getlogindetails',
             headers: {
-                'Content-type': 'application/json',
-                'Access-Control-Allow-Origin': '*'
+                "Content-type": "application/json"
             },
             data: {
                 username: username,
@@ -20,7 +19,10 @@ loginapp.controller("loginServiceCtrl", function($scope,$http){
         };
 
         $http(request).then(function(response){
-            alert(response);
+            if(response.status === 200){
+                alert("success!");
+                alert(response.data[0].USERNAME);
+            }
         });
     }
 });
