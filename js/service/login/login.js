@@ -5,6 +5,7 @@ loginapp.controller("loginServiceCtrl", function($scope,$http){
     $scope.password = null;
 
     $scope.logindata = function(username,password){
+        $('.health-bridge-loading').show();  
         var request = {
             method: 'POST',
             url: 'https://8cz518ciu1.execute-api.us-east-1.amazonaws.com/dev/user/getlogindetails',
@@ -18,10 +19,9 @@ loginapp.controller("loginServiceCtrl", function($scope,$http){
 
         };
 
-        $http(request).then(function(response){
-            if(response.status === 200){
-                alert("success!");
-                alert(response.data[0].USERNAME);
+        $http(request).then(function(response){  
+            if(response.status === 200 && response.data.length > 0){
+                window.open("/healthbridge/patient", "_self");
             }
         });
     }
