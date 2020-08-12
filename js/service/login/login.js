@@ -19,8 +19,9 @@ loginapp.controller("loginServiceCtrl", function($scope,$http){
         };
 
         $http(request).then(function(response){
-            if(response.status === 200){
-                alert("carlo");
+            $('.health-bridge-loading').show();    
+            if(response.status === 200 && response.data.length > 0){
+                window.open("/healthbridge/patient", "_self");
             }
         });
     }
