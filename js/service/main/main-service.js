@@ -3,9 +3,6 @@ mainapp.controller("mainServiceCtrl", function($scope){
 
     $scope.redirect = function(redirectUrl){
         $('.health-bridge-loading').show();
-        if(redirectUrl === '/guest'){
-            localStorage.setItem("isLoggedIn", false);
-        }
         window.open("/healthbridge" + redirectUrl, "_self");
     }
 });
@@ -42,5 +39,10 @@ mainapp.controller("mainServiceCtrl", function($scope){
 
     $(document).ready(function() {
         MAPP.init();
+        var url = window.location.href;
+        url = url.substring(url.indexOf('/hea'));
+        if(url === '/healthbridge/guest'){
+            localStorage.setItem("isLoggedIn", false);
+        }
     });
 })(jQuery);
