@@ -37,20 +37,20 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav text-uppercase ml-auto logged-in">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Pharmacies</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#shop">Medicines</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger cart-link" href="#cart">
-                        <span>
-                            <span>Cart</span>
-                        </span>
-                        <span class="cart-total-price3 cart-quantity-notif">0</span>
-                        <div class="cart-active cart">
+                            <span>
+                                <span>Cart</span>
+                            </span>
+                            <span class="cart-total-price3 cart-quantity-notif">0</span>
+                            <div class="cart-active cart">
                                 <h2 class="section-header section-heading text-uppercase">CART</h2>
                                 <div class="cart-row">
                                     <span class="cart-item cart-header cart-column">ITEM</span>
                                     <span class="cart-price cart-header cart-column">PRICE</span>
                                     <span class="cart-quantity cart-header cart-column">QUANTITY</span>
-                        
+
                                 </div>
                                 <div class="cart-items2">
                                 </div>
@@ -58,23 +58,24 @@
                                     <strong class="cart-total-title">Total</strong>
                                     <span class="cart-total-price4">P0</span>
                                 </div>
-                        </div>
-                    </a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" ng-click="redirect('/guest')">Logout</a></li>
+                            </div>
+                        </a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" ng-click="redirect('/guest')">Logout</a>
+                    </li>
                 </ul>
                 <ul class="navbar-nav text-uppercase ml-auto logged-out">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger cart-link" href="#cart">
-                        <span>
-                            <span>Cart</span>
-                        </span>
-                        <span class="cart-total-price2 cart-quantity-notif">0</span>
-                        <div class="cart-active cart">
+                            <span>
+                                <span>Cart</span>
+                            </span>
+                            <span class="cart-total-price2 cart-quantity-notif">0</span>
+                            <div class="cart-active cart">
                                 <h2 class="section-header section-heading text-uppercase">CART</h2>
                                 <div class="cart-row">
                                     <span class="cart-item cart-header cart-column">ITEM</span>
                                     <span class="cart-price cart-header cart-column">PRICE</span>
                                     <span class="cart-quantity cart-header cart-column">QUANTITY</span>
-                        
+
                                 </div>
                                 <div class="cart-items1">
                                 </div>
@@ -82,9 +83,10 @@
                                     <strong class="cart-total-title">Total</strong>
                                     <span class="cart-total-price1">P0</span>
                                 </div>
-                        </div>
-                    </a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" ng-click="redirect('/login')">Login</a></li>
+                            </div>
+                        </a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" ng-click="redirect('/login')">Login</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -95,7 +97,8 @@
         <!--patient pharmacy menu-->
         <div id="patientPharmacy" class="container">
             <div class="masthead-heading text-uppercase">Welcome to HealthBridge</div>
-            <div class="masthead-subheading">Lets help to Bridge the gaps for health care providers to deliver quality medical services</div>
+            <div class="masthead-subheading">Lets help to Bridge the gaps for health care providers to deliver quality
+                medical services</div>
             <a class="btn btn-primary-1 btn-xl js-scroll-trigger btn-header" href="/healthbridge/myprofile">
                 <div class="text-center ">
                     <img class="img-fluid-header" src="images/icons/userprof.png" alt="" />
@@ -122,7 +125,8 @@
         <!--doctor pharmacy menu-->
         <div id="doctorPharmacy" class="container">
             <div class="masthead-heading text-uppercase">Welcome to HealthBridge</div>
-            <div class="masthead-subheading">Lets help to Bridge the gaps for health care providers to deliver quality medical services</div>
+            <div class="masthead-subheading">Lets help to Bridge the gaps for health care providers to deliver quality
+                medical services</div>
             <a class="btn btn-primary-1 btn-xl js-scroll-trigger btn-header" href="/healthbridge/doctor">
                 <div class="text-center ">
                     <img class="img-fluid-header" src="images/icons/userprof.png" alt="" />
@@ -144,7 +148,8 @@
         <!--guest pharmacy menu-->
         <div id="guestPharmacy" class="container">
             <div class="masthead-heading text-uppercase">Welcome to HealthBridge</div>
-            <div class="masthead-subheading">Lets help to Bridge the gaps for health care providers to deliver quality medical services</div>
+            <div class="masthead-subheading">Lets help to Bridge the gaps for health care providers to deliver quality
+                medical services</div>
             <a class="btn btn-primary-1 btn-xl js-scroll-trigger btn-header" href="/healthbridge/login">
                 <div class="text-center ">
                     <img class="img-fluid-header" src="images/icons/userprof.png" alt="" />
@@ -393,7 +398,36 @@
             </div>
             <div class="row">
                 <div class="col-lg-8 mx-auto text-center">
-                    <p class="large text-muted">See More >> </p>
+                    <div class="load-more text-center">
+                        <nav aria-label="...">
+                            <ul class="pagination">
+                                <li class="page-item disabled">
+                                    <a class="page-link" href="#" tabindex="-1">Previous</a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="shop">1</a></li>
+                                <li class="page-item active">
+                                    <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="shop">3</a></li>
+                                <li class="page-item"><a class="page-link" href="shop">4</a></li>
+                              <li class="page-item"><a class="page-link" href="shop">5</a></li>
+                              <li class="page-item"><a class="page-link" href="shop">6</a></li>
+                              <li class="page-item"><a class="page-link" href="shop">7</a></li>
+                              <li class="page-item"><a class="page-link" href="shop">8</a></li>
+                              <li class="page-item"><a class="page-link" href="shop">9</a></li>
+                              <li class="page-item"><a class="page-link" href="shop">10</a></li>
+                              <li class="page-item"><a class="page-link" href="shop">11</a></li>
+                              <li class="page-item"><a class="page-link" href="shop">12</a></li>
+                              <li class="page-item"><a class="page-link" href="shop">13</a></li>
+                              <li class="page-item"><a class="page-link" href="shop">14</a></li>
+                              <li class="page-item"><a class="page-link" href="shop">15</a></li>
+                              <li class="page-item"><a class="page-link" href="shop">16</a></li>
+                                <li class="page-item">
+                                    <a class="btn page-link" href="shop">Next</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
             </div>
         </div>
@@ -413,14 +447,14 @@
             <strong class="cart-total-title">Total</strong>
             <span class="cart-total-price">$0</span>
         </div>
-        <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+        <button class="btn btn-primary btn-purchase" type="button">CHECK OUT</button>
     </section>
     <!-- Contact-->
     <section class="page-section" id="contact">
         <div class="container">
             <div class="text-center">
                 <h2 class="section-heading text-uppercase">Contact Us</h2>
-                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                <h3 class="section-subheading text-muted">Feel free to message us for concerns, feedbacks and suggestions.</h3>
             </div>
             <form id="contactForm" name="sentMessage" novalidate="novalidate">
                 <div class="row align-items-stretch mb-5">
@@ -694,7 +728,7 @@
     <script type="text/javascript" src="js/service/main/main-service.js"></script>
     <script type="text/javascript" src="js/service/pharmacy/pharmacy.js"></script>
     <script>
-        
+
     </script>
 
 </body>
