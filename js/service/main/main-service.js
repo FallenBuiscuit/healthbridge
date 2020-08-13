@@ -33,6 +33,7 @@ mainapp.controller("mainServiceCtrl", function($scope, $http){
         init: function() {
             this.initialize();
             this.checkIfLoginOrLoggedOut();
+            this.checkPersonType();
         },
 
         initialize: function() {
@@ -53,15 +54,32 @@ mainapp.controller("mainServiceCtrl", function($scope, $http){
             }
         },
 
+        checkPersonType: function() {
+            var personType = localStorage.getItem("personType");
+            if(personType === '1'){
+                $('#patientPharmacy').show();
+            } else if(personType === '2'){
+                $('#doctorPharmacy').show();
+            } else {
+                $('#guestPharmacy').show();
+            }
+            
+        }
+
     };
     
 
     $(document).ready(function() {
+        $('#errorLogin').hide();
+        $('#patientPharmacy').hide();
+        $('#doctorPharmacy').hide();
+        $('#guestPharmacy').hide();
         MAPP.init();
         var url = window.location.href;
         url = url.substring(url.indexOf('/hea'));
         if(url === '/healthbridge/guest'){
             localStorage.setItem("isLoggedIn", false);
+            localStorage.setItem("personType", 0);
         }
     });
 })(jQuery);

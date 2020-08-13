@@ -49,10 +49,11 @@
     </nav>
     <!-- Masthead-->
     <header class="masthead" id="home">
-        <div class="container">
+        <!--patient pharmacy menu-->
+        <div id="patientPharmacy" class="container">
             <div class="masthead-heading text-uppercase">Welcome to HealthBridge</div>
             <div class="masthead-subheading">Lets help to Bridge the gaps for health care providers to deliver quality medical services</div>
-            <a class="btn btn-primary-1 btn-xl js-scroll-trigger btn-header" href="patientportal.html">
+            <a class="btn btn-primary-1 btn-xl js-scroll-trigger btn-header" href="/healthbridge/myprofile">
                 <div class="text-center ">
                     <img class="img-fluid-header" src="images/icons/userprof.png" alt="" />
                 </div>Patient Portal
@@ -67,7 +68,56 @@
                     <img class="img-fluid-header" src="images/icons/calendar.png" alt="" />
                 </div>Appointments
             </a>
-            <a class="btn btn-primary-4 btn-xl js-scroll-trigger btn-header" href="#services">
+            <a class="btn btn-primary-4 btn-xl js-scroll-trigger btn-header" href="#cart">
+                <div class="text-center ">
+                    <img class="img-fluid-header" src="images/icons/cart.png" alt="" />
+                </div>
+                View Cart
+            </a>
+        </div>
+
+        <!--doctor pharmacy menu-->
+        <div id="doctorPharmacy" class="container">
+            <div class="masthead-heading text-uppercase">Welcome to HealthBridge</div>
+            <div class="masthead-subheading">Lets help to Bridge the gaps for health care providers to deliver quality medical services</div>
+            <a class="btn btn-primary-1 btn-xl js-scroll-trigger btn-header" href="/healthbridge/doctor">
+                <div class="text-center ">
+                    <img class="img-fluid-header" src="images/icons/userprof.png" alt="" />
+                </div>Doctor Portal
+            </a>
+            <a class="btn btn-primary-3 btn-xl js-scroll-trigger btn-header" href="/healthbridge/doctor/appointments">
+                <div class="text-center ">
+                    <img class="img-fluid-header" src="images/icons/calendar.png" alt="" />
+                </div>Appointments
+            </a>
+            <a class="btn btn-primary-4 btn-xl js-scroll-trigger btn-header" href="#cart">
+                <div class="text-center ">
+                    <img class="img-fluid-header" src="images/icons/cart.png" alt="" />
+                </div>
+                View Cart
+            </a>
+        </div>
+
+        <!--guest pharmacy menu-->
+        <div id="guestPharmacy" class="container">
+            <div class="masthead-heading text-uppercase">Welcome to HealthBridge</div>
+            <div class="masthead-subheading">Lets help to Bridge the gaps for health care providers to deliver quality medical services</div>
+            <a class="btn btn-primary-1 btn-xl js-scroll-trigger btn-header" href="/healthbridge/login">
+                <div class="text-center ">
+                    <img class="img-fluid-header" src="images/icons/userprof.png" alt="" />
+                </div>Patient Portal
+            </a>
+            <a class="btn btn-primary-2 btn-xl js-scroll-trigger btn-header" href="/healthbridge/login">
+                <div class="text-center ">
+                    <img class="img-fluid-header" src="images/icons/finddoctor.png" alt="" />
+                </div>Find Doctor
+            </a>
+            <a class="btn btn-primary-3 btn-xl js-scroll-trigger btn-header" href="/healthbridge/login">
+                <div class="text-center ">
+                    <img class="img-fluid-header" src="images/icons/calendar.png" alt="" />
+                </div>Appointments
+            </a>
+            <a class="btn btn-primary-4 btn-xl js-scroll-trigger btn-header" href="#cart">
                 <div class="text-center ">
                     <img class="img-fluid-header" src="images/icons/cart.png" alt="" />
                 </div>
@@ -198,11 +248,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="text-center">
-                <div id="success"></div>
-                <button class="btn btn-primary btn-xl text-uppercase" id="sendMessageButton" type="submit">Go To
-                    Store</button>
             </div>
         </div>
     </section>
