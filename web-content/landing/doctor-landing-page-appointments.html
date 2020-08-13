@@ -1,6 +1,6 @@
 <html lang="en" style="transform: none;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		
-	<title>Doccure</title>
+	<title>HealthBridge</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
 	
 	<!-- Favicons -->
@@ -10,14 +10,14 @@
 	<link rel="stylesheet" href="../style/main/bootstrap.min.css">
 	
 	<!-- Fontawesome CSS -->
-	<link rel="stylesheet" href="../style/landingpage/doctor/fontawesome.min.css">
+	<link rel="stylesheet" href="../style/main/fontawesome.min.css">
 	<link rel="stylesheet" href="../style/landingpage/doctor/all.min.css">
 	
 	<!-- Main CSS -->
-	<link rel="stylesheet" href="../style/landingpage/doctor/style.css">
+	<link rel="stylesheet" href="../style/landingpage/style.css">
+	<link rel="stylesheet" href="../style/landingpage/doctor/customstyle.css">
 	<script src="https://kit.fontawesome.com/6dcc7dba5d.js" crossorigin="anonymous"></script><link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all" rel="stylesheet"><link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css" media="all" rel="stylesheet"><link href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" rel="stylesheet">
 	<link href="../style/landingpage/styles.css" rel="stylesheet">
-	<link href="style/main/main.css" rel="stylesheet" />
 	
 
 <style id="theia-sticky-sidebar-stylesheet-TSS">.theiaStickySidebar:after {content: ""; display: table; clear: both;}</style></head>
@@ -28,14 +28,19 @@
 		
 		<!-- Navigation-->
 		<nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-shrink" id="mainNav">
-			<div ng-app="mainapp" ng-controller="mainServiceCtrl" class="container">
+			<div class="container">
+				<a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="../images/img/navbar-logo.png" alt=""></a>
+				<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+					Menu
+					<i class="fas fa-bars ml-1" aria-hidden="true"></i>
+				</button>
 				<div class="collapse navbar-collapse" id="navbarResponsive">
 					<ul class="navbar-nav text-uppercase ml-auto">
-						<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#home">Home</a></li>
+						<li class="nav-item"><a class="nav-link js-scroll-trigger active" href="#home">Home</a></li>
 						<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Services</a></li>
 						<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Shop</a></li>
 						<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">Contact Us</a></li>
-						<li class="nav-item"><a class="nav-link js-scroll-trigger" ng-click="redirect('/guest')">Logout</a></li>
+						<li class="nav-item"><a class="nav-link js-scroll-trigger">Logout</a></li>
 					</ul>
 				</div>
 			</div>
@@ -101,25 +106,6 @@
 											<a href="/healthbridge/doctor/scheduling">
 												<i class="fas fa-hourglass-start" aria-hidden="true"></i>
 												<span>Schedule Timings</span>
-											</a>
-										</li>
-										<li>
-											<a href="/healthbridge/doctor/invoices">
-												<i class="fas fa-file-invoice" aria-hidden="true"></i>
-												<span>Invoices</span>
-											</a>
-										</li>
-										<li>
-											<a href="/healthbridge/doctor/reviews">
-												<i class="fas fa-star" aria-hidden="true"></i>
-												<span>Reviews</span>
-											</a>
-										</li>
-										<li>
-											<a href="/healthbridge/doctor/messages">
-												<i class="fas fa-comments" aria-hidden="true"></i>
-												<span>Message</span>
-												<small class="unread-msg">23</small>
 											</a>
 										</li>
 										<li>
@@ -531,10 +517,8 @@
 	</footer>
 	<!-- /Main Wrapper -->
   
-	<!-- Bootstrap core JS-->
-    <script type="text/javascript" src="js/main/angular.min.js"></script>
-    <script type="text/javascript" src="js/main/jquery-3.5.1.min.js"></script>
-    <script type="text/javascript" src="js/main/bootstrap.min.js"></script>
+	<!-- jQuery -->
+	<script src="../js/service/landing/jquery.min.js"></script>
 	
 	<!-- Bootstrap Core JS -->
 	<script src="../js/service/landing/popper.min.js"></script>
@@ -550,7 +534,6 @@
 	<!-- Custom JS -->
 	<script src="../js/scripts.js"></script>
 	<script src="../js/service/landing/script.js"></script><div class="sidebar-overlay"></div><div class="sidebar-overlay"></div>
-	<script type="text/javascript" src="js/service/main/login.js"></script>
-    <script type="text/javascript" src="js/service/main/main-service.js"></script>
+	
 
 </body></html>
