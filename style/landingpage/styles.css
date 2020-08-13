@@ -1,4 +1,4 @@
-@charset "UTF-8";
+
 /*!
 * Start Bootstrap - Agency v6.0.2 (https://startbootstrap.com/template-overviews/agency)
 * Copyright 2013-2020 Start Bootstrap
@@ -2509,9 +2509,8 @@ fieldset:disabled a.btn {
   background-color: #2691c5;
   border-color: #2691c5;
 }
-
 .btn span.icon {
-    background: url("../../images/main/health-bridge-logo.png") no-repeat;
+    background: url("../../images/main/favicon.ico") no-repeat;
     float: left;
     width: 10px;
     height: 40px;
