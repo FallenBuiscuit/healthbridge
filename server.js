@@ -25,6 +25,10 @@ app.use('/healthbridge/js', express.static(__dirname + '/js'));
 app.use('/healthbridge/style', express.static(__dirname + '/style'));
 app.use('/healthbridge/images', express.static(__dirname + '/images'));
 
+app.get('/', function (req, res) {
+    res.redirect('/healthbridge/guest');
+});
+
 app.get('/healthbridge/guest', function (req, res) {
     res.sendfile(__dirname + '/web-content/landing/guest-landing-page.html');
 });
@@ -40,4 +44,7 @@ app.get('/healthbridge/patient', function (req, res) {
 
 app.get('/healthbridge/patient/appointmentdetails', function (req, res) {
     res.sendfile(__dirname + '/web-content/landing/patient-appointments-page.html');
+
+app.get('/healthbridge/pharmacy', function (req, res) {
+    res.sendfile(__dirname + '/web-content/e-pharmacy/pharmacy-landing-page.html');
 });
