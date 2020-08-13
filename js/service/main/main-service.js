@@ -39,15 +39,9 @@ mainapp.controller("mainServiceCtrl", function($scope){
             var personType = localStorage.getItem("personType");
             if(personType === '1'){
                 $('#patientPharmacy').show();
-                $('#doctorPharmacy').hide();
-                $('#guestPharmacy').hide();
             } else if(personType === '2'){
-                $('#patientPharmacy').hide();
                 $('#doctorPharmacy').show();
-                $('#guestPharmacy').hide();
             } else {
-                $('#patientPharmacy').hide();
-                $('#doctorPharmacy').hide();
                 $('#guestPharmacy').show();
             }
             
@@ -57,6 +51,10 @@ mainapp.controller("mainServiceCtrl", function($scope){
     
 
     $(document).ready(function() {
+        $('#errorLogin').hide();
+        $('#patientPharmacy').hide();
+        $('#doctorPharmacy').hide();
+        $('#guestPharmacy').hide();
         MAPP.init();
         var url = window.location.href;
         url = url.substring(url.indexOf('/hea'));
@@ -64,7 +62,5 @@ mainapp.controller("mainServiceCtrl", function($scope){
             localStorage.setItem("isLoggedIn", false);
             localStorage.setItem("personType", 0);
         }
-        $('#errorLogin').hide();
-        
     });
 })(jQuery);
