@@ -24,7 +24,14 @@ loginapp.controller("loginServiceCtrl", function($scope,$http){
             if(response.status === 200 && response.data.length > 0){
                 isLoggedIn = true;
                 localStorage.setItem("isLoggedIn", isLoggedIn);
-                window.open("/healthbridge/patient", "_self");
+                if(response.data[0].PERSON_TYPE_ID === 1){
+                    window.open("/healthbridge/patient", "_self");
+                } else if(response.data[0].PERSON_TYPE_ID === 2){
+                    window.open("/healthbridge/doctor", "_self");
+                } else {
+                    $('.health-bridge-loading').hide();  
+                    alert("Login Failed!..")
+                }
             }
         });
     }
