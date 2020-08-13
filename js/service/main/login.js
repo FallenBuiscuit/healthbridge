@@ -5,6 +5,7 @@ loginapp.controller("loginServiceCtrl", function($scope,$http){
     $scope.password = null;
 
     $scope.logindata = function(username,password){
+        var isLoggedIn = false;
         $('.health-bridge-loading').show();  
         var request = {
             method: 'POST',
@@ -21,6 +22,8 @@ loginapp.controller("loginServiceCtrl", function($scope,$http){
 
         $http(request).then(function(response){  
             if(response.status === 200 && response.data.length > 0){
+                isLoggedIn = true;
+                localStorage.setItem("isLoggedIn", isLoggedIn);
                 window.open("/healthbridge/patient", "_self");
             }
         });
