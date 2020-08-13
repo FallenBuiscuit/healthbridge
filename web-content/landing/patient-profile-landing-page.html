@@ -117,6 +117,9 @@
 										<li class="nav-item">
 											<a class="nav-link" href="#medical" data-toggle="tab"><span class="med-records">Medical Records</span></a>
 										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#profileSettings" data-toggle="tab"><span>Profiles and Settings</span></a>
+										</li>
 									</ul>
 								</div>
 								<div class="tab-content">
@@ -445,7 +448,308 @@
 										</div>
 									</div>
 									<!-- /Medical Records Tab -->
-											
+									<!-- Page Content -->
+									<div class="tab-pane fade" id="profileSettings">
+										<div class="card card-table mb-0">
+											<div class="card-body">
+												<div class="container-fluid" style="transform: none;">
+													<div class="row" style="transform: none;">
+															<div class="col-md-7 col-lg-8 col-xl-9">
+																<!-- Basic Information -->
+																<div class="card">
+																	<div class="card-body">
+																		<h4 class="card-title">Basic Information</h4>
+																		<div class="row form-row">
+																			<div class="col-md-12">
+																				<div class="form-group">
+																					<div class="change-avatar">
+																						<div class="profile-img">
+																							<img src="images/img/patients/doctor-thumb-02.jpg" alt="User Image">
+																						</div>
+																						<div class="upload-img">
+																							<div class="change-photo-btn">
+																								<span><i class="fa fa-upload"></i> Upload Photo</span>
+																								<input type="file" class="upload">
+																							</div>
+																							<small class="form-text text-muted">Allowed JPG, GIF or PNG. Max size of 2MB</small>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																			<div class="col-md-6">
+																				<div class="form-group">
+																					<label>Username <span class="text-danger">*</span></label>
+																					<input type="text" class="form-control" readonly="" placeholder="DonnieG">
+																				</div>
+																			</div>
+																			<div class="col-md-6">
+																				<div class="form-group">
+																					<label>Email <span class="text-danger">*</span></label>
+																					<input type="email" class="form-control" readonly="" placeholder="donnieG@email.com">
+																				</div>
+																			</div>
+																			<div class="col-md-6">
+																				<div class="form-group">
+																					<label>First Name <span class="text-danger">*</span></label>
+																					<input type="text" class="form-control" placeholder="Donnie">
+																				</div>
+																			</div>
+																			<div class="col-md-6">
+																				<div class="form-group">
+																					<label>Last Name <span class="text-danger">*</span></label>
+																					<input type="text" class="form-control" placeholder="G">
+																				</div>
+																			</div>
+																			<div class="col-md-6">
+																				<div class="form-group">
+																					<label>Phone Number</label>
+																					<input type="text" class="form-control" placeholder="+6300000">
+																				</div>
+																			</div>
+																			<div class="col-md-6">
+																				<div class="form-group">
+																					<label>Gender</label>
+																					<select class="form-control" data-select2-id="1" tabindex="-1" aria-hidden="true">
+																						<option data-select2-id="3">Select</option>
+																						<option selected>Male</option>
+																						<option>Female</option>
+																					</select>
+																				</div>
+																			</div>
+																			<div class="col-md-6">
+																				<div class="form-group mb-0">
+																					<label>Date of Birth</label>
+																					<input type="text" class="form-control" placeholder="1993-05-06">
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<!-- /Basic Information -->
+																
+																<!-- About Me -->
+																<div class="card">
+																	<div class="card-body">
+																		<h4 class="card-title">About Me</h4>
+																		<div class="form-group mb-0">
+																			<label>Biography</label>
+																			<textarea class="form-control" rows="5"></textarea>
+																		</div>
+																	</div>
+																</div>
+																<!-- /About Me -->
+		
+																<!-- Contact Details -->
+																<div class="card contact-card">
+																	<div class="card-body">
+																		<h4 class="card-title">Contact Details</h4>
+																		<div class="row form-row">
+																			<div class="col-md-6">
+																				<div class="form-group">
+																					<label>Address Line 1</label>
+																					<input type="text" class="form-control">
+																				</div>
+																			</div>
+																			<div class="col-md-6">
+																				<div class="form-group">
+																					<label class="control-label">Address Line 2</label>
+																					<input type="text" class="form-control">
+																				</div>
+																			</div>
+																			<div class="col-md-6">
+																				<div class="form-group">
+																					<label class="control-label">City</label>
+																					<input type="text" class="form-control">
+																				</div>
+																			</div>
+		
+																			<div class="col-md-6">
+																				<div class="form-group">
+																					<label class="control-label">State / Province</label>
+																					<input type="text" class="form-control">
+																				</div>
+																			</div>
+																			<div class="col-md-6">
+																				<div class="form-group">
+																					<label class="control-label">Country</label>
+																					<input type="text" class="form-control">
+																				</div>
+																			</div>
+																			<div class="col-md-6">
+																				<div class="form-group">
+																					<label class="control-label">Postal Code</label>
+																					<input type="text" class="form-control">
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<!-- /Contact Details -->
+															
+																<!-- Family Members -->
+																<div class="card">
+																	<div class="card-body">
+																		<h4 class="card-title">Family Members</h4>
+																		<div class="experience-info">
+																			<div class="row form-row experience-cont">
+																				<div class="col-12 col-md-10 col-lg-11">
+																					<div class="row form-row">
+																						<div class="col-12 col-md-4 col-lg-3">
+																							<div class="form-group">
+																								<label>First Name</label>
+																								<input type="text" class="form-control">
+																							</div> 
+																						</div>
+																						<div class="col-12 col-md-4 col-lg-3">
+																							<div class="form-group">
+																								<label>Last Name</label>
+																								<input type="text" class="form-control">
+																							</div> 
+																						</div>
+																						<div class="col-12 col-md-3 col-lg-2">
+																							<div class="form-group">
+																								<label>Date of Birth</label>
+																								<input type="text" class="form-control">
+																								<span class="input-group-addon">
+																									<span class="glyphicon glyphicon-calendar"></span>
+																								</span>
+																							</div> 
+																						</div>
+																						<div class="col-12 col-md-6 col-lg-4">
+																							<div class="form-group">
+																								<label>Relationship</label>
+																								<select class="form-control" data-select2-id="1" tabindex="-1" aria-hidden="true">
+																									<option data-select2-id="3">Select</option>
+																									<option>Mother</option>
+																									<option>Father</option>
+																									<option>Brother</option>
+																									<option>Sister</option>
+																									<option>Son</option>
+																									<option>Daughter</option>
+																									<option>Grandmother</option>
+																									<option>Grandfather</option>
+																									<option>Grandson</option>
+																									<option>Granddaughter</option>
+																								</select>
+																							</div> 
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="add-more">
+																			<a href="javascript:void(0);" class="add-family-members"><i class="fa fa-plus-circle"></i> Add More</a>
+																		</div>
+																	</div>
+																</div>
+																<!-- /Family Members -->
+																
+																<!-- Emergency Contacts -->
+																<div class="card">
+																	<div class="card-body">
+																		<h4 class="card-title">Emergency Contact</h4>
+																		<div class="experience-info">
+																			<div class="row form-row experience-cont">
+																				<div class="col-12 col-md-10 col-lg-11">
+																					<div class="row form-row">
+																						<div class="col-12 col-md-6 col-lg-4">
+																							<div class="form-group">
+																								<label>First Name</label>
+																								<input type="text" class="form-control">
+																							</div> 
+																						</div>
+																						<div class="col-12 col-md-6 col-lg-4">
+																							<div class="form-group">
+																								<label>Last Name</label>
+																								<input type="text" class="form-control">
+																							</div> 
+																						</div>
+																						<div class="col-12 col-md-6 col-lg-4">
+																							<div class="form-group">
+																								<label>Contact Number</label>
+																								<input type="text" class="form-control">
+																							</div> 
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="add-more">
+																			<a href="javascript:void(0);" class="add-emergency-contacts"><i class="fa fa-plus-circle"></i> Add More</a>
+																		</div>
+																	</div>
+																</div>
+																<!-- /Emergency Contacts -->
+																
+																<!-- Known Allergies -->
+																<div class="card">
+																	<div class="card-body">
+																		<h4 class="card-title">Known Allergies</h4>
+																		<div class="education-info">
+																			<div class="row form-row education-cont">
+																				<div class="col-12 col-md-10 col-lg-11">
+																					<div class="row form-row">
+																						<div class="col-12">
+																							<div class="form-group">
+																								<label>Allergic to...</label>
+																								<input type="text" class="form-control">
+																							</div> 
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="add-more">
+																			<a href="javascript:void(0);" class="add-allergies"><i class="fa fa-plus-circle"></i> Add More</a>
+																		</div>
+																	</div>
+																</div>
+																<!-- /Known Allergies -->
+		
+																<!-- Immunizations -->
+																<div class="card">
+																	<div class="card-body">
+																		<h4 class="card-title">Immunizations</h4>
+																		<div class="education-info">
+																			<div class="row form-row education-cont">
+																				<div class="col-12 col-md-10 col-lg-11">
+																					<div class="row form-row">
+																						<div class="col-12 col-md-10 col-lg-10">
+																							<div class="form-group">
+																								<label>Immunization</label>
+																								<input type="text" class="form-control">
+																							</div> 
+																						</div>
+																						<div class="col-12 col-md-2 col-lg-2">
+																							<div class="form-group">
+																								<label>Year Taken</label>
+																								<input type="text" class="form-control">
+																							</div> 
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="add-more">
+																			<a href="javascript:void(0);" class="add-immunizations"><i class="fa fa-plus-circle"></i> Add More</a>
+																		</div>
+																	</div>
+																</div>
+																<!-- /Immunizations -->
+																
+																<div class="submit-section submit-btn-bottom">
+																	<button type="submit" class="btn btn-primary submit-btn">Save Changes</button>
+																</div>
+																
+															</div>
+														
+													</div>
+		
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- /Page Content -->		
 								</div>
 							</div>
 						</div>
