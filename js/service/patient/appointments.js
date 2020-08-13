@@ -1,12 +1,9 @@
 var mainapp = angular.module("mainapp", []);
 
 mainapp.controller("mainServiceCtrl", function($scope, $http){
-    $scope.redirect = function(redirectUrl){
-        $('.health-bridge-loading').show();
-        window.open("/healthbridge" + redirectUrl, "_self");
-    },
 
      $scope.getpatientappointment = function(){
+     	var patientId = getCookie("patientId");
         var request = {
             method: 'POST',
             url: 'https://8cz518ciu1.execute-api.us-east-1.amazonaws.com/dev/patient/getpatientappointment',
@@ -14,7 +11,7 @@ mainapp.controller("mainServiceCtrl", function($scope, $http){
                 "Content-type": "application/json"
             },
             data: {
-                patientId: 3
+                patientId: patientId
             }
         };
 
@@ -26,6 +23,20 @@ mainapp.controller("mainServiceCtrl", function($scope, $http){
     }
 });
 
+function getCookie(cname) {
+  var name = cname + "=";
+  var ca = document.cookie.split(';');
+  for(var i = 0; i < ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
 
 (function($) {
     
@@ -33,8 +44,6 @@ mainapp.controller("mainServiceCtrl", function($scope, $http){
         init: function() {
             this.initialize();
             this.checkIfLoginOrLoggedOut();
-            this.checkPersonType();
-            this.patientAppointment();
         },
 
         initialize: function() {
@@ -55,45 +64,15 @@ mainapp.controller("mainServiceCtrl", function($scope, $http){
             }
         },
 
-        checkPersonType: function() {
-            var personType = localStorage.getItem("personType");
-            if(personType === '1'){
-                $('#patientPharmacy').show();
-            } else if(personType === '2'){
-                $('#doctorPharmacy').show();
-            } else {
-                $('#guestPharmacy').show();
-            }
-            
-        },
-
-        patientAppointment: function() {
-            $('#patientAppointment').on("click", function(){
-                window.open("/healthbridge/myprofile", "_self");
-                localStorage.setItem("patientAppointment", true);
-            });
-        }
-
     };
     
 
     $(document).ready(function() {
-        $('#errorLogin').hide();
-        $('#patientPharmacy').hide();
-        $('#doctorPharmacy').hide();
-        $('#guestPharmacy').hide();
-        var appointmentClicked = localStorage.getItem("patientAppointment");
-        if(appointmentClicked === "true"){
-            localStorage.setItem("patientAppointment", false);
-            $('#appointmentTab').click();
-        }
+        MAPP.init();
         var url = window.location.href;
-        url = url.substring(url.indexOf('/healthbridge'));
+        url = url.substring(url.indexOf('/hea'));
         if(url === '/healthbridge/guest'){
             localStorage.setItem("isLoggedIn", false);
-            localStorage.setItem("personType", 0);
         }
-        MAPP.init();
-       
     });
 })(jQuery);

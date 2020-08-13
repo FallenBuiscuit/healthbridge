@@ -1,0 +1,685 @@
+<html lang="en" style="transform: none;">
+<head> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<title>HealthBridge</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+
+	<!-- Favicons -->
+    <link rel="icon" href="images/main/favicon.ico">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="style/main/bootstrap.min.css">
+
+	<!-- Fontawesome CSS -->
+	<link rel="stylesheet" href="style/main/fontawesome.min.css">
+	<link rel="stylesheet" href="style/landingpage/doctor/all.min.css">
+
+	<!-- Main CSS -->
+	<link rel="stylesheet" href="style/landingpage/doctor/customstyle.css">
+	<script src="https://kit.fontawesome.com/6dcc7dba5d.js" crossorigin="anonymous"></script><link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all" rel="stylesheet"><link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css" media="all" rel="stylesheet"><link href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" rel="stylesheet">
+	<link href="style/landingpage/styles.css" rel="stylesheet">
+
+	<style id="theia-sticky-sidebar-stylesheet-TSS">.theiaStickySidebar:after {content: ""; display: table; clear: both;}</style>
+
+</head> 
+
+<body style="transform: none;">
+
+	<!-- Main Wrapper -->
+	<div class="main-wrapper" style="transform: none;">	
+		
+		<!-- Navigation-->
+		<nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-shrink" id="mainNav">
+			<div class="container">
+				<a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="images/img/navbar-logo.png" alt=""></a>
+				<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+					Menu
+					<i class="fas fa-bars ml-1" aria-hidden="true"></i>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarResponsive">
+					<ul class="navbar-nav text-uppercase ml-auto">
+						<li class="nav-item"><a class="nav-link js-scroll-trigger active" href="/healthbridge/patient">Home</a></li>
+						<li class="nav-item"><a class="nav-link js-scroll-trigger" href="/healthbridge/pharmacy">Services</a></li>
+						<li class="nav-item"><a class="nav-link js-scroll-trigger" href="/healthbridge/pharmacy">Shop</a></li>
+						<li class="nav-item"><a class="nav-link js-scroll-trigger" href="/healthbridge/pharmacy">Contact Us</a></li>
+						<li class="nav-item"><a class="nav-link js-scroll-trigger" href="/healthbridge/guest">Logout</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- Masthead-->
+		<header class="masthead dashboard" id="home">
+			<div class="container">
+				<div class="masthead-heading text-uppercase">Welcome to HealthBridge</div>
+				<div class="masthead-subheading">Lets help to Bridge the gaps for health care providers to deliver quality medical services</div>
+			</div>
+		</header>
+				
+		<!-- Page Content -->
+		<div class="content" style="min-height: 129px;">
+			<div class="container">
+
+				<!-- Doctor Widget -->
+				<div class="card">
+					<div class="card-body">
+						<div class="doctor-widget">
+							<div class="doc-info-left">
+								<div class="doctor-img">
+									<img src="images/img/patients/doctor-thumb-02.jpg" class="img-fluid" alt="User Image">
+								</div>
+								<div class="doc-info-cont">
+									<h4 class="doc-name"><a href="/healthbridge/viewdoctor">Dr. Donnie Gallardo</a></h4>
+									<p class="doc-speciality"> Orthodontics and Dentofacial Orthopedics; Pediatric Dentistry MDS - Pediatric &amp; Procedural Dermatology</p>
+									<h5 class="doc-department">Dentist</h5>
+									<div class="rating">
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star"></i>
+										<span class="d-inline-block average-rating">(50)</span>
+									</div>
+									<div class="clinic-details">
+										<p class="doc-location"><i class="fas fa-map-marker-alt"></i> Taga Cebu  -  <a href="javascript:void(0);"> Get Directions</a></p>
+										<ul class="clinic-gallery">
+											<li>
+												<a href="#" data-fancybox="gallery">
+													<img src="images/img/patients/feature-01.jpg" alt="Feature">
+												</a>
+											</li>
+											<li>
+												<a href="#" data-fancybox="gallery">
+													<img src="images/img/patients/feature-02.jpg" alt="Feature">
+												</a>
+											</li>
+										</ul>
+									</div>
+									<div class="clinic-services">
+										<span>Papasta</span>
+										<span>Paputi Ngipon</span>
+										<span>Dental Public Health</span>
+										<span>Endodontics</span>
+										<span>Periodontics.</span>
+									</div>
+								</div>
+							</div>
+							<div class="doc-info-right">
+								<div class="clini-infos">
+									<ul>
+										<li><i class="far fa-thumbs-up"></i> 100%</li>
+										<li><i class="far fa-comment"></i> 20 Feedback</li>
+										<li><i class="fas fa-map-marker-alt"></i> Taga Cebu</li>
+										<li><i class="far fa-money-bill-alt"></i> P 300 - P 500</li>
+									</ul>
+								</div>
+								<div class="doctor-action">
+									<a href="javascript:void(0)" class="btn btn-white fav-btn">
+										<i class="far fa-bookmark"></i>
+									</a>
+									<a href="" class="btn btn-white msg-btn">
+										<i class="far fa-comment-alt"></i>
+									</a>
+									<a href="javascript:void(0)" class="btn btn-white call-btn" data-toggle="modal" data-target="#voice_call">
+										<i class="fas fa-phone"></i>
+									</a>
+									<a href="javascript:void(0)" class="btn btn-white call-btn" data-toggle="modal" data-target="#video_call">
+										<i class="fas fa-video"></i>
+									</a>
+								</div>
+								<div class="clinic-booking">
+									<a class="apt-btn" href="/healthbridge/bookappointment">Book Appointment</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /Doctor Widget -->
+				
+				<!-- Doctor Details Tab -->
+				<div class="card">
+					<div class="card-body pt-0">
+					
+						<!-- Tab Menu -->
+						<nav class="user-tabs mb-4">
+							<ul class="nav nav-tabs nav-tabs-bottom nav-justified">
+								<li class="nav-item">
+									<a class="nav-link active" href="#doc_overview" data-toggle="tab">Overview</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#doc_locations" data-toggle="tab">Locations</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#doc_reviews" data-toggle="tab">Reviews</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#doc_business_hours" data-toggle="tab">Business Hours</a>
+								</li>
+							</ul>
+						</nav>
+						<!-- /Tab Menu -->
+						
+						<!-- Tab Content -->
+						<div class="tab-content pt-0">
+						
+							<!-- Overview Content -->
+							<div role="tabpanel" id="doc_overview" class="tab-pane fade show active">
+								<div class="row">
+									<div class="col-md-12 col-lg-9">
+									
+										<!-- About Details -->
+										<div class="widget about-widget">
+											<h4 class="widget-title">About Me</h4>
+											<p>Charotcharot I can show you the world Shining, shimmering, splendid
+												Tell me, princess, now when did  You last let your heart decide?
+												I can open your eyes Take you wonder by wonder  Over, sideways and under
+												On a magic carpet ridesdfCharotcharotcharot asdCharotcharotcharot asdfasdf asdfasdfadfCharotcharotcharot asdfasdfadfsdfCharotcharotcharot asdfCharotcharotcharot asdfasdfaCharotcharotcharot asdfasdfadfdfasCharotcharotcharot asdfasdCharotcharotcharot asdfasdfadffadfdfadfharot asdfasCharotcharotcharot asdfasdfadfdfadf </p>
+										</div>
+										<!-- /About Details -->	
+										
+										<!-- Services List -->
+										<div class="service-list">
+											<h4>Services</h4>
+											<ul class="clearfix">
+												<li>Tooth cleaning </li>
+												<li>Root Canal Therapy</li>
+												<li>Implants</li>
+												<li>Composite Bonding</li>
+												<li>Fissure Sealants</li>
+												<li>Surgical Extractions</li>
+											</ul>
+										</div>
+										<!-- /Services List -->
+										
+										<!-- Specializations List -->
+										<div class="service-list">
+											<h4>Specializations</h4>
+											<ul class="clearfix">
+												<li>Children Care</li>
+												<li>Dental Care</li>	
+												<li>Oral and Maxillofacial Surgery </li>	
+												<li>Orthodontist</li>	
+												<li>Periodontist</li>	
+												<li>Prosthodontics</li>	
+											</ul>
+										</div>
+										<!-- /Specializations List -->
+
+									</div>
+								</div>
+							</div>
+							<!-- /Overview Content -->
+							
+							<!-- Locations Content -->
+							<div role="tabpanel" id="doc_locations" class="tab-pane fade">
+							
+								<!-- Location List -->
+								<div class="location-list">
+									<div class="row">
+									
+										<!-- Clinic Content -->
+										<div class="col-md-6">
+											<div class="clinic-content">
+												<h4 class="clinic-name"><a href="#">Clinic1</a></h4>
+												<p class="doc-speciality">Tigibot og ngipon</p>
+												<div class="rating">
+													<i class="fas fa-star filled"></i>
+													<i class="fas fa-star filled"></i>
+													<i class="fas fa-star filled"></i>
+													<i class="fas fa-star filled"></i>
+													<i class="fas fa-star"></i>
+													<span class="d-inline-block average-rating">(4)</span>
+												</div>
+												<div class="clinic-details mb-0">
+													<h5 class="clinic-direction"> <i class="fas fa-map-marker-alt"></i> Address 1 <br><a href="javascript:void(0);">Get Directions</a></h5>
+													<ul>
+														<li>
+															<a href="#" data-fancybox="gallery">
+																<img src="images/img/patients/feature-01.jpg" alt="Feature">
+															</a>
+														</li>
+														<li>
+															<a href="#" data-fancybox="gallery">
+																<img src="images/img/patients/feature-02.jpg" alt="Feature">
+															</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<!-- /Clinic Content -->
+										
+										<!-- Clinic Timing -->
+										<div class="col-md-4">
+											<div class="clinic-timing">
+												<div>
+													<p class="timings-days">
+														<span> Mon - Sat </span>
+													</p>
+													<p class="timings-times">
+														<span>10:00 AM - 2:00 PM</span>
+														<span>4:00 PM - 9:00 PM</span>
+													</p>
+												</div>
+												<div>
+												<p class="timings-days">
+													<span>Sun</span>
+												</p>
+												<p class="timings-times">
+													<span>10:00 AM - 2:00 PM</span>
+												</p>
+												</div>
+											</div>
+										</div>
+										<!-- /Clinic Timing -->
+										
+										<div class="col-md-2">
+											<div class="consult-price">
+												P200
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- /Location List -->
+								
+								<!-- Location List -->
+								<div class="location-list">
+									<div class="row">
+									
+										<!-- Clinic Content -->
+										<div class="col-md-6">
+											<div class="clinic-content">
+												<h4 class="clinic-name"><a href="#">Clinic gyud ni sya ba</a></h4>
+												<p class="doc-speciality">Tig-ibot og ngipon</p>
+												<div class="rating">
+													<i class="fas fa-star filled"></i>
+													<i class="fas fa-star filled"></i>
+													<i class="fas fa-star filled"></i>
+													<i class="fas fa-star filled"></i>
+													<i class="fas fa-star"></i>
+													<span class="d-inline-block average-rating">(4)</span>
+												</div>
+												<div class="clinic-details mb-0">
+													<p class="clinic-direction"> <i class="fas fa-map-marker-alt"></i> Naa sa Mandaue sudlonon <br><a href="javascript:void(0);">Get Directions</a></p>
+													<ul>
+														<li>
+															<a href="#" data-fancybox="gallery">
+																<img src="images/img/patients/feature-01.jpg" alt="Feature">
+															</a>
+														</li>
+														<li>
+															<a href="#" data-fancybox="gallery">
+																<img src="images/img/patients/feature-02.jpg" alt="Feature">
+															</a>
+														</li>
+													</ul>
+												</div>
+
+											</div>
+										</div>
+										<!-- /Clinic Content -->
+										
+										<!-- Clinic Timing -->
+										<div class="col-md-4">
+											<div class="clinic-timing">
+												<div>
+													<p class="timings-days">
+														<span> Tue - Fri </span>
+													</p>
+													<p class="timings-times">
+														<span>11:00 AM - 1:00 PM</span>
+														<span>6:00 PM - 11:00 PM</span>
+													</p>
+												</div>
+												<div>
+													<p class="timings-days">
+														<span>Sat - Sun</span>
+													</p>
+													<p class="timings-times">
+														<span>8:00 AM - 10:00 AM</span>
+														<span>3:00 PM - 7:00 PM</span>
+													</p>
+												</div>
+											</div>
+										</div>
+										<!-- /Clinic Timing -->
+										
+										<div class="col-md-2">
+											<div class="consult-price">
+												P350
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- /Location List -->
+
+							</div>
+							<!-- /Locations Content -->
+							
+							<!-- Reviews Content -->
+							<div role="tabpanel" id="doc_reviews" class="tab-pane fade">
+							
+								<!-- Review Listing -->
+								<div class="widget review-listing">
+									<ul class="comments-list">
+									
+										<!-- Comment List -->
+										<li>
+											<div class="comment">
+												<img class="avatar avatar-sm rounded-circle" alt="User Image" src="images/img/patients/patient.jpg">
+												<div class="comment-body">
+													<div class="meta-data">
+														<span class="comment-author">Ngalan gyud ni sya</span>
+														<span class="comment-date">Reviewed 2 Days ago</span>
+														<div class="review-count rating">
+															<i class="fas fa-star filled"></i>
+															<i class="fas fa-star filled"></i>
+															<i class="fas fa-star filled"></i>
+															<i class="fas fa-star filled"></i>
+															<i class="fas fa-star"></i>
+														</div>
+													</div>
+													<p class="recommended"><i class="far fa-thumbs-up"></i> I recommend the doctor very handsome and he knows what he is doing</p>
+													<p class="comment-content">
+														CharotcharotcsdfCharotcharotcharot asdCharotcharotcharot asdfasdfadffasCharotchar
+														otcharot asdfasdfadfdfadfsCha tcharotcharot asdfasd f rotcharot asdfa
+														sdfadfCharotcharotcharot asdfasdfadfsdfCharotcharotcharot asdfCharotcharotcharot asdfasd
+													</p>
+													<div class="comment-reply">
+														<a class="comment-btn" href="#">
+															<i class="fas fa-reply"></i> Reply
+														</a>
+													   <p class="recommend-btn">
+														<span>Recommend?</span>
+														<a href="#" class="like-btn">
+															<i class="far fa-thumbs-up"></i> Yes
+														</a>
+														<a href="#" class="dislike-btn">
+															<i class="far fa-thumbs-down"></i> No
+														</a>
+													</p>
+													</div>
+												</div>
+											</div>
+											
+											<!-- Comment Reply -->
+											<ul class="comments-reply">
+												<li>
+													<div class="comment">
+														<img class="avatar avatar-sm rounded-circle" alt="User Image" src="images/img/patients/patient.jpg">
+														<div class="comment-body">
+															<div class="meta-data">
+																<span class="comment-author">Ngalan gyud ni sya</span>
+																<span class="comment-date">Reviewed 3 Days ago</span>
+																<div class="review-count rating">
+																	<i class="fas fa-star filled"></i>
+																	<i class="fas fa-star filled"></i>
+																	<i class="fas fa-star filled"></i>
+																	<i class="fas fa-star filled"></i>
+																	<i class="fas fa-star"></i>
+																</div>
+															</div>
+															<p class="comment-content">
+																CharotcharotcsdfCharotcharotcharot asdCharotcharotcharot asdfasdfadffasCharotchar
+																otcharot asdfasdfadfdfadfsCha tcharotcharot asdfasd f rotcharot asdfa
+																sdfadfCharotcharotcharot asdfasdfadfsdfCharotcharotcharot asdfCharotcharotcharot asdfasd
+															</p>
+															<div class="comment-reply">
+																<a class="comment-btn" href="#">
+																	<i class="fas fa-reply"></i> Reply
+																</a>
+																<p class="recommend-btn">
+																	<span>Recommend?</span>
+																	<a href="#" class="like-btn">
+																		<i class="far fa-thumbs-up"></i> Yes
+																	</a>
+																	<a href="#" class="dislike-btn">
+																		<i class="far fa-thumbs-down"></i> No
+																	</a>
+																</p>
+															</div>
+														</div>
+													</div>
+												</li>
+											</ul>
+											<!-- /Comment Reply -->
+											
+										</li>
+										<!-- /Comment List -->
+										
+										<!-- Comment List -->
+										<li>
+											<div class="comment">
+												<img class="avatar avatar-sm rounded-circle" alt="User Image" src="images/img/patients/patient.jpg">
+												<div class="comment-body">
+													<div class="meta-data">
+														<span class="comment-author">Ngalan gyud ni sya</span>
+														<span class="comment-date">Reviewed 4 Days ago</span>
+														<div class="review-count rating">
+														 	<i class="fas fa-star filled"></i>
+															<i class="fas fa-star filled"></i>
+															<i class="fas fa-star filled"></i>
+															<i class="fas fa-star filled"></i>
+															<i class="fas fa-star"></i>
+														</div>
+													</div>
+													<p class="comment-content">
+														CharotcharotcsdfCharotcharotcharot asdCharotcharotcharot asdfasdfadffasCharotchar
+														otcharot asdfasdfadfdfadfsCha tcharotcharot asdfasd f rotcharot asdfa
+														sdfadfCharotcharotcharot asdfasdfadfsdfCharotcharotcharot asdfCharotcharotcharot asdfasd
+													</p>
+													<div class="comment-reply">
+														<a class="comment-btn" href="#">
+															<i class="fas fa-reply"></i> Reply
+														</a>
+														<p class="recommend-btn">
+															<span>Recommend?</span>
+															<a href="#" class="like-btn">
+																<i class="far fa-thumbs-up"></i> Yes
+															</a>
+															<a href="#" class="dislike-btn">
+																<i class="far fa-thumbs-down"></i> No
+															</a>
+														</p>
+													</div>
+												</div>
+											</div>
+										</li>
+										<!-- /Comment List -->
+										
+									</ul>
+									
+									<!-- Show All -->
+									<div class="all-feedback text-center">
+										<a href="#" class="btn btn-primary btn-sm">
+											Show all feedback <strong>(167)</strong>
+										</a>
+									</div>
+									<!-- /Show All -->
+									
+								</div>
+								<!-- /Review Listing -->
+							
+								<!-- Write Review -->
+								<div class="write-review">
+									<h4>Write a review for <strong>Dr. Donnie Gallardo</strong></h4>
+									
+									<!-- Write Review Form -->
+									<form>
+										<div class="form-group">
+											<label>Review</label>
+											<div class="star-rating">
+												<input id="star-5" type="radio" name="rating" value="star-5">
+												<label for="star-5" title="5 stars">
+													<i class="active fa fa-star"></i>
+												</label>
+												<input id="star-4" type="radio" name="rating" value="star-4">
+												<label for="star-4" title="4 stars">
+													<i class="active fa fa-star"></i>
+												</label>
+												<input id="star-3" type="radio" name="rating" value="star-3">
+												<label for="star-3" title="3 stars">
+													<i class="active fa fa-star"></i>
+												</label>
+												<input id="star-2" type="radio" name="rating" value="star-2">
+												<label for="star-2" title="2 stars">
+													<i class="active fa fa-star"></i>
+												</label>
+												<input id="star-1" type="radio" name="rating" value="star-1">
+												<label for="star-1" title="1 star">
+													<i class="active fa fa-star"></i>
+												</label>
+											</div>
+										</div>
+										<div class="form-group">
+											<label>Title of your review</label>
+											<input class="form-control" type="text" placeholder="If you could say it in one sentence, what would you say?">
+										</div>
+										<div class="form-group">
+											<label>Your review</label>
+											<textarea id="review_desc" maxlength="100" class="form-control"></textarea>
+										  
+										  <div class="d-flex justify-content-between mt-3"><small class="text-muted"><span id="chars">100</span> characters remaining</small></div>
+										</div>
+										<hr>
+										<div class="form-group">
+											<div class="terms-accept">
+												<div class="custom-checkbox">
+												   <input type="checkbox" id="terms_accept">
+												   <label for="terms_accept">I have read and accept <a href="#">Terms &amp; Conditions</a></label>
+												</div>
+											</div>
+										</div>
+										<div class="submit-section">
+											<button type="submit" class="btn btn-primary submit-btn">Add Review</button>
+										</div>
+									</form>
+									<!-- /Write Review Form -->
+									
+								</div>
+								<!-- /Write Review -->
+					
+							</div>
+							<!-- /Reviews Content -->
+							
+							<!-- Business Hours Content -->
+							<div role="tabpanel" id="doc_business_hours" class="tab-pane fade">
+								<div class="row">
+									<div class="col-md-6 offset-md-3">
+									
+										<!-- Business Hours Widget -->
+										<div class="widget business-widget">
+											<div class="widget-content">
+												<div class="listing-hours">
+													<div class="listing-day current">
+														<div class="day">Today <span>14</span> Aug 2020</span></div>
+														<div class="time-items">
+															<span class="open-status"><span class="badge bg-success-light">Open Now</span></span>
+															<span class="time">07:00 AM - 09:00 PM</span>
+														</div>
+													</div>
+													<div class="listing-day">
+														<div class="day">Monday</div>
+														<div class="time-items">
+															<span class="time">07:00 AM - 09:00 PM</span>
+														</div>
+													</div>
+													<div class="listing-day">
+														<div class="day">Tuesday</div>
+														<div class="time-items">
+															<span class="time">07:00 AM - 09:00 PM</span>
+														</div>
+													</div>
+													<div class="listing-day">
+														<div class="day">Wednesday</div>
+														<div class="time-items">
+															<span class="time">07:00 AM - 09:00 PM</span>
+														</div>
+													</div>
+													<div class="listing-day">
+														<div class="day">Thursday</div>
+														<div class="time-items">
+															<span class="time">07:00 AM - 09:00 PM</span>
+														</div>
+													</div>
+													<div class="listing-day">
+														<div class="day">Friday</div>
+														<div class="time-items">
+															<span class="time">07:00 AM - 09:00 PM</span>
+														</div>
+													</div>
+													<div class="listing-day">
+														<div class="day">Saturday</div>
+														<div class="time-items">
+															<span class="time">07:00 AM - 09:00 PM</span>
+														</div>
+													</div>
+													<div class="listing-day closed">
+														<div class="day">Sunday</div>
+														<div class="time-items">
+															<span class="time"><span class="badge bg-danger-light">Closed</span></span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- /Business Hours Widget -->
+								
+									</div>
+								</div>
+							</div>
+							<!-- /Business Hours Content -->
+							
+						</div>
+					</div>
+				</div>
+				<!-- /Doctor Details Tab -->
+
+			</div>
+		</div>	
+		<!-- /Page Content -->
+
+		
+		
+	   
+	</div>
+	<!-- Footer-->
+	<footer class="footer py-4">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-4 text-lg-left">Copyright © HealthBridge 2020</div>
+				<div class="col-lg-4 my-3 my-lg-0">
+					<a class="btn btn-dark btn-social mx-2" href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+					<a class="btn btn-dark btn-social mx-2" href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+					<a class="btn btn-dark btn-social mx-2" href="#"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+				</div>
+				<div class="col-lg-4 text-lg-right">
+					<a class="mr-3" href="#">Privacy Policy</a>
+					<a href="#">Terms of Use</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- /Main Wrapper -->
+  
+	<!-- jQuery -->
+	<script src="js/service/landing/jquery.min.js"></script>
+	
+	<!-- Bootstrap Core JS -->
+	<script src="js/service/landing/popper.min.js"></script>
+	<script src="js/main/bootstrap.min.js"></script>
+	
+	<!-- Sticky Sidebar JS -->
+	<script src="js/service/landing/resize.js"></script>
+	<script src="js/service/landing/sticky-sidebar.js"></script>
+	
+	<!-- Circle Progress JS -->
+	<script src="js/service/landing/circle-progress.min.js"></script>
+	
+	<!-- Custom JS -->
+	<script src="js/scripts.js"></script>
+	<script src="js/service/landing/script.js"></script>
+	
+
+</body></html>
