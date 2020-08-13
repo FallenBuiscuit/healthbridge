@@ -11,3 +11,7 @@
 .health-bridge-loading {
   display: none;
 }
+
+.nav-link {
+  cursor: pointer;
+}
