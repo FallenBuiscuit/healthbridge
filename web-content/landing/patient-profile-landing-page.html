@@ -1,28 +1,23 @@
-<html lang="en" style="transform: none;">
-<head> 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+<html lang="en" style="transform: none;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
 	<title>HealthBridge</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-
+	
 	<!-- Favicons -->
     <link rel="icon" href="images/main/favicon.ico">
-
+	
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="style/main/bootstrap.min.css">
-
+	
 	<!-- Fontawesome CSS -->
 	<link rel="stylesheet" href="style/main/fontawesome.min.css">
 	<link rel="stylesheet" href="style/landingpage/doctor/all.min.css">
-
+	
 	<!-- Main CSS -->
 	<link rel="stylesheet" href="style/landingpage/doctor/customstyle.css">
 	<script src="https://kit.fontawesome.com/6dcc7dba5d.js" crossorigin="anonymous"></script><link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all" rel="stylesheet"><link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css" media="all" rel="stylesheet"><link href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" rel="stylesheet">
 	<link href="style/landingpage/styles.css" rel="stylesheet">
-
-	<style id="theia-sticky-sidebar-stylesheet-TSS">.theiaStickySidebar:after {content: ""; display: table; clear: both;}</style>
-
+	
 </head> 
 
 <body style="transform: none;">
@@ -40,9 +35,11 @@
 				</button>
 				<div class="collapse navbar-collapse" id="navbarResponsive">
 					<ul class="navbar-nav text-uppercase ml-auto">
-						<li class="nav-item"><a class="nav-link js-scroll-trigger active" href="/healthbridge/myprofile">Home</a></li>
-						<li class="nav-item"><a class="nav-link js-scroll-trigger" href="/healthbridge/pharmacy">Shop</a></li>
-						<li class="nav-item"><a class="nav-link js-scroll-trigger" href="/healthbridge/guest">Logout</a></li>
+						<li class="nav-item"><a class="nav-link js-scroll-trigger active" href="/healthbridge/doctor">Home</a></li>
+						<li class="nav-item"><a class="nav-link js-scroll-trigger" href="/healthbridge/patient">Services</a></li>
+						<li class="nav-item"><a class="nav-link js-scroll-trigger" href="/healthbridge/patient">Shop</a></li>
+						<li class="nav-item"><a class="nav-link js-scroll-trigger" href="/healthbridge/patient">Contact Us</a></li>
+						<li class="nav-item"><a class="nav-link js-scroll-trigger" href="/healthbridge/login">Logout</a></li>
 					</ul>
 				</div>
 			</div>
@@ -52,6 +49,8 @@
 			<div class="container">
 				<div class="masthead-heading text-uppercase">Welcome to HealthBridge</div>
 				<div class="masthead-subheading">Lets help to Bridge the gaps for health care providers to deliver quality medical services</div>
+				
+
 			</div>
 		</header>
 				
@@ -60,481 +59,402 @@
 			<div class="container-fluid" style="transform: none;">
 
 				<div class="row" style="transform: none;">
-					<div class="col-md-5 col-lg-4 col-xl-3 theiaStickySidebar" style="position: relative; overflow: visible; box-sizing: border-box; min-height: 1px; transform: none;">
+					<div class="col-md-5 col-lg-4 col-xl-3 theiaStickySidebar dct-dashbd-lft" style="position: relative; overflow: visible; box-sizing: border-box; min-height: 1px;">
+					
+						<!-- Profile Widget -->
 						
-						<!-- Profile Sidebar -->
+						<!-- /Profile Widget -->
 						
-						<!-- /Profile Sidebar -->
+						<!-- Last Booking -->
 						
-					<div class="theiaStickySidebar" style="padding-top: 0px; padding-bottom: 1px; position: static; transform: none; top: 0px; overflow: visible; box-sizing: border-box; min-height: 1px; left: 12px;"><div class="theiaStickySidebar" style="padding-top: 0px; padding-bottom: 1px; position: static; transform: none;"><div class="profile-sidebar">
-							<div class="widget-profile pro-widget-content">
-								<div class="profile-info-widget">
-									<a href="doctor-dashboard.html#" class="booking-doc-img">
-										<img src="images/img/patients/doctor-thumb-02.jpg" alt="User Image">
-									</a>
-									<div class="profile-det-info">
-										<h3>Mr. Donnie Gallardo</h3>
-										
-										<div class="patient-details">
-											<h5 class="mb-0">Age: 25, Sex: M</h5>
+						<!-- /Last Booking -->
+						
+					<div class="theiaStickySidebar" style="padding-top: 0px; padding-bottom: 1px; position: static; transform: none; top: 0px; left: 30px;"><div class="card widget-profile pat-widget-profile">
+							<div class="card-body">
+								<div class="pro-widget-content">
+									<div class="profile-info-widget">
+										<a href="#" class="booking-doc-img">
+											<img src="images/img/patients/patient.jpg" alt="User Image">
+										</a>
+										<div class="profile-det-info">
+											<h3>Jose Bonachita</h3>
+											
+											<div class="patient-details">
+												<h5><b>Patient ID :</b> PT0016</h5>
+												<h5 class="mb-0"><i class="fas fa-map-marker-alt"></i> Taga Cebu </h5>
+											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="dashboard-widget">
-								<nav class="dashboard-menu">
+								<div class="patient-info">
 									<ul>
-										<li class="active">
-											<a href="/healthbridge/myprofile">
-												<i class="fas fa-columns" aria-hidden="true"></i>
-												<span>Dashboard</span>
-											</a>
-										</li>
-										<li>
-											<a href="/healthbridge/patient/appointments">
-												<i class="fas fa-calendar-check" aria-hidden="true"></i>
-												<span>Appointments</span>
-											</a>
-										</li>
-										<li>
-											<a href="/healthbridge/patient/profilesettings">
-												<i class="fas fa-user-cog" aria-hidden="true"></i>
-												<span>Profile Settings</span>
-											</a>
-										</li>
-										<li>
-											<a href="/healthbridge/guest">
-												<i class="fas fa-sign-out-alt" aria-hidden="true"></i>
-												<span>Logout</span>
-											</a>
-										</li>
+										<li>Phone <span>090 Call me anytime</span></li>
+										<li>Age/Gender <span>20 Years - Male</span></li>
+										<li>Birthdate <span>August 2, 2002</span></li>
+										<li>Heigh/Weight <span>180CM - 200lbs</span></li>
+										<li>Allergies <span>Antibiotics, Aspirin</span></li>
+										<li>Medical Problems <span>Cardiovascular Disease</span></li>
 									</ul>
-								</nav>
-							</div>
-						</div><div class="resize-sensor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; z-index: -1; visibility: hidden;"><div class="resize-sensor-expand" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; overflow: hidden; z-index: -1; visibility: hidden;"><div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 340px; height: 869px;"></div></div><div class="resize-sensor-shrink" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; overflow: hidden; z-index: -1; visibility: hidden;"><div style="position: absolute; left: 0; top: 0; transition: 0s; width: 200%; height: 200%"></div></div></div><div class="resize-sensor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; z-index: -1; visibility: hidden;"><div class="resize-sensor-expand" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; overflow: hidden; z-index: -1; visibility: hidden;"><div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 347px; height: 896px;"></div></div><div class="resize-sensor-shrink" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; overflow: hidden; z-index: -1; visibility: hidden;"><div style="position: absolute; left: 0; top: 0; transition: 0s; width: 200%; height: 200%"></div></div></div><div class="resize-sensor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; z-index: -1; visibility: hidden;"><div class="resize-sensor-expand" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; overflow: hidden; z-index: -1; visibility: hidden;"><div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 347px; height: 896px;"></div></div><div class="resize-sensor-shrink" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; overflow: hidden; z-index: -1; visibility: hidden;"><div style="position: absolute; left: 0; top: 0; transition: 0s; width: 200%; height: 200%"></div></div></div></div></div></div>
-					
-					<div class="col-md-7 col-lg-8 col-xl-9">
-
-						<div class="row">
-							<div class="col-md-12">
-								<div class="card dash-card">
-									<div class="card-body">
-										<div class="row">
-											<div class="col-md-12 col-lg-4">
-												<div class="dash-widget dct-border-rht">
-													<div class="circle-bar circle-bar1">
-														<div class="circle-graph1" data-percent="20">															
-															<img src="images/icons/icon-01.png" class="img-fluid" alt="patient">
-														</div>
-													</div>
-													<div class="dash-widget-info">
-														<h6>Total Patient</h6>
-														<h3>100</h3>
-														<p class="text-muted">Till Today</p>
-													</div>
-												</div>
-											</div>
-											
-											<div class="col-md-12 col-lg-4">
-												<div class="dash-widget dct-border-rht">
-													<div class="circle-bar circle-bar2">
-														<div class="circle-graph2" data-percent="4">
-															<img src="images/icons/icon-02.png" class="img-fluid" alt="Patient">
-														</div>
-													</div>
-													<div class="dash-widget-info">
-														<h6>Today Patient</h6>
-														<h3>4</h3>
-														<p class="text-muted">06, Aug 2020</p>
-													</div>
-												</div>
-											</div>
-											
-											<div class="col-md-12 col-lg-4">
-												<div class="dash-widget">
-													<div class="circle-bar circle-bar3">
-														<div class="circle-graph3" data-percent="11">
-															<img src="images/icons/icon-03.png" class="img-fluid" alt="Patient">
-														</div>
-													</div>
-													<div class="dash-widget-info">
-														<h6>Appoinments</h6>
-														<h3>11</h3>
-														<p class="text-muted">13, Aug 2020</p>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
 								</div>
 							</div>
 						</div>
-						
-						<div class="row">
-							<div class="col-md-12">
-								<h4 class="mb-4">Patient Appoinment</h4>
-								<div class="appointment-tab">
-								
-									<!-- Appointment Tab -->
-									<ul class="nav nav-tabs nav-tabs-solid nav-tabs-rounded">
+						<div class="resize-sensor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; z-index: -1; visibility: hidden;"><div class="resize-sensor-expand" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; overflow: hidden; z-index: -1; visibility: hidden;"><div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 340px; height: 995px;"></div></div><div class="resize-sensor-shrink" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; overflow: hidden; z-index: -1; visibility: hidden;"><div style="position: absolute; left: 0; top: 0; transition: 0s; width: 200%; height: 200%"></div></div></div></div></div>
+
+					<div class="col-md-7 col-lg-8 col-xl-9 dct-appoinment">
+						<div class="card">
+							<div class="card-body pt-0">
+								<div class="user-tabs">
+									<ul class="nav nav-tabs nav-tabs-bottom nav-justified flex-wrap">
 										<li class="nav-item">
-											<a class="nav-link active" href="#upcoming-appointments" data-toggle="tab">Upcoming</a>
+											<a class="nav-link active" href="#profileTab" data-toggle="tab">Profile</a>
 										</li>
 										<li class="nav-item">
-											<a class="nav-link" href="#today-appointments" data-toggle="tab">Today</a>
-										</li> 
+											<a class="nav-link" href="#prescriptionTab" data-toggle="tab"><span>Prescriptions</span></a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#pat_appointments" data-toggle="tab"><span>Appointments</span></a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#medical" data-toggle="tab"><span class="med-records">Medical Records</span></a>
+										</li>
 									</ul>
+								</div>
+								<div class="tab-content">
+
+									<!-- Profile Tab -->
+									<div class="tab-pane fade" id="profileTab">
+										<h5>Next Appointment: Dr. Donnie Gallardo, Today Aug. 14, 10AM</h5>
+										<br>
+										<h5>Medications you need to take for today</h5>
+										<div class="card card-table mb-0">
+											<div class="card-body">
+												<div class="table-responsive">
+													<table class="table table-hover table-center mb-0">
+														<thead>
+														    
+														</thead>
+														<tbody>
+															<tr>
+																<td>Valleceracin</td>
+																<td>
+																	<a href="doctor-profile.html" class="avatar avatar-sm mr-2">
+																		<img class="avatar-img rounded-circle" src="images/img/medicines/Valleceracin.jpg" alt="User Image">
+																	</a>
+																</td>
+																<td>(2) 10mg Tablets</td>
+																<td>August 14, 2020 09:00AM</td>
+																<td>
+																	<a href="javascript:void(0);" class="btn btn-sm bg-primary-light">
+																		<i class="fas fa-print"></i> Doctor's Note
+																	</a>
+																</td>
+															</tr>
+															<tr>
+																<td>Rustexis</td>
+																<td>
+																	<a href="doctor-profile.html" class="avatar avatar-sm mr-2">
+																		<img class="avatar-img rounded-circle" src="images/img/medicines/Rustexis.jpg" alt="User Image">
+																	</a>
+																</td>
+																<td>(1) 10mg Gel Tablets</td>
+																<td>August 14, 2020 08:00PM</td>
+																<td>
+																	<a href="javascript:void(0);" class="btn btn-sm bg-primary-light">
+																		<i class="fas fa-print"></i> Doctor's Note
+																	</a>
+																</td>
+															</tr>
+															
+														</tbody>	
+													</table>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- /Prescription Tab -->
+
+									<!-- Prescription Tab -->
+									<div class="tab-pane fade" id="prescriptionTab">
+										<div class="card card-table mb-0">
+											<div class="card-body">
+												<div class="table-responsive">
+													<table class="table table-hover table-center mb-0">
+														<thead>
+															<tr>
+																<th>Date Prescribed</th>
+																<th>Name</th>									
+																<th>Prescribed By </th>
+															</tr>     
+														</thead>
+														<tbody>
+															<tr>
+																<td>14 Aug 2020</td>
+																<td>Prescription 1</td>
+																<td>
+																	<h2 class="table-avatar">
+																		<a href="doctor-profile.html" class="avatar avatar-sm mr-2">
+																			<img class="avatar-img rounded-circle" src="images/img/patients/doctor-thumb-02.jpg" alt="User Image">
+																		</a>
+																		<a href="doctor-profile.html">Dr. Donnie Gallardo <span>Dental</span></a>
+																	</h2>
+																</td>
+																<td class="text-right">
+																	<div class="table-action">
+																		<a href="javascript:void(0);" class="btn btn-sm bg-primary-light">
+																			<i class="fas fa-print"></i> Print
+																		</a>
+																		<a href="javascript:void(0);" class="btn btn-sm bg-info-light">
+																			<i class="far fa-eye"></i> View
+																		</a>
+																	</div>
+																</td>
+															</tr>
+															<tr>
+																<td>13 Aug 2020</td>
+																<td>Prescription 2</td>
+																<td>
+																	<h2 class="table-avatar">
+																		<a href="doctor-profile.html" class="avatar avatar-sm mr-2">
+																			<img class="avatar-img rounded-circle" src="images/img/patients/doctor-thumb-02.jpg" alt="User Image">
+																		</a>
+																		<a href="doctor-profile.html">Dr. Donnie Gallardo <span>Dental</span></a>
+																	</h2>
+																</td>
+																<td class="text-right">
+																	<div class="table-action">
+																		<a href="javascript:void(0);" class="btn btn-sm bg-primary-light">
+																			<i class="fas fa-print"></i> Print
+																		</a>
+																		<a href="javascript:void(0);" class="btn btn-sm bg-info-light">
+																			<i class="far fa-eye"></i> View
+																		</a>
+																		<a href="edit-prescription.html" class="btn btn-sm bg-success-light">
+																			<i class="fas fa-edit"></i> Edit
+																		</a>
+																		<a href="javascript:void(0);" class="btn btn-sm bg-danger-light">
+																			<i class="far fa-trash-alt"></i> Delete
+																		</a>
+																	</div>
+																</td>
+															</tr>
+															
+														</tbody>	
+													</table>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- /Prescription Tab -->
+
+									<!-- Appointment Tab -->
+									<div id="pat_appointments" class="tab-pane fade show active">
+										<div class="text-right">
+											<a href="add-prescription.html" class="add-new-btn">+ Create New Appointment</a>
+										</div>
+										<div class="card card-table mb-0">
+											<div class="card-body">
+												<div class="table-responsive">
+													<table class="table table-hover table-center mb-0">
+														<thead>
+															<tr>
+																<th>Doctor</th>
+																<th>Appt Date</th>
+																<th>Booking Date</th>
+																<th>Amount</th>
+																<th>Follow Up</th>
+																<th>Status</th>
+																<th></th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td>
+																	<h2 class="table-avatar">
+																		<a href="doctor-profile.html" class="avatar avatar-sm mr-2">
+																			<img class="avatar-img rounded-circle" src="images/img/patients/doctor-thumb-02.jpg" alt="User Image">
+																		</a>
+																		<a href="doctor-profile.html">Dr. Donnie Gallardo <span>Dental</span></a>
+																	</h2>
+																</td>
+																<td>14 Aug 2020 <span class="d-block text-info">10.00 AM</span></td>
+																<td>12 Aug 2020</td>
+																<td>$160</td>
+																<td>16 Aug 2020</td>
+																<td><span class="badge badge-pill bg-success-light">Confirmed</span></td>
+																<td class="text-right">
+																	<div class="table-action">
+																		<a href="javascript:void(0);" class="btn btn-sm bg-success-light">
+																			<i class="far fa-edit"></i> Edit
+																		</a>
+																	</div>
+																</td>
+															</tr>
+															<tr>
+																<td>
+																	<h2 class="table-avatar">
+																		<a href="doctor-profile.html" class="avatar avatar-sm mr-2">
+																			<img class="avatar-img rounded-circle" src="images/img/patients/doctor-thumb-02.jpg" alt="User Image">
+																		</a>
+																		<a href="doctor-profile.html">Dr. Donnie Gallardo <span>Dental</span></a>
+																	</h2>
+																</td>
+																<td>12 Aug 2020 <span class="d-block text-info">8.00 PM</span></td>
+																<td>12 Aug 2020</td>
+																<td>$250</td>
+																<td>14 Aug 2020</td>
+																<td><span class="badge badge-pill bg-success-light">Confirmed</span></td>
+																<td class="text-right">
+																	<div class="table-action">
+																		<a href="javascript:void(0);" class="btn btn-sm bg-success-light">
+																			<i class="far fa-edit"></i> Edit
+																		</a>
+																	</div>
+																</td>
+															</tr>
+															<tr>
+																<td>
+																	<h2 class="table-avatar">
+																		<a href="doctor-profile.html" class="avatar avatar-sm mr-2">
+																			<img class="avatar-img rounded-circle" src="images/img/patients/doctor-thumb-02.jpg" alt="User Image">
+																		</a>
+																		<a href="doctor-profile.html">Dr. Donnie Gallardo <span>Dental</span></a>
+																	</h2>
+																</td>
+																<td>11 Aug 2020 <span class="d-block text-info">11.00 AM</span></td>
+																<td>10 Aug 2020</td>
+																<td>$400</td>
+																<td>13 Aug 2020</td>
+																<td><span class="badge badge-pill bg-danger-light">Cancelled</span></td>
+																<td class="text-right">
+																	<div class="table-action">
+																		<a href="javascript:void(0);" class="btn btn-sm bg-success-light">
+																			<i class="far fa-edit"></i> Edit
+																		</a>
+																	</div>
+																</td>
+															</tr>
+															<tr>
+																<td>
+																	<h2 class="table-avatar">
+																		<a href="doctor-profile.html" class="avatar avatar-sm mr-2">
+																			<img class="avatar-img rounded-circle" src="images/img/patients/doctor-thumb-02.jpg" alt="User Image">
+																		</a>
+																		<a href="doctor-profile.html">Dr. Donnie Gallardo <span>Dental</span></a>
+																	</h2>
+																</td>
+																<td>10 Aug 2020 <span class="d-block text-info">3.00 PM</span></td>
+																<td>10 Aug 2020</td>
+																<td>$350</td>
+																<td>12 Aug 2020</td>
+																<td><span class="badge badge-pill bg-warning-light">Pending</span></td>
+																<td class="text-right">
+																	<div class="table-action">
+																		<a href="edit-prescription.html" class="btn btn-sm bg-success-light">
+																			<i class="far fa-edit"></i> Edit
+																		</a>
+																		<a href="javascript:void(0);" class="btn btn-sm bg-danger-light">
+																			<i class="far fa-trash-alt"></i> Cancel
+																		</a>
+																	</div>
+																</td>
+															</tr>
+															
+														</tbody>
+													</table>
+												</div>
+											</div>
+										</div>
+									</div>
 									<!-- /Appointment Tab -->
 									
-									<div class="tab-content">
-									
-										<!-- Upcoming Appointment Tab -->
-										<div class="tab-pane show active" id="upcoming-appointments">
-											<div class="card card-table mb-0">
-												<div class="card-body">
-													<div class="table-responsive">
-														<table class="table table-hover table-center mb-0">
-															<thead>
-																<tr>
-																	<th>Patient Name</th>
-																	<th>Appt Date</th>
-																	<th>Purpose</th>
-																	<th>Type</th>
-																	<th class="text-center">Paid Amount</th>
-																	<th></th>
-																</tr>
-															</thead>
-															<tbody>
-																<tr>
-																	<td>
-																		<h2 class="table-avatar">
-																			<a href="patient-profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="images/img/patients/patient.jpg" alt="User Image"></a>
-																			<a href="patient-profile.html">Jose Bonachita <span>#PT0001</span></a>
-																		</h2>
-																	</td>
-																	<td>20 Aug 2020 <span class="d-block text-info">10.00 AM</span></td>
-																	<td>Labad Ulo</td>
-																	<td>New Patient</td>
-																	<td class="text-center">$150</td>
-																	<td class="text-right">
-																		<div class="table-action">
-																			<a href="javascript:void(0);" class="btn btn-sm btn-info">
-																				<i class="far fa-eye" aria-hidden="true"></i> View
-																			</a>
-																			
-																			<a href="javascript:void(0);" class="btn btn-sm btn-success">
-																				<i class="fas fa-check" aria-hidden="true"></i> Accept
-																			</a>
-																			<a href="javascript:void(0);" class="btn btn-sm btn-danger">
-																				<i class="fas fa-times" aria-hidden="true"></i> Cancel
-																			</a>
-																		</div>
-																	</td>
-																</tr>																
-																<tr>
-																	<td>
-																		<h2 class="table-avatar">
-																			<a href="patient-profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="images/img/patients/patient.jpg" alt="User Image"></a>
-																			<a href="patient-profile.html">Carlo Ruste <span>#PT0002</span></a>
-																		</h2>
-																	</td>
-																	<td>20 Aug 2020 <span class="d-block text-info">1.00 AM</span></td>
-																	<td>Sakit ang Ulo</td>
-																	<td>Old Patient</td>
-																	<td class="text-center">$200</td>
-																	<td class="text-right">
-																		<div class="table-action">
-																			<a href="javascript:void(0);" class="btn btn-sm btn-info">
-																				<i class="far fa-eye" aria-hidden="true"></i> View
-																			</a>
-																			
-																			<a href="javascript:void(0);" class="btn btn-sm btn-success">
-																				<i class="fas fa-check" aria-hidden="true"></i> Accept
-																			</a>
-																			<a href="javascript:void(0);" class="btn btn-sm btn-danger">
-																				<i class="fas fa-times" aria-hidden="true"></i> Cancel
-																			</a>
-																		</div>
-																	</td>
-																</tr>														
-																<tr>
-																	<td>
-																		<h2 class="table-avatar">
-																			<a href="patient-profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="images/img/patients/patient.jpg" alt="User Image"></a>
-																			<a href="patient-profile.html">Christine Leonardo<span>#PT0003</span></a>
-																		</h2>
-																	</td>
-																	<td>20 Aug 2020 <span class="d-block text-info">1.00 AM</span></td>
-																	<td>Sakit ang tiyan</td>
-																	<td>Old Patient</td>
-																	<td class="text-center">$200</td>
-																	<td class="text-right">
-																		<div class="table-action">
-																			<a href="javascript:void(0);" class="btn btn-sm btn-info">
-																				<i class="far fa-eye" aria-hidden="true"></i> View
-																			</a>
-																			
-																			<a href="javascript:void(0);" class="btn btn-sm btn-success">
-																				<i class="fas fa-check" aria-hidden="true"></i> Accept
-																			</a>
-																			<a href="javascript:void(0);" class="btn btn-sm btn-danger">
-																				<i class="fas fa-times" aria-hidden="true"></i> Cancel
-																			</a>
-																		</div>
-																	</td>
-																</tr>	
-																<tr>
-																	<td>
-																		<h2 class="table-avatar">
-																			<a href="patient-profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="images/img/patients/patient.jpg" alt="User Image"></a>
-																			<a href="patient-profile.html">Patrick Dumilon<span>#PT0004</span></a>
-																		</h2>
-																	</td>
-																	<td>14 Aug 2020 <span class="d-block text-info">6.00 PM</span></td>
-																	<td>Fever</td>
-																	<td>New Patient</td>
-																	<td class="text-center">$300</td>
-																	<td class="text-right">
-																		<div class="table-action">
-																			<a href="javascript:void(0);" class="btn btn-sm btn-info">
-																				<i class="far fa-eye" aria-hidden="true"></i> View
-																			</a>
-																			
-																			<a href="javascript:void(0);" class="btn btn-sm btn-success">
-																				<i class="fas fa-check" aria-hidden="true"></i> Accept
-																			</a>
-																			<a href="javascript:void(0);" class="btn btn-sm btn-danger">
-																				<i class="fas fa-times" aria-hidden="true"></i> Cancel
-																			</a>
-																		</div>
-																	</td>
-																</tr>
-																<tr>
-																	<td>
-																		<h2 class="table-avatar">
-																			<a href="patient-profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="images/img/patients/patient.jpg" alt="User Image"></a>
-																			<a href="patient-profile.html">Jose Bonachita <span>#PT0001</span></a>
-																		</h2>
-																	</td>
-																	<td>20 Aug 2020 <span class="d-block text-info">10.00 AM</span></td>
-																	<td>General Checkup</td>
-																	<td>New Patient</td>
-																	<td class="text-center">$150</td>
-																	<td class="text-right">
-																		<div class="table-action">
-																			<a href="javascript:void(0);" class="btn btn-sm btn-info">
-																				<i class="far fa-eye" aria-hidden="true"></i> View
-																			</a>
-																			
-																			<a href="javascript:void(0);" class="btn btn-sm btn-success">
-																				<i class="fas fa-check" aria-hidden="true"></i> Accept
-																			</a>
-																			<a href="javascript:void(0);" class="btn btn-sm btn-danger">
-																				<i class="fas fa-times" aria-hidden="true"></i> Cancel
-																			</a>
-																		</div>
-																	</td>
-																</tr>																
-																<tr>
-																	<td>
-																		<h2 class="table-avatar">
-																			<a href="patient-profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="images/img/patients/patient.jpg" alt="User Image"></a>
-																			<a href="patient-profile.html">Ma. Tia Ann B. Vallecera <span>#PT0002</span></a>
-																		</h2>
-																	</td>
-																	<td>20 Aug 2020 <span class="d-block text-info">1.00 AM</span></td>
-																	<td>General</td>
-																	<td>Old Patient</td>
-																	<td class="text-center">$200</td>
-																	<td class="text-right">
-																		<div class="table-action">
-																			<a href="javascript:void(0);" class="btn btn-sm btn-info">
-																				<i class="far fa-eye" aria-hidden="true"></i> View
-																			</a>
-																			
-																			<a href="javascript:void(0);" class="btn btn-sm btn-success">
-																				<i class="fas fa-check" aria-hidden="true"></i> Accept
-																			</a>
-																			<a href="javascript:void(0);" class="btn btn-sm btn-danger">
-																				<i class="fas fa-times" aria-hidden="true"></i> Cancel
-																			</a>
-																		</div>
-																	</td>
-																</tr>														
-																<tr>
-																	<td>
-																		<h2 class="table-avatar">
-																			<a href="patient-profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="images/img/patients/patient.jpg" alt="User Image"></a>
-																			<a href="patient-profile.html">Shenani Pemintel<span>#PT0003</span></a>
-																		</h2>
-																	</td>
-																	<td>20 Aug 2020 <span class="d-block text-info">1.00 AM</span></td>
-																	<td>General</td>
-																	<td>Old Patient</td>
-																	<td class="text-center">$200</td>
-																	<td class="text-right">
-																		<div class="table-action">
-																			<a href="javascript:void(0);" class="btn btn-sm btn-info">
-																				<i class="far fa-eye" aria-hidden="true"></i> View
-																			</a>
-																			
-																			<a href="javascript:void(0);" class="btn btn-sm btn-success">
-																				<i class="fas fa-check" aria-hidden="true"></i> Accept
-																			</a>
-																			<a href="javascript:void(0);" class="btn btn-sm btn-danger">
-																				<i class="fas fa-times" aria-hidden="true"></i> Cancel
-																			</a>
-																		</div>
-																	</td>
-																</tr>	
-															</tbody>
-														</table>		
-													</div>
+									<!-- Medical Records Tab -->
+									<div class="tab-pane fade" id="medical">
+										<div class="card card-table mb-0">
+											<div class="card-body">
+												<div class="table-responsive">
+													<table class="table table-hover table-center mb-0">
+														<thead>
+															<tr>
+																<th>ID</th>
+																<th>Date </th>
+																<th>Description</th>
+																<th>Attachment</th>
+																<th>Created</th>
+																<th></th>
+															</tr>     
+														</thead>
+														<tbody>
+															<tr>
+																<td><a href="javascript:void(0);">#MR-0010</a></td>
+																<td>14 Aug 2020</td>
+																<td>Dental Filling</td>
+																<td><a href="#">dental-test.pdf</a></td>
+																<td>
+																	<h2 class="table-avatar">
+																		<a href="doctor-profile.html" class="avatar avatar-sm mr-2">
+																			<img class="avatar-img rounded-circle" src="images/img/patients/doctor-thumb-02.jpg" alt="User Image">
+																		</a>
+																		<a href="doctor-profile.html">Dr. Donnie Gallardo <span>Dental</span></a>
+																	</h2>
+																</td>
+																<td class="text-right">
+																	<div class="table-action">
+																		<a href="javascript:void(0);" class="btn btn-sm bg-primary-light">
+																			<i class="fas fa-print"></i> Print
+																		</a>
+																		<a href="javascript:void(0);" class="btn btn-sm bg-info-light">
+																			<i class="far fa-eye"></i> View
+																		</a>
+																	</div>
+																</td>
+															</tr>
+															<tr>
+																<td><a href="javascript:void(0);">#MR-0009</a></td>
+																<td>13 Aug 2020</td>
+																<td>Teeth Cleaning</td>
+																<td><a href="#">dental-test.pdf</a></td>
+																<td>
+																	<h2 class="table-avatar">
+																		<a href="doctor-profile.html" class="avatar avatar-sm mr-2">
+																			<img class="avatar-img rounded-circle" src="images/img/patients/doctor-thumb-02.jpg" alt="User Image">
+																		</a>
+																		<a href="doctor-profile.html">Dr. Donnie Gallardo <span>Dental</span></a>
+																	</h2>
+																</td>
+																<td class="text-right">
+																	<div class="table-action">
+																		<a href="javascript:void(0);" class="btn btn-sm bg-primary-light">
+																			<i class="fas fa-print"></i> Print
+																		</a>
+																		<a href="javascript:void(0);" class="btn btn-sm bg-info-light">
+																			<i class="far fa-eye"></i> View
+																		</a>
+																		<a href="edit-prescription.html" class="btn btn-sm bg-success-light" data-toggle="modal" data-target="#add_medical_records">
+																			<i class="fas fa-edit"></i> Edit
+																		</a>
+																		<a href="javascript:void(0);" class="btn btn-sm bg-danger-light">
+																			<i class="far fa-trash-alt"></i> Delete
+																		</a>
+																	</div>
+																</td>
+															</tr>
+														</tbody>  	
+													</table>
 												</div>
 											</div>
 										</div>
-										<!-- /Upcoming Appointment Tab -->
-								   
-										<!-- Today Appointment Tab -->
-										<div class="tab-pane" id="today-appointments">
-											<div class="card card-table mb-0">
-												<div class="card-body">
-													<div class="table-responsive">
-														<table class="table table-hover table-center mb-0">
-															<thead>
-																<tr>
-																	<th>Patient Name</th>
-																	<th>Appt Date</th>
-																	<th>Purpose</th>
-																	<th>Type</th>
-																	<th class="text-center">Paid Amount</th>
-																	<th></th>
-																</tr>
-															</thead>
-															<tbody>
-																<tr>
-																	<td>
-																		<h2 class="table-avatar">
-																			<a href="patient-profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="images/img/patients/patient.jpg" alt="User Image"></a>
-																			<a href="patient-profile.html">Patrick Dumilon<span>#PT0004</span></a>
-																		</h2>
-																	</td>
-																	<td>13 Aug 2020 <span class="d-block text-info">6.00 PM</span></td>
-																	<td>Fever</td>
-																	<td>New Patient</td>
-																	<td class="text-center">$300</td>
-																	<td class="text-right">
-																		<div class="table-action">
-																			<a href="javascript:void(0);" class="btn btn-sm btn-info">
-																				<i class="far fa-eye" aria-hidden="true"></i> View
-																			</a>
-																			
-																			<a href="javascript:void(0);" class="btn btn-sm btn-success">
-																				<i class="fas fa-check" aria-hidden="true"></i> Accept
-																			</a>
-																			<a href="javascript:void(0);" class="btn btn-sm btn-danger">
-																				<i class="fas fa-times" aria-hidden="true"></i> Cancel
-																			</a>
-																		</div>
-																	</td>
-																</tr>
-																<tr>
-																	<td>
-																		<h2 class="table-avatar">
-																			<a href="patient-profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="images/img/patients/patient.jpg" alt="User Image"></a>
-																			<a href="patient-profile.html">Jose Bonachita <span>#PT0001</span></a>
-																		</h2>
-																	</td>
-																	<td>13 Aug 2020 <span class="d-block text-info">10.00 AM</span></td>
-																	<td>General</td>
-																	<td>New Patient</td>
-																	<td class="text-center">$150</td>
-																	<td class="text-right">
-																		<div class="table-action">
-																			<a href="javascript:void(0);" class="btn btn-sm btn-info">
-																				<i class="far fa-eye" aria-hidden="true"></i> View
-																			</a>
-																			
-																			<a href="javascript:void(0);" class="btn btn-sm btn-success">
-																				<i class="fas fa-check" aria-hidden="true"></i> Accept
-																			</a>
-																			<a href="javascript:void(0);" class="btn btn-sm btn-danger">
-																				<i class="fas fa-times" aria-hidden="true"></i> Cancel
-																			</a>
-																		</div>
-																	</td>
-																</tr>																
-																<tr>
-																	<td>
-																		<h2 class="table-avatar">
-																			<a href="patient-profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="images/img/patients/patient.jpg" alt="User Image"></a>
-																			<a href="patient-profile.html">Carlo Ruste <span>#PT0002</span></a>
-																		</h2>
-																	</td>
-																	<td>13 Aug 2020 <span class="d-block text-info">1.00 AM</span></td>
-																	<td>General</td>
-																	<td>Old Patient</td>
-																	<td class="text-center">$200</td>
-																	<td class="text-right">
-																		<div class="table-action">
-																			<a href="javascript:void(0);" class="btn btn-sm btn-info">
-																				<i class="far fa-eye" aria-hidden="true"></i> View
-																			</a>
-																			
-																			<a href="javascript:void(0);" class="btn btn-sm btn-success">
-																				<i class="fas fa-check" aria-hidden="true"></i> Accept
-																			</a>
-																			<a href="javascript:void(0);" class="btn btn-sm btn-danger">
-																				<i class="fas fa-times" aria-hidden="true"></i> Cancel
-																			</a>
-																		</div>
-																	</td>
-																</tr>														
-																<tr>
-																	<td>
-																		<h2 class="table-avatar">
-																			<a href="patient-profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="images/img/patients/patient.jpg" alt="User Image"></a>
-																			<a href="patient-profile.html">Christine Leonardo<span>#PT0003</span></a>
-																		</h2>
-																	</td>
-																	<td>13 Aug 2020 <span class="d-block text-info">1.00 AM</span></td>
-																	<td>General</td>
-																	<td>Old Patient</td>
-																	<td class="text-center">$200</td>
-																	<td class="text-right">
-																		<div class="table-action">
-																			<a href="javascript:void(0);" class="btn btn-sm btn-info">
-																				<i class="far fa-eye" aria-hidden="true"></i> View
-																			</a>
-																			
-																			<a href="javascript:void(0);" class="btn btn-sm btn-success">
-																				<i class="fas fa-check" aria-hidden="true"></i> Accept
-																			</a>
-																			<a href="javascript:void(0);" class="btn btn-sm btn-danger">
-																				<i class="fas fa-times" aria-hidden="true"></i> Cancel
-																			</a>
-																		</div>
-																	</td>
-																</tr>
-															</tbody>
-														</table>		
-													</div>	
-												</div>	
-											</div>	
-										</div>
-										<!-- /Today Appointment Tab -->
-										
 									</div>
+									<!-- /Medical Records Tab -->
+											
 								</div>
 							</div>
 						</div>
-
 					</div>
 				</div>
 
 			</div>
 
-		</div>		
+		</div>
 		<!-- /Page Content -->
 
 		
@@ -562,7 +482,7 @@
   
 	<!-- jQuery -->
 	<script src="js/service/landing/jquery.min.js"></script>
-	
+
 	<!-- Bootstrap Core JS -->
 	<script src="js/service/landing/popper.min.js"></script>
 	<script src="js/main/bootstrap.min.js"></script>
