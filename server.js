@@ -69,3 +69,4 @@ app.get('/healthbridge/doctor/reviews', function (req, res) {
 });
 app.get('/healthbridge/patient/appointmentdetails', function (req, res) {
     res.sendfile(__dirname + '/web-content/landing/patient-appointments-page.html');
+});
