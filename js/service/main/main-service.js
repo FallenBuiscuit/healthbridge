@@ -75,7 +75,7 @@ mainapp.controller("mainServiceCtrl", function($scope, $http){
         $('#doctorPharmacy').hide();
         $('#guestPharmacy').hide();
         var url = window.location.href;
-        url = url.substring(url.indexOf('/hea'));
+        url = url.substring(url.indexOf('/healthbridge'));
         if(url === '/healthbridge/guest'){
             localStorage.setItem("isLoggedIn", false);
             localStorage.setItem("personType", 0);
