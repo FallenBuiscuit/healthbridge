@@ -74,12 +74,13 @@ mainapp.controller("mainServiceCtrl", function($scope, $http){
         $('#patientPharmacy').hide();
         $('#doctorPharmacy').hide();
         $('#guestPharmacy').hide();
-        MAPP.init();
         var url = window.location.href;
         url = url.substring(url.indexOf('/hea'));
         if(url === '/healthbridge/guest'){
             localStorage.setItem("isLoggedIn", false);
             localStorage.setItem("personType", 0);
         }
+        MAPP.init();
+       
     });
 })(jQuery);
