@@ -1,8 +1,11 @@
+<<<<<<< HEAD
 /*
 Author       : Dreamguys
 Template Name: Doccure - Bootstrap Template
 Version      : 1.3
 */
+=======
+>>>>>>> d5999084b847d51b547e24fe9fdc3d754ecc9211
 
 (function($) {
     "use strict";
@@ -331,7 +334,11 @@ Version      : 1.3
 					size : 400,
 					thickness: 30,
 					fill: {
+<<<<<<< HEAD
 						color: '#da3f81'
+=======
+						color: '#3bd55e'
+>>>>>>> d5999084b847d51b547e24fe9fdc3d754ecc9211
 					}
 				});
 			}
@@ -348,7 +355,11 @@ Version      : 1.3
 					size : 400,
 					thickness: 30,
 					fill: {
+<<<<<<< HEAD
 						color: '#68dda9'
+=======
+						color: '#f3a545'
+>>>>>>> d5999084b847d51b547e24fe9fdc3d754ecc9211
 					}
 				});
 			}
