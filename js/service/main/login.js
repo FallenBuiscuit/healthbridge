@@ -28,10 +28,12 @@ loginapp.controller("loginServiceCtrl", function($scope,$http){
                     window.open("/healthbridge/patient", "_self");
                 } else if(response.data[0].PERSON_TYPE_ID === 2){
                     window.open("/healthbridge/doctor", "_self");
-                } else {
-                    $('.health-bridge-loading').hide();  
-                    alert("Login Failed!..")
                 }
+                localStorage.setItem("personType", response.data[0].PERSON_TYPE_ID); 
+            } else {
+                $('.health-bridge-loading').hide();  
+                $('#errorLogin').show();
+                $('#errorLogin').css("color", "red");
             }
         });
     }
