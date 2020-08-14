@@ -34,6 +34,7 @@ mainapp.controller("mainServiceCtrl", function($scope, $http){
             this.initialize();
             this.checkIfLoginOrLoggedOut();
             this.checkPersonType();
+            this.patientAppointment();
         },
 
         initialize: function() {
@@ -64,6 +65,13 @@ mainapp.controller("mainServiceCtrl", function($scope, $http){
                 $('#guestPharmacy').show();
             }
             
+        },
+
+        patientAppointment: function() {
+            $('#patientAppointment').on("click", function(){
+                window.open("/healthbridge/myprofile", "_self");
+                localStorage.setItem("patientAppointment", true);
+            });
         }
 
     };
@@ -74,12 +82,18 @@ mainapp.controller("mainServiceCtrl", function($scope, $http){
         $('#patientPharmacy').hide();
         $('#doctorPharmacy').hide();
         $('#guestPharmacy').hide();
-        MAPP.init();
+        var appointmentClicked = localStorage.getItem("patientAppointment");
+        if(appointmentClicked === "true"){
+            localStorage.setItem("patientAppointment", false);
+            $('#appointmentTab').click();
+        }
         var url = window.location.href;
-        url = url.substring(url.indexOf('/hea'));
+        url = url.substring(url.indexOf('/healthbridge'));
         if(url === '/healthbridge/guest'){
             localStorage.setItem("isLoggedIn", false);
             localStorage.setItem("personType", 0);
         }
+        MAPP.init();
+       
     });
 })(jQuery);
