@@ -6181,17 +6181,19 @@
 			select: function(start, end, allDay) {
 				// var title = prompt('Event Title:');
 				$('#add_time_slot').modal('show'); 
-				if (title) {
-					calendar.fullCalendar('renderEvent',
+				$('#submitButton').on('click',function(){
+					$('#add_time_slot').modal('hide'); 
+					$('#calendar').fullCalendar('renderEvent',
 						{
-							title: title,
+							title: 'Your Appointment',
 							start: start,
 							end: end,
 							allDay: allDay
 						},
 						true // make the event "stick"
 					);
-				}
+				});
+
 				calendar.fullCalendar('unselect');
 			},
 			droppable: true, // this allows things to be dropped onto the calendar !!!
@@ -6279,5 +6281,7 @@
 			],			
 		});
 		
+
 		
 	});
+
