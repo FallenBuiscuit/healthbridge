@@ -19,6 +19,7 @@
     <link href="style/main/bootstrap.css" rel="stylesheet" />
     <link href="style/landingpage/styles.css" rel="stylesheet" />
     <link href="style/main/main.css" rel="stylesheet" />
+    <link href="style/pharmacy/pharmacy.css" rel="stylesheet" />
 </head>
 
 <body id="page-top">
@@ -35,24 +36,70 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav text-uppercase ml-auto logged-in">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Shop</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">Contact Us</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" ng-click="redirect('/guest')">Logout</a></li>
+                    <li id="patientHome" class="nav-item"><a class="nav-link js-scroll-trigger" href="/healthbridge/patient">Home</a></li>
+                    <li id="doctorHome" class="nav-item"><a class="nav-link js-scroll-trigger" href="/healthbridge/doctor">Home</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Pharmacies</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Medicines</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger cart-link" href="#cart">
+                            <span>
+                                <span>Cart</span>
+                            </span>
+                            <span class="cart-total-price3 cart-quantity-notif">0</span>
+                            <div class="cart-active cart">
+                                <h2 class="section-header section-heading text-uppercase">CART</h2>
+                                <div class="cart-row">
+                                    <span class="cart-item cart-header cart-column">ITEM</span>
+                                    <span class="cart-price cart-header cart-column">PRICE</span>
+                                    <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+
+                                </div>
+                                <div class="cart-items2">
+                                </div>
+                                <div class="cart-total">
+                                    <strong class="cart-total-title">Total</strong>
+                                    <span class="cart-total-price4">P0</span>
+                                </div>
+                            </div>
+                        </a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" ng-click="redirect('/guest')">Logout</a>
+                    </li>
                 </ul>
                 <ul class="navbar-nav text-uppercase ml-auto logged-out">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" ng-click="redirect('/login')">Login</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger cart-link" href="#cart">
+                            <span>
+                                <span>Cart</span>
+                            </span>
+                            <span class="cart-total-price2 cart-quantity-notif">0</span>
+                            <div class="cart-active cart">
+                                <h2 class="section-header section-heading text-uppercase">CART</h2>
+                                <div class="cart-row">
+                                    <span class="cart-item cart-header cart-column">ITEM</span>
+                                    <span class="cart-price cart-header cart-column">PRICE</span>
+                                    <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+
+                                </div>
+                                <div class="cart-items1">
+                                </div>
+                                <div class="cart-total">
+                                    <strong class="cart-total-title">Total</strong>
+                                    <span class="cart-total-price1">P0</span>
+                                </div>
+                            </div>
+                        </a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" ng-click="redirect('/login')">Login</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
+
     <!-- Masthead-->
     <header class="masthead" id="home">
         <!--patient pharmacy menu-->
         <div id="patientPharmacy" class="container">
             <div class="masthead-heading text-uppercase">Welcome to HealthBridge</div>
-            <div class="masthead-subheading">Lets help to Bridge the gaps for health care providers to deliver quality medical services</div>
+            <div class="masthead-subheading">Lets help to Bridge the gaps for health care providers to deliver quality
+                medical services</div>
             <a class="btn btn-primary-1 btn-xl js-scroll-trigger btn-header" href="/healthbridge/myprofile">
                 <div class="text-center ">
                     <img class="img-fluid-header" src="images/icons/userprof.png" alt="" />
@@ -79,7 +126,8 @@
         <!--doctor pharmacy menu-->
         <div id="doctorPharmacy" class="container">
             <div class="masthead-heading text-uppercase">Welcome to HealthBridge</div>
-            <div class="masthead-subheading">Lets help to Bridge the gaps for health care providers to deliver quality medical services</div>
+            <div class="masthead-subheading">Lets help to Bridge the gaps for health care providers to deliver quality
+                medical services</div>
             <a class="btn btn-primary-1 btn-xl js-scroll-trigger btn-header" href="/healthbridge/doctor">
                 <div class="text-center ">
                     <img class="img-fluid-header" src="images/icons/userprof.png" alt="" />
@@ -101,7 +149,8 @@
         <!--guest pharmacy menu-->
         <div id="guestPharmacy" class="container">
             <div class="masthead-heading text-uppercase">Welcome to HealthBridge</div>
-            <div class="masthead-subheading">Lets help to Bridge the gaps for health care providers to deliver quality medical services</div>
+            <div class="masthead-subheading">Lets help to Bridge the gaps for health care providers to deliver quality
+                medical services</div>
             <a class="btn btn-primary-1 btn-xl js-scroll-trigger btn-header" href="/healthbridge/login">
                 <div class="text-center ">
                     <img class="img-fluid-header" src="images/icons/userprof.png" alt="" />
@@ -252,7 +301,7 @@
         </div>
     </section>
     <!-- Shop Medicines-->
-    <section class="page-section bg-light" id="team">
+    <section class="page-section bg-light" id="shop">
         <div class="container">
             <div class="text-center">
                 <h2 class="section-heading text-uppercase">Browse Medicines</h2>
@@ -350,7 +399,36 @@
             </div>
             <div class="row">
                 <div class="col-lg-8 mx-auto text-center">
-                    <p class="large text-muted">See More >> </p>
+                    <div class="load-more text-center">
+                        <nav aria-label="...">
+                            <ul class="pagination">
+                                <li class="page-item disabled">
+                                    <a class="page-link" href="#" tabindex="-1">Previous</a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="shop">1</a></li>
+                                <li class="page-item active">
+                                    <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="shop">3</a></li>
+                                <li class="page-item"><a class="page-link" href="shop">4</a></li>
+                              <li class="page-item"><a class="page-link" href="shop">5</a></li>
+                              <li class="page-item"><a class="page-link" href="shop">6</a></li>
+                              <li class="page-item"><a class="page-link" href="shop">7</a></li>
+                              <li class="page-item"><a class="page-link" href="shop">8</a></li>
+                              <li class="page-item"><a class="page-link" href="shop">9</a></li>
+                              <li class="page-item"><a class="page-link" href="shop">10</a></li>
+                              <li class="page-item"><a class="page-link" href="shop">11</a></li>
+                              <li class="page-item"><a class="page-link" href="shop">12</a></li>
+                              <li class="page-item"><a class="page-link" href="shop">13</a></li>
+                              <li class="page-item"><a class="page-link" href="shop">14</a></li>
+                              <li class="page-item"><a class="page-link" href="shop">15</a></li>
+                              <li class="page-item"><a class="page-link" href="shop">16</a></li>
+                                <li class="page-item">
+                                    <a class="btn page-link" href="shop">Next</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
             </div>
         </div>
@@ -370,14 +448,14 @@
             <strong class="cart-total-title">Total</strong>
             <span class="cart-total-price">$0</span>
         </div>
-        <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+        <button class="btn btn-primary btn-purchase redirect-btn" value="/checkout" type="button">CHECK OUT</button>
     </section>
     <!-- Contact-->
     <section class="page-section" id="contact">
         <div class="container">
             <div class="text-center">
                 <h2 class="section-heading text-uppercase">Contact Us</h2>
-                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                <h3 class="section-subheading text-muted">Feel free to message us for concerns, feedbacks and suggestions.</h3>
             </div>
             <form id="contactForm" name="sentMessage" novalidate="novalidate">
                 <div class="row align-items-stretch mb-5">
@@ -649,112 +727,9 @@
     <script src="js/scripts.js"></script>
     <script type="text/javascript" src="js/service/main/login.js"></script>
     <script type="text/javascript" src="js/service/main/main-service.js"></script>
+    <script type="text/javascript" src="js/service/pharmacy/pharmacy.js"></script>
     <script>
-        if (document.readyState == 'loading') {
-            document.addEventListener('DOMContentLoaded', ready)
-        } else {
-            ready()
-        }
 
-
-        function ready() {
-            var removeCartItemButtons = document.getElementsByClassName('btn-danger')
-            for (var i = 0; i < removeCartItemButtons.length; i++) {
-                var button = removeCartItemButtons[i]
-                button.addEventListener('click', removeCartItem)
-            }
-
-            var quantityInputs = document.getElementsByClassName('cart-quantity-input')
-            for (var i = 0; i < quantityInputs.length; i++) {
-                var input = quantityInputs[i]
-                input.addEventListener('change', quantityChanged)
-            }
-
-            var addToCartButtons = document.getElementsByClassName('shop-item-button')
-            for (var i = 0; i < addToCartButtons.length; i++) {
-                var button = addToCartButtons[i]
-                button.addEventListener('click', addToCartClicked)
-            }
-
-            document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
-        }
-
-        function purchaseClicked() {
-            alert('Thank you for your purchase')
-            var cartItems = document.getElementsByClassName('cart-items')[0]
-            while (cartItems.hasChildNodes()) {
-                cartItems.removeChild(cartItems.firstChild)
-            }
-            updateCartTotal()
-        }
-
-        function removeCartItem(event) {
-            var buttonClicked = event.target
-            buttonClicked.parentElement.parentElement.remove()
-            updateCartTotal()
-        }
-
-        function quantityChanged(event) {
-            var input = event.target
-            if (isNaN(input.value) || input.value <= 0) {
-                input.value = 1
-            }
-            updateCartTotal()
-        }
-
-        function addToCartClicked(event) {
-            var button = event.target
-            var shopItem = button.parentElement.parentElement
-            var title = shopItem.getElementsByClassName('shop-item-title')[0].innerText
-            var price = shopItem.getElementsByClassName('shop-item-price')[0].innerText
-            var imageSrc = shopItem.getElementsByClassName('shop-item-image')[0].src
-            addItemToCart(title, price, imageSrc)
-            updateCartTotal()
-        }
-
-        function addItemToCart(title, price, imageSrc) {
-            var cartRow = document.createElement('div')
-            cartRow.classList.add('cart-row')
-            var cartItems = document.getElementsByClassName('cart-items')[0]
-            var cartItemNames = cartItems.getElementsByClassName('cart-item-title')
-            for (var i = 0; i < cartItemNames.length; i++) {
-                if (cartItemNames[i].innerText == title) {
-                    alert('This item is already added to the cart')
-                    return
-                }
-            }
-            var cartRowContents = `
-        <div class="cart-item cart-column">
-            <img class="cart-item-image" src="${imageSrc}" width="100" height="100">
-            <span class="cart-item-title">${title}</span>
-        </div>
-        <span class="cart-price cart-column">${price}</span>
-        <div class="cart-quantity cart-column">
-            <input class="cart-quantity-input" type="number" value="1">
-            <button class="btn btn-danger" type="button">REMOVE</button>
-        </div>`
-            cartRow.innerHTML = cartRowContents
-            cartItems.append(cartRow)
-            cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', removeCartItem)
-            cartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener('change', quantityChanged)
-        }
-
-        function updateCartTotal() {
-            var cartItemContainer = document.getElementsByClassName('cart-items')[0]
-            var cartRows = cartItemContainer.getElementsByClassName('cart-row')
-            var total = 0
-            for (var i = 0; i < cartRows.length; i++) {
-                var cartRow = cartRows[i]
-                var priceElement = cartRow.getElementsByClassName('cart-price')[0]
-                var quantityElement = cartRow.getElementsByClassName('cart-quantity-input')[0]
-                var price = parseFloat(priceElement.innerText.replace('P', ''))
-                var quantity = quantityElement.value
-                total = total + (price * quantity)
-            }
-
-            total = parseFloat(total).toFixed(2);
-            document.getElementsByClassName('cart-total-price')[0].innerText = 'P' + total
-        }
     </script>
 
 </body>
