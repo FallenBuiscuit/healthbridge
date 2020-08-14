@@ -18,7 +18,7 @@
 
 	<!-- Main CSS -->
 	<link rel="stylesheet" href="style/landingpage/doctor/customstyle.css">
-	<link rel="stylesheet" href="style/booking/customstyle.css">
+	<link rel="stylesheet" href="style/booking/calendar.css">
 	<script src="https://kit.fontawesome.com/6dcc7dba5d.js" crossorigin="anonymous"></script><link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all" rel="stylesheet"><link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css" media="all" rel="stylesheet"><link href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" rel="stylesheet">
 	<link href="style/landingpage/styles.css" rel="stylesheet">
 
@@ -57,37 +57,16 @@
 				<div class="masthead-subheading">Lets help to Bridge the gaps for health care providers to deliver quality medical services</div>
 			</div>
 		</header>
-		
+				
 		<!-- Page Content -->
 		<div class="content" style="min-height: 129px;">
 			<div class="container">
 			
 				<div class="row">
 					<div class="col-12">
-					
-						<div class="card">
-							<div class="card-body">
-								<div class="booking-doc-info">
-									<a href="/healthbridge/viewdoctor" class="booking-doc-img">
-										<img src="images/img/patients/doctor-thumb-02.jpg" alt="User Image">
-									<div class="booking-info">
-										<h4><a href="images/img/patients/doctor-thumb-02.jpg">Dr. Donnie Gallardo</a></h4>
-										<div class="rating">
-											<i class="fas fa-star filled"></i>
-											<i class="fas fa-star filled"></i>
-											<i class="fas fa-star filled"></i>
-											<i class="fas fa-star filled"></i>
-											<i class="fas fa-star"></i>
-											<span class="d-inline-block average-rating">35</span>
-										</div>
-										<p class="text-muted mb-0"><i class="fas fa-map-marker-alt"></i> Taga Cebu </p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-12 col-sm-4 col-md-6">
-								<h4 class="mb-1">Choose Schedule</h4>
+						<div class="row  text-center">
+							<div class="col-12 col-sm-12 col-md-12">
+								<h5 class="mb-1">Choose Schedule for Dr. Donnie Gallardo </h5>
 								<br/>
 							</div>
 						</div>
@@ -102,12 +81,11 @@
 						<br/>
 						<br/>
 						<!-- Submit Section -->
-						<div class="submit-section proceed-btn" style="float: right; padding-left: 2%">
+						<div class="submit-section text-center">
+							<a href="#" class="btn btn-primary submit-btn">Proceed to Pay</a>
 							<a href="/healthbridge/searchdoctor" class="btn btn-primary submit-btn" style="background: crimson">Cancel</a>
 						</div>
-						<div class="submit-section proceed-btn text-right">
-							<a href="#" class="btn btn-primary submit-btn">Proceed to Pay</a>
-						</div>
+						<br/>
 						<!-- /Submit Section -->
 						
 					</div>
@@ -139,7 +117,62 @@
 		</div>
 	</footer>
 	<!-- /Main Wrapper -->
-  
+  <!-- Add Time Slot Modal -->
+  <div class="modal fade custom-modal" id="add_time_slot">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title">Choose Time Slot</h5>
+				<button type="button" class="" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">×</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<form>
+					<div class="hours-info">
+						<div class="row form-row hours-cont">
+							<div class="col-12 col-md-12">
+								<div class="row form-row">
+									<div class="col-12 col-md-6">
+										<div class="form-group">
+											<label>Start Time</label>
+											<select class="form-control">
+												<option>-</option>
+												<option>12.00 am</option>
+												<option>12.30 am</option>  
+												<option>1.00 am</option>
+												<option>1.30 am</option>
+											</select>
+										</div> 
+									</div>
+									<div class="col-12 col-md-6">
+										<div class="form-group">
+											<label>End Time</label>
+											<select class="form-control">
+												<option>-</option>
+												<option>12.00 am</option>
+												<option>12.30 am</option>  
+												<option>1.00 am</option>
+												<option>1.30 am</option>
+											</select>
+										</div> 
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="clinic-booking clinic-booking-a">
+						<a class="btn apt-btn" id="submitButton" type="submit" >Book Appointment</a>
+					</div>
+
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- /Add Time Slot Modal -->
+
 	<!-- jQuery -->
 	<script src="js/service/landing/jquery.min.js"></script>
 	
@@ -157,7 +190,7 @@
 	<!-- Custom JS -->
 	<script src="js/scripts.js"></script>
 	<script src="js/service/landing/script.js"></script>
-	<script src="js/service/booking/customscript.js"></script>
+	<script src="js/service/booking/calendar.js"></script>
 	
 
 </body></html>
