@@ -43,6 +43,7 @@ app.get('/healthbridge/patient', function (req, res) {res.sendfile(__dirname + '
 app.get('/healthbridge/myprofile', function (req, res) {res.sendfile(__dirname + '/web-content/landing/patient-profile-landing-page.html');});
 app.get('/healthbridge/patient/appointments', function (req, res) {res.sendfile(__dirname + '/web-content/landing/patient-landing-page-appointments.html');});
 app.get('/healthbridge/patient/profilesettings', function (req, res) {res.sendfile(__dirname + '/web-content/landing/patient-landing-page-profilesettings.html');});
+app.get('/healthbridge/patient/profile', function (req, res) {res.sendfile(__dirname + '/web-content/landing/patient-landing-profile-view.html');});
 
 //for doctor
 app.get('/healthbridge/doctor', function (req, res) { res.sendfile(__dirname + '/web-content/landing/doctor-landing-page.html');});

@@ -18,8 +18,10 @@
 
 	<!-- Main CSS -->
 	<link rel="stylesheet" href="style/landingpage/doctor/customstyle.css">
+	<link rel="stylesheet" href="style/booking/styles.css">
+	<link rel="stylesheet" href="style/book/customstyle.css">
 	<script src="https://kit.fontawesome.com/6dcc7dba5d.js" crossorigin="anonymous"></script><link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all" rel="stylesheet"><link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css" media="all" rel="stylesheet"><link href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" rel="stylesheet">
-	<link href="style/landingpage/styles.css" rel="stylesheet">
+	
 
 	<style id="theia-sticky-sidebar-stylesheet-TSS">.theiaStickySidebar:after {content: ""; display: table; clear: both;}</style>
 
@@ -147,282 +149,254 @@
 								</div>
 							</div>
 								<div class="btn-search">
-									<button type="button" class="btn btn-block">Search</button>
+									<button type="button apt-btn" class="btn btn-block">Search</button>
 								</div>	
 							</div>
 						</div><div class="resize-sensor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; z-index: -1; visibility: hidden;"><div class="resize-sensor-expand" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; overflow: hidden; z-index: -1; visibility: hidden;"><div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 340px; height: 1707px;"></div></div><div class="resize-sensor-shrink" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; overflow: hidden; z-index: -1; visibility: hidden;"><div style="position: absolute; left: 0; top: 0; transition: 0s; width: 200%; height: 200%"></div></div></div></div></div>
 					
 					<div class="col-md-12 col-lg-8 col-xl-9">
-
-						<!-- Doctor Widget -->
-						<div class="card">
-							<div class="card-body">
-								<div class="doctor-widget">
-									<div class="doc-info-left">
-										<div class="doctor-img">
-											<a href="/healthbridge/viewdoctor">
-												<img src="images/img/patients/doctor-thumb-02.jpg" class="img-fluid" alt="User Image">
-											</a>
+						<div class="card-columns">
+							<div class="card">
+								<img class="card-img-top" src="images/img/patients/doctor-thumb-02.jpg" class=""alt="Card image cap">
+								<div class="card-body-result">
+									<div class="doc-info-cont  text-center">
+										<h7 class="doc-name"><a href="/healthbridge/viewdoctor">Dr. Donnie Gallardo</a></h7>
+										<h5 class="doc-department text-center">Dentist</h5>
+										<div class="rating text-center">
+											<i class="fas fa-star filled"></i>
+											<i class="fas fa-star filled"></i>
+											<i class="fas fa-star filled"></i>
+											<i class="fas fa-star filled"></i>
+											<i class="fas fa-star"></i>
+											<span class="d-inline-block average-rating">(50)</span>
+											<span><i class="far fa-money-bill-alt"></i> P 300 - P 500</span>
+											<p class="doc-location"><i class="fas fa-map-marker-alt"></i> Taga Cebu</p>
 										</div>
-										<div class="doc-info-cont">
-											<h4 class="doc-name"><a href="/healthbridge/viewdoctor">Dr. Donnie Gallardo</a></h4>
-											<p class="doc-speciality">BDS, MDS - Pediatric &amp; Procedural Dermatology</p>
-											<h5 class="doc-department">Dermatologist</h5>
-											<div class="rating">
-												<i class="fas fa-star filled"></i>
-												<i class="fas fa-star filled"></i>
-												<i class="fas fa-star filled"></i>
-												<i class="fas fa-star filled"></i>
-												<i class="fas fa-star"></i>
-												<span class="d-inline-block average-rating">(50)</span>
-											</div>
-											<div class="clinic-details">
-												<p class="doc-location"><i class="fas fa-map-marker-alt"></i> Taga Cebu</p>
-												<ul class="clinic-gallery">
-													<li>
-														<a href="#" data-fancybox="gallery">
-															<img src="images/img/patients/feature-01.jpg" alt="Feature">
-														</a>
-													</li>
-													<li>
-														<a href="#" data-fancybox="gallery">
-															<img src="images/img/patients/feature-02.jpg" alt="Feature">
-														</a>
-													</li>
-												</ul>
-											</div>
-											<div class="clinic-services">
-												<span>Skin biopsy</span>
-												<span>Shave removal</span>
-												<span>Cryosurgery</span>
-												<span>Topical chemotherapy</span>
-												<span>Photodynamic therapy</span>
-											</div>
-										</div>
-
-										
-									</div>
-									<div class="doc-info-right">
-										<div class="clini-infos">
-											<ul>
-												<li><i class="far fa-thumbs-up"></i> 100%</li>
-												<li><i class="far fa-comment"></i> 20 Feedback</li>
-												<li><i class="fas fa-map-marker-alt"></i> Taga Cebu</li>
-												<li><i class="far fa-money-bill-alt"></i> P 300 - P 500</li>
-											</ul>
-										</div>
-										<div class="clinic-booking">
+										<div class="clinic-booking clinic-booking-a">
 											<a class="view-pro-btn" href="/healthbridge/viewdoctor">View Profile</a>
 											<a class="apt-btn" href="/healthbridge/bookappointment">Book Appointment</a>
 										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-						<!-- /Doctor Widget -->
-
-						<!-- Doctor Widget -->
-						<div class="card">
-							<div class="card-body">
-								<div class="doctor-widget">
-									<div class="doc-info-left">
-										<div class="doctor-img">
-											<a href="/healthbridge/viewdoctor">
-												<img src="images/img/patients/doctor-thumb-02.jpg" class="img-fluid" alt="User Image">
-											</a>
+							<div class="card">
+								<img class="card-img-top" src="images/img/patients/doctor-thumb-02.jpg" class=""alt="Card image cap">
+								<div class="card-body-result">
+									<div class="doc-info-cont  text-center">
+										<h7 class="doc-name"><a href="/healthbridge/viewdoctor">Dr. Shenani Pimentel</a></h7>
+										<h5 class="doc-department text-center">Dermatologist</h5>
+										<div class="rating text-center">
+											<i class="fas fa-star filled"></i>
+											<i class="fas fa-star filled"></i>
+											<i class="fas fa-star filled"></i>
+											<i class="fas fa-star filled"></i>
+											<i class="fas fa-star"></i>
+											<span class="d-inline-block average-rating">(50)</span>
+											<span><i class="far fa-money-bill-alt"></i> P 300 - P 500</span>
+											<p class="doc-location"><i class="fas fa-map-marker-alt"></i> Taga Cebu</p>
 										</div>
-										<div class="doc-info-cont">
-											<h4 class="doc-name"><a href="/healthbridge/viewdoctor">Dr. Shenani Pimentel</a></h4>
-											<p class="doc-speciality">BDS, MDS - Pediatric &amp; Procedural Dermatology</p>
-											<h5 class="doc-department">Dentist</h5>
-											<div class="rating">
-												<i class="fas fa-star filled"></i>
-												<i class="fas fa-star filled"></i>
-												<i class="fas fa-star filled"></i>
-												<i class="fas fa-star filled"></i>
-												<i class="fas fa-star"></i>
-												<span class="d-inline-block average-rating">(50)</span>
-											</div>
-											<div class="clinic-details">
-												<p class="doc-location"><i class="fas fa-map-marker-alt"></i> Taga LapuLapu</p>
-												<ul class="clinic-gallery">
-													<li>
-														<a href="#" data-fancybox="gallery">
-															<img src="images/img/patients/feature-01.jpg" alt="Feature">
-														</a>
-													</li>
-													<li>
-														<a href="#" data-fancybox="gallery">
-															<img src="images/img/patients/feature-02.jpg" alt="Feature">
-														</a>
-													</li>
-												</ul>
-											</div>
-											<div class="clinic-services">
-												<span>Papasta</span>
-												<span>Paputi Ngipon</span>
-												<span>Dental Public Health</span>
-												<span>Endodontics</span>
-												<span>Periodontics.</span>
-											</div>
-										</div>
-									</div>
-									<div class="doc-info-right">
-										<div class="clini-infos">
-											<ul>
-												<li><i class="far fa-thumbs-up"></i> 100%</li>
-												<li><i class="far fa-comment"></i> 40 Feedback</li>
-												<li><i class="fas fa-map-marker-alt"></i> Taga Cebu</li>
-												<li><i class="far fa-money-bill-alt"></i> P 250 - P 1000</li>
-											</ul>
-										</div>
-										<div class="clinic-booking">
+										<div class="clinic-booking clinic-booking-a">
 											<a class="view-pro-btn" href="/healthbridge/viewdoctor">View Profile</a>
 											<a class="apt-btn" href="/healthbridge/bookappointment">Book Appointment</a>
 										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-						<!-- /Doctor Widget -->
-
-						<!-- Doctor Widget -->
-						<div class="card">
-							<div class="card-body">
-								<div class="doctor-widget">
-									<div class="doc-info-left">
-										<div class="doctor-img">
-											<a href="/healthbridge/viewdoctor">
-												<img src="images/img/patients/doctor-thumb-02.jpg" class="img-fluid" alt="User Image">
-											</a>
+							<div class="card">
+								<img class="card-img-top" src="images/img/patients/doctor-thumb-02.jpg" class=""alt="Card image cap">
+								<div class="card-body-result">
+									<div class="doc-info-cont  text-center">
+										<h7 class="doc-name"><a href="/healthbridge/viewdoctor">Dr. Carlo Ruste</a></h7>
+										<h5 class="doc-department text-center">Dermatologist</h5>
+										<div class="rating text-center">
+											<i class="fas fa-star filled"></i>
+											<i class="fas fa-star filled"></i>
+											<i class="fas fa-star filled"></i>
+											<i class="fas fa-star filled"></i>
+											<i class="fas fa-star"></i>
+											<span class="d-inline-block average-rating">(50)</span>
+											<span><i class="far fa-money-bill-alt"></i> P 300 - P 500</span>
+											<p class="doc-location"><i class="fas fa-map-marker-alt"></i> Taga Cebu</p>
 										</div>
-										<div class="doc-info-cont">
-											<h4 class="doc-name"><a href="/healthbridge/viewdoctor">Dr. Shenani Pimentel</a></h4>
-											<p class="doc-speciality"> Orthodontics and Dentofacial Orthopedics; Pediatric Dentistry MDS - Pediatric &amp; Procedural Dermatology</p>
-											<h5 class="doc-department">Dentist</h5>
-											<div class="rating">
-												<i class="fas fa-star filled"></i>
-												<i class="fas fa-star filled"></i>
-												<i class="fas fa-star filled"></i>
-												<i class="fas fa-star filled"></i>
-												<i class="fas fa-star"></i>
-												<span class="d-inline-block average-rating">(50)</span>
-											</div>
-											<div class="clinic-details">
-												<p class="doc-location"><i class="fas fa-map-marker-alt"></i> Taga LapuLapu</p>
-												<ul class="clinic-gallery">
-													<li>
-														<a href="#" data-fancybox="gallery">
-															<img src="images/img/patients/feature-01.jpg" alt="Feature">
-														</a>
-													</li>
-													<li>
-														<a href="#" data-fancybox="gallery">
-															<img src="images/img/patients/feature-02.jpg" alt="Feature">
-														</a>
-													</li>
-												</ul>
-											</div>
-											<div class="clinic-services">
-												<span>Papasta</span>
-												<span>Paputi Ngipon</span>
-												<span>Dental Public Health</span>
-												<span>Endodontics</span>
-												<span>Periodontics.</span>
-											</div>
-										</div>
-									</div>
-									<div class="doc-info-right">
-										<div class="clini-infos">
-											<ul>
-												<li><i class="far fa-thumbs-up"></i> 100%</li>
-												<li><i class="far fa-comment"></i> 40 Feedback</li>
-												<li><i class="fas fa-map-marker-alt"></i> Taga Cebu</li>
-												<li><i class="far fa-money-bill-alt"></i> P 250 - P 1000</li>
-											</ul>
-										</div>
-										<div class="clinic-booking">
+										<div class="clinic-booking clinic-booking-a">
 											<a class="view-pro-btn" href="/healthbridge/viewdoctor">View Profile</a>
 											<a class="apt-btn" href="/healthbridge/bookappointment">Book Appointment</a>
 										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-						<!-- /Doctor Widget -->
-
-						<!-- Doctor Widget -->
-						<div class="card">
-							<div class="card-body">
-								<div class="doctor-widget">
-									<div class="doc-info-left">
-										<div class="doctor-img">
-											<a href="/healthbridge/viewdoctor">
-												<img src="images/img/patients/doctor-thumb-02.jpg" class="img-fluid" alt="User Image">
-											</a>
+							<div class="card">
+								<img class="card-img-top" src="images/img/patients/doctor-thumb-02.jpg" class=""alt="Card image cap">
+								<div class="card-body-result">
+									<div class="doc-info-cont  text-center">
+										<h7 class="doc-name"><a href="/healthbridge/viewdoctor">Dr. Tin Leonardo</a></h7>
+										<h5 class="doc-department text-center">Dermatologist</h5>
+										<div class="rating text-center">
+											<i class="fas fa-star filled"></i>
+											<i class="fas fa-star filled"></i>
+											<i class="fas fa-star filled"></i>
+											<i class="fas fa-star filled"></i>
+											<i class="fas fa-star"></i>
+											<span class="d-inline-block average-rating">(50)</span>
+											<span><i class="far fa-money-bill-alt"></i> P 300 - P 500</span>
+											<p class="doc-location"><i class="fas fa-map-marker-alt"></i> Taga Cebu</p>
 										</div>
-										<div class="doc-info-cont">
-											<h4 class="doc-name"><a href="/healthbridge/viewdoctor">Dr. Shenani Pimentel</a></h4>
-											<p class="doc-speciality">BDS, MDS - Pediatric &amp; Procedural Dermatology</p>
-											<h5 class="doc-department">Dentist</h5>
-											<div class="rating">
-												<i class="fas fa-star filled"></i>
-												<i class="fas fa-star filled"></i>
-												<i class="fas fa-star filled"></i>
-												<i class="fas fa-star filled"></i>
-												<i class="fas fa-star"></i>
-												<span class="d-inline-block average-rating">(50)</span>
-											</div>
-											<div class="clinic-details">
-												<p class="doc-location"><i class="fas fa-map-marker-alt"></i> Taga LapuLapu</p>
-												<ul class="clinic-gallery">
-													<li>
-														<a href="#" data-fancybox="gallery">
-															<img src="images/img/patients/feature-01.jpg" alt="Feature">
-														</a>
-													</li>
-													<li>
-														<a href="#" data-fancybox="gallery">
-															<img src="images/img/patients/feature-02.jpg" alt="Feature">
-														</a>
-													</li>
-												</ul>
-											</div>
-											<div class="clinic-services">
-												<span>Papasta</span>
-												<span>Paputi Ngipon</span>
-												<span>Dental Public Health</span>
-												<span>Endodontics</span>
-												<span>Periodontics.</span>
-											</div>
-										</div>
-									</div>
-									<div class="doc-info-right">
-										<div class="clini-infos">
-											<ul>
-												<li><i class="far fa-thumbs-up"></i> 100%</li>
-												<li><i class="far fa-comment"></i> 40 Feedback</li>
-												<li><i class="fas fa-map-marker-alt"></i> Taga Cebu</li>
-												<li><i class="far fa-money-bill-alt"></i> P 250 - P 1000</li>
-											</ul>
-										</div>
-										<div class="clinic-booking">
+										<div class="clinic-booking clinic-booking-a">
 											<a class="view-pro-btn" href="/healthbridge/viewdoctor">View Profile</a>
 											<a class="apt-btn" href="/healthbridge/bookappointment">Book Appointment</a>
 										</div>
 									</div>
 								</div>
 							</div>
+							<div class="card">
+								<img class="card-img-top" src="images/img/patients/doctor-thumb-02.jpg" class=""alt="Card image cap">
+								<div class="card-body-result">
+									<div class="doc-info-cont  text-center">
+										<h7 class="doc-name"><a href="/healthbridge/viewdoctor">Dr. Patrick Dumilon</a></h7>
+										<h5 class="doc-department text-center">Dermatologist</h5>
+										<div class="rating text-center">
+											<i class="fas fa-star filled"></i>
+											<i class="fas fa-star filled"></i>
+											<i class="fas fa-star filled"></i>
+											<i class="fas fa-star filled"></i>
+											<i class="fas fa-star"></i>
+											<span class="d-inline-block average-rating">(50)</span>
+											<span><i class="far fa-money-bill-alt"></i> P 300 - P 500</span>
+											<p class="doc-location"><i class="fas fa-map-marker-alt"></i> Taga Cebu</p>
+										</div>
+										<div class="clinic-booking clinic-booking-a">
+											<a class="view-pro-btn" href="/healthbridge/viewdoctor">View Profile</a>
+											<a class="apt-btn" href="/healthbridge/bookappointment">Book Appointment</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<img class="card-img-top" src="images/img/patients/doctor-thumb-02.jpg" class=""alt="Card image cap">
+								<div class="card-body-result">
+									<div class="doc-info-cont  text-center">
+										<h7 class="doc-name"><a href="/healthbridge/viewdoctor">Dr. Jose Bonachita</a></h7>
+										<h5 class="doc-department text-center">Dentist</h5>
+										<div class="rating text-center">
+											<i class="fas fa-star filled"></i>
+											<i class="fas fa-star filled"></i>
+											<i class="fas fa-star filled"></i>
+											<i class="fas fa-star filled"></i>
+											<i class="fas fa-star"></i>
+											<span class="d-inline-block average-rating">(50)</span>
+											<span><i class="far fa-money-bill-alt"></i> P 300 - P 500</span>
+											<p class="doc-location"><i class="fas fa-map-marker-alt"></i> Taga Cebu</p>
+										</div>
+										<div class="clinic-booking clinic-booking-a">
+											<a class="view-pro-btn" href="/healthbridge/viewdoctor">View Profile</a>
+											<a class="apt-btn" href="/healthbridge/bookappointment">Book Appointment</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<img class="card-img-top" src="images/img/patients/doctor-thumb-02.jpg" class=""alt="Card image cap">
+								<div class="card-body-result">
+									<div class="doc-info-cont  text-center">
+										<h7 class="doc-name"><a href="/healthbridge/viewdoctor">Dr. Tia Vallecera</a></h7>
+										<h5 class="doc-department text-center">Dermatologist</h5>
+										<div class="rating text-center">
+											<i class="fas fa-star filled"></i>
+											<i class="fas fa-star filled"></i>
+											<i class="fas fa-star filled"></i>
+											<i class="fas fa-star filled"></i>
+											<i class="fas fa-star"></i>
+											<span class="d-inline-block average-rating">(50)</span>
+											<span><i class="far fa-money-bill-alt"></i> P 300 - P 500</span>
+											<p class="doc-location"><i class="fas fa-map-marker-alt"></i> Taga Cebu</p>
+										</div>
+										<div class="clinic-booking clinic-booking-a">
+											<a class="view-pro-btn" href="/healthbridge/viewdoctor">View Profile</a>
+											<a class="apt-btn" href="/healthbridge/bookappointment">Book Appointment</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<img class="card-img-top" src="images/img/patients/doctor-thumb-02.jpg" class=""alt="Card image cap">
+								<div class="card-body-result">
+									<div class="doc-info-cont  text-center">
+										<h7 class="doc-name"><a href="/healthbridge/viewdoctor">Dr. Maricris Lao</a></h7>
+										<h5 class="doc-department text-center">Dentist</h5>
+										<div class="rating text-center">
+											<i class="fas fa-star filled"></i>
+											<i class="fas fa-star filled"></i>
+											<i class="fas fa-star filled"></i>
+											<i class="fas fa-star filled"></i>
+											<i class="fas fa-star"></i>
+											<span class="d-inline-block average-rating">(50)</span>
+											<span><i class="far fa-money-bill-alt"></i> P 300 - P 500</span>
+											<p class="doc-location"><i class="fas fa-map-marker-alt"></i> Taga Cebu</p>
+										</div>
+										<div class="clinic-booking clinic-booking-a">
+											<a class="view-pro-btn" href="/healthbridge/viewdoctor">View Profile</a>
+											<a class="apt-btn" href="/healthbridge/bookappointment">Book Appointment</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<img class="card-img-top" src="images/img/patients/doctor-thumb-02.jpg" class=""alt="Card image cap">
+								<div class="card-body-result">
+									<div class="doc-info-cont  text-center">
+										<h7 class="doc-name"><a href="/healthbridge/viewdoctor">Dr. JP Gainsan</a></h7>
+										<h5 class="doc-department text-center">Dermatologist</h5>
+										<div class="rating text-center">
+											<i class="fas fa-star filled"></i>
+											<i class="fas fa-star filled"></i>
+											<i class="fas fa-star filled"></i>
+											<i class="fas fa-star filled"></i>
+											<i class="fas fa-star"></i>
+											<span class="d-inline-block average-rating">(50)</span>
+											<span><i class="far fa-money-bill-alt"></i> P 300 - P 500</span>
+											<p class="doc-location"><i class="fas fa-map-marker-alt"></i> Taga Cebu</p>
+										</div>
+										<div class="clinic-booking clinic-booking-a">
+											<a class="view-pro-btn" href="/healthbridge/viewdoctor">View Profile</a>
+											<a class="apt-btn" href="/healthbridge/bookappointment">Book Appointment</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<img class="card-img-top" src="images/img/patients/doctor-thumb-02.jpg" class=""alt="Card image cap">
+								<div class="card-body-result">
+									<div class="doc-info-cont  text-center">
+										<h7 class="doc-name"><a href="/healthbridge/viewdoctor">Dr. Donnie Gallardo</a></h7>
+										<h5 class="doc-department text-center">Dentist</h5>
+										<div class="rating text-center">
+											<i class="fas fa-star filled"></i>
+											<i class="fas fa-star filled"></i>
+											<i class="fas fa-star filled"></i>
+											<i class="fas fa-star filled"></i>
+											<i class="fas fa-star"></i>
+											<span class="d-inline-block average-rating">(50)</span>
+											<span><i class="far fa-money-bill-alt"></i> P 300 - P 500</span>
+											<p class="doc-location"><i class="fas fa-map-marker-alt"></i> Taga Cebu</p>
+										</div>
+										<div class="clinic-booking clinic-booking-a">
+											<a class="view-pro-btn" href="/healthbridge/viewdoctor">View Profile</a>
+											<a class="apt-btn" href="/healthbridge/bookappointment">Book Appointment</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							
 						</div>
-						<!-- /Doctor Widget -->
+
 						<div class="load-more text-center">
 							<nav aria-label="...">
 								<ul class="pagination">
 								  <li class="page-item disabled">
 									<a class="page-link" href="#" tabindex="-1">Previous</a>
 								  </li>
-								  <li class="page-item"><a class="page-link" href="#">1</a></li>
-								  <li class="page-item active">
+								  <li class="page-item active"><a class="page-link" href="#">1</a></li>
+								  <li class="page-item ">
 									<a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
 								  </li>
 								  <li class="page-item"><a class="page-link" href="#">3</a></li>
@@ -431,7 +405,7 @@
 								  </li>
 								</ul>
 							  </nav>
-						</div>	
+						</div>		
 					</div>
 				</div>
 
