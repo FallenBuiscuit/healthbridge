@@ -45,18 +45,16 @@
                     <i class="fas fa-bars ml-1" aria-hidden="true"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav text-uppercase ml-auto">
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger active"
-                                href="/healthbridge/patient">Home</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger"
-                                href="/healthbridge/patient">Services</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger"
-                                href="/healthbridge/pharmacy">Shop</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/healthbridge/patient">Contact
-                                Us</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/healthbridge/guest">Logout</a>
-                        </li>
-                    </ul>
+                    <ul class="navbar-nav text-uppercase ml-auto logged-in">
+                        <li id="patientHome" class="nav-item"><a class="nav-link js-scroll-trigger" href="/healthbridge/patient">Home</a></li>
+                        <li id="doctorHome" class="nav-item"><a class="nav-link js-scroll-trigger" href="/healthbridge/doctor">Home</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/healthbridge/guest">Logout</a></li>
+                        
+                    </ul>   
+                    <ul class="navbar-nav text-uppercase ml-auto logged-out">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/healthbridge/guest">Home</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/healthbridge/login">Login</a></li>
+                    </ul>     
                 </div>
             </div>
         </nav>
