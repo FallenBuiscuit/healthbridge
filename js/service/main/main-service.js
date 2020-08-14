@@ -59,8 +59,10 @@ mainapp.controller("mainServiceCtrl", function($scope, $http){
             var personType = localStorage.getItem("personType");
             if(personType === '1'){
                 $('#patientPharmacy').show();
+                $('#patientHome').show();
             } else if(personType === '2'){
                 $('#doctorPharmacy').show();
+                $('#doctorHome').show();
             } else {
                 $('#guestPharmacy').show();
             }
@@ -82,6 +84,8 @@ mainapp.controller("mainServiceCtrl", function($scope, $http){
         $('#patientPharmacy').hide();
         $('#doctorPharmacy').hide();
         $('#guestPharmacy').hide();
+        $('#patientHome').hide();
+        $('#doctorHome').hide();
         var appointmentClicked = localStorage.getItem("patientAppointment");
         if(appointmentClicked === "true"){
             localStorage.setItem("patientAppointment", false);
