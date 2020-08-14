@@ -2381,6 +2381,8 @@
 				"<td" +
 				" class='" + classNames.join(' ') + "'" +
 				" data-date='" + formatDate(date, 'yyyy-MM-dd') + "'" +
+				
+				" data-toggle='modal' href='#add_time_slot'" +
 				">" +
 				"<div>";
 	
@@ -6177,7 +6179,8 @@
 			allDaySlot: false,
 			selectHelper: true,
 			select: function(start, end, allDay) {
-				var title = prompt('Event Title:');
+				// var title = prompt('Event Title:');
+				$('#add_time_slot').modal('show'); 
 				if (title) {
 					calendar.fullCalendar('renderEvent',
 						{

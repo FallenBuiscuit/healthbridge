@@ -8,6 +8,7 @@ td.fc-day {
 
 background:#FFF !important;
 font-family: 'Roboto', sans-serif;
+cursor: pointer;
 
 }
 td.fc-today {
@@ -188,6 +189,7 @@ html .fc,
 
 /* Buttons
 ------------------------------------------------------------------------*/
+
 
 .fc-button {
 	position: relative;
@@ -684,7 +686,8 @@ table.fc-header{
     background-color: #B8B8B8;
     border-radius: 50%;
     color: #FFFFFF;
-    transition: background-color 0.2s;
+	transition: background-color 0.2s;
+	cursor: pointer;
 }
 .fc-week .fc-day.fc-state-highlight:hover .fc-day-number{
     background-color:  #ff3b30;

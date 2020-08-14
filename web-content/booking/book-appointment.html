@@ -140,7 +140,62 @@
 		</div>
 	</footer>
 	<!-- /Main Wrapper -->
-  
+  <!-- Add Time Slot Modal -->
+  <div class="modal fade custom-modal" id="add_time_slot">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title">Choose Time Slot</h5>
+				<button type="button" class="" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">×</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<form>
+					<div class="hours-info">
+						<div class="row form-row hours-cont">
+							<div class="col-12 col-md-12">
+								<div class="row form-row">
+									<div class="col-12 col-md-6">
+										<div class="form-group">
+											<label>Start Time</label>
+											<select class="form-control">
+												<option>-</option>
+												<option>12.00 am</option>
+												<option>12.30 am</option>  
+												<option>1.00 am</option>
+												<option>1.30 am</option>
+											</select>
+										</div> 
+									</div>
+									<div class="col-12 col-md-6">
+										<div class="form-group">
+											<label>End Time</label>
+											<select class="form-control">
+												<option>-</option>
+												<option>12.00 am</option>
+												<option>12.30 am</option>  
+												<option>1.00 am</option>
+												<option>1.30 am</option>
+											</select>
+										</div> 
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="clinic-booking clinic-booking-a">
+						<a class="apt-btn" type="submit" >Book Appointment</a>
+					</div>
+
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- /Add Time Slot Modal -->
+
 	<!-- jQuery -->
 	<script src="js/service/landing/jquery.min.js"></script>
 	
@@ -158,7 +213,7 @@
 	<!-- Custom JS -->
 	<script src="js/scripts.js"></script>
 	<script src="js/service/landing/script.js"></script>
-	<script src="js/service/booking/customscript.js"></script>
+	<script src="js/service/booking/calendar.js"></script>
 	
 
 </body></html>
