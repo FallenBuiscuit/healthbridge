@@ -106,7 +106,7 @@
 								<div class="user-tabs">
 									<ul class="nav nav-tabs nav-tabs-bottom nav-justified flex-wrap">
 										<li class="nav-item">
-											<a class="nav-link active" href="#profileTab" data-toggle="tab">Profile</a>
+											<a id="profileView" class="nav-link active" href="#profileTab" data-toggle="tab">Profile</a>
 										</li>
 										<li class="nav-item">
 											<a class="nav-link" href="#prescriptionTab" data-toggle="tab"><span>Prescriptions</span></a>
@@ -231,9 +231,6 @@
 																		<a href="javascript:void(0);" class="btn btn-sm bg-info-light">
 																			<i class="far fa-eye"></i> View
 																		</a>
-																		<a href="edit-prescription.html" class="btn btn-sm bg-success-light">
-																			<i class="fas fa-edit"></i> Edit
-																		</a>
 																		<a href="javascript:void(0);" class="btn btn-sm bg-danger-light">
 																			<i class="far fa-trash-alt"></i> Delete
 																		</a>
@@ -251,7 +248,7 @@
 
 									<!-- Appointment Tab -->
 									<div id="pat_appointments" class="tab-pane fade show active">
-										<div class="text-right">
+										<div class="text-right hidden">
 											<a href="/healthbridge/searchdoctor" class="add-new-btn">+ Create New Appointment</a>
 										</div>
 										<div class="card card-table mb-0">
@@ -431,9 +428,6 @@
 																		</a>
 																		<a href="javascript:void(0);" class="btn btn-sm bg-info-light">
 																			<i class="far fa-eye"></i> View
-																		</a>
-																		<a href="edit-prescription.html" class="btn btn-sm bg-success-light" data-toggle="modal" data-target="#add_medical_records">
-																			<i class="fas fa-edit"></i> Edit
 																		</a>
 																		<a href="javascript:void(0);" class="btn btn-sm bg-danger-light">
 																			<i class="far fa-trash-alt"></i> Delete
