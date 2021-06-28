@@ -72,11 +72,11 @@
                 <div class="container">
                     <div class="masthead-heading text-uppercase">Welcome to HealthBridge</div>
                     <div class="masthead-subheading">Lets help to Bridge the gaps for health care providers to deliver quality medical services</div>
-                    <a id="serviceBtn" class="btn btn-primary-1 btn-xl js-scroll-trigger btn-header" href="#services" onclick="dataLayer.push({'event':'gtm.click','eventCategory': 'FAQDetail', 'eventAction': 'Expand', 'eventLabel':'FAQQuestion'});">
+                    <a id="serviceBtn" class="btn btn-primary-1 btn-xl js-scroll-trigger btn-header" href="#services" onclick="getFAQQuestion('service', 'true')">
                         <div class="text-center ">
                         <img class="img-fluid-header" src="images/icons/userprof.png" alt="" />
                     </div>Services</a>
-                    <a class="btn btn-primary-4 btn-xl js-scroll-trigger btn-header" href="#portfolio">
+                    <a class="btn btn-primary-4 btn-xl js-scroll-trigger btn-header" href="#portfolio" onclick="getFAQQuestion('portfolio', 'false')">
                         <div class="text-center ">
                         <img class="img-fluid-header" src="images/icons/cart.png" alt="" />
                     </div>Buy Medicine</a>
@@ -468,6 +468,23 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <script>
+            var gaFaqQuestion = "";
+            var eventAction = "";
+            function getFAQQuestion(faqQuestion, isCollapsed){
+                gaFaqQuestion = faqQuestion.replace(/(<p[^>]+?>|<p>|<\/p>)/img, "");
+                if(isCollapsed === "true"){
+                    eventAction = 'Collapsed';
+                } else {
+                    eventAction = 'Expand';
+                }
+                executeGA(eventAction, gaFaqQuestion);
+            }
+            function executeGA(eventAction, eventLabel){
+                window.dataLayer = window.dataLayer || [];
+                dataLayer.push({'event':'gtm.click','eventCategory':'FAQDetail', 'eventAction':eventAction, 'eventLabel':eventLabel});
+            }
+        </script>
     </div>
     </body>
 </html>
