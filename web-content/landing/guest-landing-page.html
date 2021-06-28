@@ -19,36 +19,8 @@
         <link href="style/landingpage/styles.css" rel="stylesheet" />
 
         <link href="style/main/main.css" rel="stylesheet" />
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-200620791-2"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'UA-200620791-2');
-        </script>
-        <script>
-            (function(w, d, s, l, i) {
-                w[l] = w[l] || [];
-                w[l].push({
-                    'gtm.start': new Date().getTime(),
-                    event: 'gtm.js'
-                });
-                var f = d.getElementsByTagName(s)[0],
-                    j = d.createElement(s),
-                    dl = l != 'dataLayer' ? '&l=' + l : '';
-                j.async = true;
-                j.src =
-                    '//www.googletagmanager.com/gtm.js?id=' + i + dl;
-                f.parentNode.insertBefore(j, f);
-            })(window, document, 'script', 'dataLayer', 'GTM-KJHB7LV');
-        </script>
     </head>
     <body id="page-top">
-        <!-- Google Tag Manager (noscript) -->
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KJHB7LV"
-            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-        <!-- End Google Tag Manager (noscript) -->
         <div ng-app="mainapp" ng-controller="mainServiceCtrl">
             <!-- Navigation-->
             <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
@@ -72,11 +44,11 @@
                 <div class="container">
                     <div class="masthead-heading text-uppercase">Welcome to HealthBridge</div>
                     <div class="masthead-subheading">Lets help to Bridge the gaps for health care providers to deliver quality medical services</div>
-                    <a id="serviceBtn" class="btn btn-primary-1 btn-xl js-scroll-trigger btn-header" href="#services" onclick="getFAQQuestion('service', 'true')">
+                    <a id="serviceBtn" class="btn btn-primary-1 btn-xl js-scroll-trigger btn-header" href="#services">
                         <div class="text-center ">
                         <img class="img-fluid-header" src="images/icons/userprof.png" alt="" />
                     </div>Services</a>
-                    <a class="btn btn-primary-4 btn-xl js-scroll-trigger btn-header" href="#portfolio" onclick="getFAQQuestion('portfolio', 'false')">
+                    <a class="btn btn-primary-4 btn-xl js-scroll-trigger btn-header" href="#portfolio">
                         <div class="text-center ">
                         <img class="img-fluid-header" src="images/icons/cart.png" alt="" />
                     </div>Buy Medicine</a>
@@ -468,23 +440,6 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-        <script>
-            var gaFaqQuestion = "";
-            var eventAction = "";
-            function getFAQQuestion(faqQuestion, isCollapsed){
-                gaFaqQuestion = faqQuestion.replace(/(<p[^>]+?>|<p>|<\/p>)/img, "");
-                if(isCollapsed === "true"){
-                    eventAction = 'Collapsed';
-                } else {
-                    eventAction = 'Expand';
-                }
-                executeGA(eventAction, gaFaqQuestion);
-            }
-            function executeGA(eventAction, eventLabel){
-                window.dataLayer = window.dataLayer || [];
-                dataLayer.push({'event':'LogHFAQ','eventCategory':'FAQDetail', 'eventAction':eventAction, 'eventLabel':eventLabel});
-            }
-        </script>
     </div>
     </body>
 </html>
